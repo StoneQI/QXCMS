@@ -5,10 +5,10 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model backend\models\Columns */
 
-$this->title = 'Update Columns: ' . $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Columns', 'url' => ['index']];
-$this->params['breadcrumbs'][] = ['label' => $model->id, 'url' => ['view', 'id' => $model->id]];
-$this->params['breadcrumbs'][] = 'Update';
+$this->title = '修改栏目: ' . $model->column_name;
+$this->params['breadcrumbs'][] = ['label' => '栏目', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => $model->column_name, 'url' => ['view', 'id' => $model->id]];
+$this->params['breadcrumbs'][] = '修改';
 ?>
 <div class="columns-update">
 
@@ -16,6 +16,7 @@ $this->params['breadcrumbs'][] = 'Update';
 
     <?= $this->render('_form', [
         'model' => $model,
+        'columns'=>$columns
     ]) ?>
 
 </div>

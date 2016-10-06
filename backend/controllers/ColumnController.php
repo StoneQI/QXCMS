@@ -4,6 +4,7 @@ namespace backend\controllers;
 
 use Yii;
 use backend\models\Columns;
+use backend\models\Posts;
 use backend\models\ColumnsSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -64,12 +65,14 @@ class ColumnController extends Controller
     public function actionCreate()
     {
         $model = new Columns();
-
+        $columns = Columns::getColumn(0);
+        var_dump(Yii::$app->request->post());
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
                 'model' => $model,
+                'columns' => $columns,
             ]);
         }
     }
@@ -83,12 +86,13 @@ class ColumnController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-
+        $columns = Columns::getColumn(0);
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [
                 'model' => $model,
+                'columns' => $columns
             ]);
         }
     }
@@ -101,7 +105,18 @@ class ColumnController extends Controller
      */
     public function actionDelete($id)
     {
-        $this->findModel($id)->delete();
+        if (!Columns::find()->where(['pid'=>$id])->one()) {
+           if (!Posts::find()->where(['post_column_id'=>$id])->one()) {
+                $this->findModel($id)->delete();
+            }else{
+                Yii::$app->session->setFlash('error', '不能删除有文章的栏目');
+            }
+        }else{
+           Yii::$app->session->setFlash('error', '不能删除上级栏目');
+        }
+
+
+
 
         return $this->redirect(['index']);
     }
@@ -121,4 +136,34 @@ class ColumnController extends Controller
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
+
+    protected function getColumn($id=0,&$columns=array(),$spac=0)
+    {
+        $spac =$spac + 1;
+        $column = Columns::find()->where(['pid'=>$id])->all();
+        foreach ($column as $key => $value) {
+            $columns[$value->id] = '|'.str_repeat('—',$spac).$value->column_name;
+
+            $this->getColumn($value->id,$columns,$spac);
+
+        }
+
+        return $columns;
+    }
+
+    public function actions()
+    {
+        return [
+            'upload' => [
+                'class' => 'kucha\ueditor\UEditorAction',
+                'config' => [
+                                "imageUrlPrefix"  => "http://localhost/",//图片访问路径前缀
+                                "imagePathFormat" => "upload/image/{yyyy}{mm}{dd}/{time}{rand:6}", //上传保存路径
+                              //  "imageRoot" => Yii::getAlias("@common"),
+                            ],
+            ]
+        ];
+    }
+
 }
+

@@ -6,8 +6,8 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model backend\models\Columns */
 
-$this->title = 'Create Columns';
-$this->params['breadcrumbs'][] = ['label' => 'Columns', 'url' => ['index']];
+$this->title = '新建栏目';
+$this->params['breadcrumbs'][] = ['label' => '栏目', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="columns-create">
@@ -16,6 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?= $this->render('_form', [
         'model' => $model,
+        'columns' => $columns,
     ]) ?>
 
 </div>

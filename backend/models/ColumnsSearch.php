@@ -18,7 +18,7 @@ class ColumnsSearch extends Columns
     public function rules()
     {
         return [
-            [['id', 'pid', 'column_content_id', 'column_sort', 'column_status', 'createtime', 'updatetime'], 'integer'],
+            [['id', 'pid',  'column_sort', 'column_status', 'created_at', 'updated_at'], 'integer'],
             [['column_name', 'column_link', 'column_layout', 'column_image', 'column_content_layout'], 'safe'],
         ];
     }
@@ -41,7 +41,7 @@ class ColumnsSearch extends Columns
      */
     public function search($params)
     {
-        $query = Columns::find();
+        $query = Columns::find()->where('id > 1');
 
         // add conditions that should always apply here
 
@@ -61,11 +61,10 @@ class ColumnsSearch extends Columns
         $query->andFilterWhere([
             'id' => $this->id,
             'pid' => $this->pid,
-            'column_content_id' => $this->column_content_id,
             'column_sort' => $this->column_sort,
             'column_status' => $this->column_status,
-            'createtime' => $this->createtime,
-            'updatetime' => $this->updatetime,
+            'created_at' => $this->created_at,
+            'updated_at' => $this->updated_at,
         ]);
 
         $query->andFilterWhere(['like', 'column_name', $this->column_name])

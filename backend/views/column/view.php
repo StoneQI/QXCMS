@@ -6,8 +6,8 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model backend\models\Columns */
 
-$this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Columns', 'url' => ['index']];
+$this->title = $model->column_name;
+$this->params['breadcrumbs'][] = ['label' => '栏目', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="columns-view">
@@ -15,11 +15,11 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'id' => $model->id], [
+        <?= Html::a('修改', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a('删除', ['delete', 'id' => $model->id], [
             'class' => 'btn btn-danger',
             'data' => [
-                'confirm' => 'Are you sure you want to delete this item?',
+                'confirm' => '你确定要删除此栏目?',
                 'method' => 'post',
             ],
         ]) ?>
@@ -28,18 +28,18 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'id',
+            //'id',
             'pid',
             'column_name',
             'column_link',
             'column_layout',
             'column_image',
-            'column_content_id',
+            'column_content:html',
             'column_content_layout',
             'column_sort',
-            'column_status',
-            'createtime:datetime',
-            'updatetime:datetime',
+  //          'column_status',
+            'created_at:datetime',
+            'updated_at:datetime',
         ],
     ]) ?>
 
