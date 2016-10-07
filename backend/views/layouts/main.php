@@ -37,7 +37,8 @@ AppAsset::register($this);
     $menuItems = [
         ['label' => '栏目管理', 'url' => ['/column/index']],
         ['label' => '文章管理', 'url' => ['/post/index']],
-        ['label' => 'Contact', 'url' => ['/site/contact']],
+        ['label' => '文件管理', 'url' => ['/file/index']],
+        ['label' => '网站配置', 'url' => ['/webinfo/index']],
     ];
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => '注册', 'url' => ['/site/signup']];
