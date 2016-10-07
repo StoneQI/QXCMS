@@ -41,7 +41,7 @@ class PostsSearch extends Posts
      */
     public function search($params)
     {
-        $query = Posts::find();
+        $query = Posts::find()->where('post_status>-1');
 
         // add conditions that should always apply here
 

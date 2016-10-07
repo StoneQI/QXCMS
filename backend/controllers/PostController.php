@@ -113,8 +113,10 @@ class PostController extends Controller
      */
     public function actionDelete($id)
     {
-        $this->findModel($id)->delete();
-        Contents::find()->where(['posts_id'=>$id])->one()->delete();
+       $model = $this->findModel($id);
+       $model->post_status = -1;
+       $model->save();
+
         return $this->redirect(['index']);
     }
 
