@@ -47,7 +47,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
             [                      // the owner name of the model
             'label' => '内容',
-            'value' => $model->content->content,
+            'value' => $model->content?$model->content->content:'文章无内容',
             'format' => 'html',
             ],
             [

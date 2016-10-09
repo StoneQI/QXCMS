@@ -74,7 +74,7 @@ $this->params['breadcrumbs'][] = $this->title;
              'trueLabel' => '已发布',
              'falseLabel' => '草稿'
              ],
-            // 'post_tag_id',
+            'post_sort',
             // 'created_at:datetime',
              //'updated_at:datetime',
              // [

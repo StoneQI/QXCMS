@@ -18,7 +18,7 @@ class PostsSearch extends Posts
     public function rules()
     {
         return [
-            [['id', 'post_is_top', 'post_column_id', 'post_status', 'post_tag_id', 'created_at', 'updated_at'], 'integer'],
+            [['id', 'post_is_top', 'post_column_id', 'post_status', 'post_sort', 'created_at', 'updated_at'], 'integer'],
             [['post_tiltle', 'post_subtitle', 'post_image', 'post_video', 'post_link', 'post_anthor', 'post_origin'], 'safe'],
         ];
     }
@@ -63,7 +63,7 @@ class PostsSearch extends Posts
             'post_is_top' => $this->post_is_top,
             'post_column_id' => $this->post_column_id,
             'post_status' => $this->post_status,
-            'post_tag_id' => $this->post_tag_id,
+            'post_sort' => $this->post_sort,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ]);

@@ -12,15 +12,15 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'pid')->dropdownList($columns); ?>
+    <?= $form->field($model, 'pid')->dropdownList($columns)->label('上级栏目（必须填写）'); ?>
 
-    <?= $form->field($model, 'column_name')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'column_name')->textInput(['maxlength' => true])->label('栏目名字（必须填写）'); ?>
 
-    <?= $form->field($model, 'column_link')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'column_link')->textInput(['maxlength' => true])->label('栏目链接（当你需要链接到其他页面时设置）') ?>
 
-    <?= $form->field($model, 'column_layout')->dropdownList(['1'=>'列表展示','2'=>'图片展示']) ?>
+    <?= $form->field($model, 'column_layout')->dropdownList(['1'=>'列表展示','2'=>'图片展示'])->label('栏目布局（根据需要指定该栏目的布局方式）') ?>
 
-    <?= $form->field($model, 'column_image')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'column_image')->textInput(['maxlength' => true])->label('栏目图像') ?>
 
     <?= $form->field($model, 'column_content')->widget('kucha\ueditor\UEditor',[
     'clientOptions' => [
@@ -122,11 +122,11 @@ use yii\widgets\ActiveForm;
         'drafts', // 从草稿箱加载
         'charts', // 图表
             ],
-        ]]]); ?>
+        ]]])->label('栏目内容'); ?>
 
-    <?= $form->field($model, 'column_content_layout')->dropdownList(['1'=>'列表展示','2'=>'图片展示']) ?>
+    <?= $form->field($model, 'column_content_layout')->dropdownList(['1'=>'默认','2'=>'图片展示'])->label('栏目内容布局（指定该栏目下文章布局方式）'); ?>
 
-    <?= $form->field($model, 'column_sort')->textInput() ?>
+    <?= $form->field($model, 'column_sort')->textInput()->label('栏目排序（输入数字，按由小到大排序）') ?>
 
 
     <div class="form-group">

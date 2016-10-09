@@ -14,15 +14,15 @@ use yii\widgets\ActiveForm;
 
 <!--     <?= $form->field($model, 'id')->dropdownList($columns); ?> -->
 
-    <?= $form->field($model, 'post_column_id')->dropdownList($columns); ?>
+    <?= $form->field($model, 'post_column_id')->dropdownList($columns)->label('所属栏目（必须填写）'); ?>
 
-    <?= $form->field($model, 'post_tiltle')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'post_tiltle')->textInput(['maxlength' => true])->label('文章标题（必须填写）'); ?>
 
     <?= $form->field($model, 'post_subtitle')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'post_anthor')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'post_origin')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'post_origin')->textInput(['maxlength' => true])->label('文章来源') ?>
 
     <?= $form->field($model, 'post_image')->textInput(['maxlength' => true]) ?>
 
@@ -132,7 +132,7 @@ use yii\widgets\ActiveForm;
         'drafts', // 从草稿箱加载
         'charts', // 图表
             ],
-        ]]]); ?>
+        ]]])->label('文章内容');; ?>
 
 
     <?= $form->field($model, 'post_is_top')->dropdownList(['0'=>'否','1'=>'是']) ?>
@@ -141,9 +141,9 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'post_status')->dropdownList(['1'=>'发布','0'=>'草稿']) ?>
 
-<!--     <?= $form->field($model, 'post_tag_id')->textInput() ?>
+<?= $form->field($model, 'post_sort')->textInput() ?>
 
-    <?= $form->field($model, 'created_at')->textInput() ?>
+ <!--      <?= $form->field($model, 'created_at')->textInput() ?>
 
     <?= $form->field($model, 'updated_at')->textInput() ?> -->
 

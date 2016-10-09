@@ -7,12 +7,12 @@ use yii\widgets\DetailView;
 /* @var $model common\models\Files */
 
 $this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Files', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => '文件管理', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="files-view">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+  <!--   <h1><?= Html::encode($this->title) ?></h1> -->
 
     <p>
         <?= Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>

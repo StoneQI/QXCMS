@@ -7,16 +7,16 @@ use yii\grid\GridView;
 /* @var $searchModel common\models\FilesSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Files';
+$this->title = '文件管理';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="files-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+   <!--  <h1><?= Html::encode($this->title) ?></h1> -->
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Files', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('新增文件', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,

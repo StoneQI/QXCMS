@@ -47,7 +47,7 @@ class Posts extends \yii\db\ActiveRecord
     {
         return [
             [[ 'post_tiltle', 'post_column_id', 'post_status'], 'required'],
-            [[ 'post_is_top', 'post_column_id', 'post_status', 'post_tag_id'], 'integer'],
+            [[ 'post_is_top', 'post_column_id', 'post_status', 'post_sort'], 'integer'],
             [['post_tiltle', 'post_subtitle'], 'string', 'max' => 255],
             [['post_image', 'post_video', 'post_link'], 'string', 'max' => 200],
             [['post_anthor'], 'string', 'max' => 50],
@@ -72,7 +72,7 @@ class Posts extends \yii\db\ActiveRecord
             'post_is_top' => '置顶',
             'post_column_id' => '所属栏目',
             'post_status' => '发布',
-            'post_tag_id' => 'Post Tag ID',
+            'post_sort' => '文章排序',
             'created_at' => '创建时间',
             'updated_at' => '修改时间',
         ];

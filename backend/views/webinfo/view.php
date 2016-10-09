@@ -19,7 +19,7 @@ $this->params['breadcrumbs'][] = ['label' => '网站信息', 'url' => ['index']]
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'id',
+         //   'id',
             'web_name',
             'web_logo',
             'record_id',
