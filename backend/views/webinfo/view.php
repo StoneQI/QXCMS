@@ -13,19 +13,37 @@ $this->params['breadcrumbs'][] = ['label' => '网站信息', 'url' => ['index']]
 
 
     <p>
-        <?= Html::a('修改', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a('修改', ['update'], ['class' => 'btn btn-primary']) ?>
     </p>
 
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
          //   'id',
-            'web_name',
-            'web_logo',
-            'record_id',
-            'web_phone',
-            'web_mail',
-            'web_address',
+          [     'attribute'=>'web_name',
+                'label'=>'网站名字',
+                'valueColOptions'=>['style'=>'width:70%'],
+            ],
+            [
+                'attribute'=>'web_logo',
+                'label'=>'网站LOGO',
+            ],
+                        [
+                'attribute'=>'record_id',
+                'label'=>'备案号',
+            ],
+                        [
+                'attribute'=>'web_phone',
+                'label'=>'网站电话',
+            ],
+                        [
+                'attribute'=>'web_mail',
+                'label'=>'网站邮箱',
+            ],
+                    [
+                'attribute'=>'web_address',
+                'label'=>'网站地址',
+            ]
         ],
     ]) ?>
 

@@ -12,19 +12,18 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-   <!--  <?= $form->field($model, 'id')->textInput() ?> -->
 
-    <?= $form->field($model, 'web_name')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'web_name')->textInput(['maxlength' => true,'value'=>$webinfo->web_name]) ?>
 
-    <?= $form->field($model, 'web_logo')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'web_logo')->textInput(['maxlength' => true,'value'=>$webinfo->web_logo]) ?>
 
-    <?= $form->field($model, 'record_id')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'record_id')->textInput(['maxlength' => true,'value'=>$webinfo->record_id]) ?>
 
-    <?= $form->field($model, 'web_phone')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'web_phone')->textInput(['maxlength' => true,'value'=>$webinfo->web_phone]) ?>
 
-    <?= $form->field($model, 'web_mail')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'web_mail')->textInput(['maxlength' => true,'value'=>$webinfo->web_mail]) ?>
 
-    <?= $form->field($model, 'web_address')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'web_address')->textInput(['maxlength' => true,'value'=>$webinfo->web_address]) ?>
 
     <div class="form-group">
         <?= Html::submitButton( '修改', ['class' =>'btn btn-primary']) ?>

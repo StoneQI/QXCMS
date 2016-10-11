@@ -2,7 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
-
+use backend\models\Columns;
 /* @var $this yii\web\View */
 /* @var $model backend\models\Columns */
 
@@ -29,7 +29,13 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             //'id',
-            'pid',
+             ['attribute'=>'pid',
+                'label'=>'上级栏目',
+                'format'=>'raw',
+                'value'=>Columns::find()->where(['id'=>$model->pid])->one()->column_name
+            ],
+
+
             'column_name',
             'column_link',
             'column_layout',

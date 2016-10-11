@@ -25,7 +25,7 @@ CREATE TABLE `QX_files` (
   `file_type` varchar(200) DEFAULT NULL,
   `file_status` int(4) DEFAULT NULL,
   `file_name` varchar(200) NOT NULL,
-  `createtime` int(10) NOT NULL,
-  `updatetime` int(10) NOT NULL,
+  `created_at` int(10) NOT NULL,
+  `updated_at` int(10) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

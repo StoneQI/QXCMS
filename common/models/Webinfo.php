@@ -3,27 +3,25 @@
 namespace common\models;
 
 use Yii;
+use yii\base\Model;
 
-/**
- * This is the model class for table "QX_webinfo".
- *
- * @property integer $id
- * @property string $web_name
- * @property string $web_logo
- * @property string $record_id
- * @property string $web_phone
- * @property string $web_mail
- * @property string $web_address
- */
-class Webinfo extends \yii\db\ActiveRecord
+
+class Webinfo extends Model
 {
     /**
      * @inheritdoc
      */
-    public static function tableName()
-    {
-        return 'QX_webinfo';
-    }
+    public $web_name;
+    public $web_logo;
+    public $record_id;
+    public $web_phone;
+    public $web_address;
+    public $web_mail;
+
+    // public static function tableName()
+    // {
+    //     return 'QX_webinfo';
+    // }
 
     /**
      * @inheritdoc
@@ -31,8 +29,6 @@ class Webinfo extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id'], 'required'],
-            [['id'], 'integer'],
             [['web_name', 'web_logo'], 'string', 'max' => 200],
             [['record_id', 'web_phone', 'web_mail', 'web_address'], 'string', 'max' => 255],
         ];
@@ -41,6 +37,27 @@ class Webinfo extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
+    public function save()
+    {
+        $web_config['web_name'] = $this->web_name;
+        $web_config['web_logo'] = $this->web_logo;
+        $web_config['record_id'] = $this->record_id;
+        $web_config['web_phone'] = $this->web_phone;
+        $web_config['web_address'] = $this->web_address;
+        $web_config['web_mail'] = $this->web_mail;
+        $webinfo = json_encode($web_config);
+
+
+        $filename =Yii::getAlias('@common').'\config\web_config.json';
+        return file_put_contents($filename,$webinfo );
+    }
+
+    public static function getinfo(){
+        $filename =Yii::getAlias('@common').'\config\web_config.json';
+        return json_decode(file_get_contents($filename));
+    }
+
+
     public function attributeLabels()
     {
         return [

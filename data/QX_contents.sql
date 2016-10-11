@@ -22,5 +22,7 @@ DROP TABLE IF EXISTS `QX_contents`;
 CREATE TABLE `QX_contents` (
   `id` int(11) NOT NULL,
   `content` longtext NOT NULL,
+  `posts_id` int(11) NOT NULL,
+  KEY `contents_posts_id` (`posts_id`) USING BTREE,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

@@ -31,14 +31,14 @@ CREATE TABLE `QX_posts` (
   `post_is_top` int(4) DEFAULT NULL,
   `post_column_id` int(11) NOT NULL,
   `post_status` int(4) NOT NULL,
-  `post_tag_id` int(11) DEFAULT NULL,
-  `createtime` int(10) NOT NULL,
-  `updatetime` int(10) NOT NULL,
+  `post_sort` int(11) DEFAULT NULL,
+  `created_at` int(10) NOT NULL,
+  `updated_at` int(10) NOT NULL,
   `post_content_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `id` (`id`),
   KEY `post_column_id` (`post_column_id`),
-  KEY `post_tag_id` (`post_tag_id`),
+  KEY `post_sort` (`post_sort`),
   KEY `post_status` (`post_status`),
-  KEY `createtime` (`createtime`)
+  KEY `created_at` (`created_at`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

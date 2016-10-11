@@ -72,6 +72,10 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+
+     // $filename =Yii::getAlias('@common').'\config\index_config.json';
+
+    //  $index_config = json_decode(file_get_contents($filename));
         return $this->render('index');
     }
 

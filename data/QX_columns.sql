@@ -29,12 +29,13 @@ CREATE TABLE `QX_columns` (
   `column_content_id` int(11) DEFAULT NULL,
   `column_content_layout` varchar(50) NOT NULL,
   `column_sort` int(8) NOT NULL,
+  `column_content` longtext NOT NULL,
   `column_status` int(4) NOT NULL DEFAULT '1',
-  `createtime` int(10) NOT NULL,
-  `updatetime` int(10) NOT NULL,
+  `created_at` int(10) NOT NULL,
+  `updated_at` int(10) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `column_pid` (`pid`) USING BTREE,
   KEY `column_sort` (`column_sort`) USING BTREE,
-  KEY `createtime` (`createtime`),
+  KEY `created_at` (`created_at`),
   KEY `column_status` (`column_status`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

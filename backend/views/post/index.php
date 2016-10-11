@@ -28,6 +28,7 @@ $this->params['breadcrumbs'][] = $this->title;
            [
                 'attribute' => 'post_column_id',
                 'format'=>'raw',
+                'vAlign'=>'middle',
                 'width'=>'15%',
                 'value'=>function ($model, $key, $index, $widget) {
                     return Html::label($model->column->column_name);
@@ -41,14 +42,17 @@ $this->params['breadcrumbs'][] = $this->title;
            ],
             [
                 'attribute' => 'post_tiltle',
+                'vAlign'=>'middle',
                 'width'=>'20%',
             ],
             [
                 'attribute' => 'post_subtitle',
+                'vAlign'=>'middle',
                 'width'=>'15%',
             ],
             [
                 'attribute' => 'post_anthor',
+                'vAlign'=>'middle',
                 'width'=>'15%',
             ],
             //'post_subtitle',
@@ -61,7 +65,7 @@ $this->params['breadcrumbs'][] = $this->title;
              'class'=>'kartik\grid\BooleanColumn',
              'attribute'=>'post_is_top',
              'vAlign'=>'middle',
-             'width'=>'10%',
+             'width'=>'8%',
              'trueLabel' => '已置顶',
              'falseLabel' => '未置顶'
              ],
@@ -70,11 +74,16 @@ $this->params['breadcrumbs'][] = $this->title;
              'class'=>'kartik\grid\BooleanColumn',
              'attribute'=>'post_status',
              'vAlign'=>'middle',
-             'width'=>'10%',
+             'width'=>'8%',
              'trueLabel' => '已发布',
              'falseLabel' => '草稿'
              ],
-            'post_sort',
+             [
+             'attribute'=>'post_sort',
+             'vAlign'=>'middle',
+             'width'=>'8%',
+             ],
+
             // 'created_at:datetime',
              //'updated_at:datetime',
              // [

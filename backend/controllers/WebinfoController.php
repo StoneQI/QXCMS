@@ -4,9 +4,7 @@ namespace backend\controllers;
 
 use Yii;
 use common\models\Webinfo;
-use common\models\WebinfoSearch;
 use yii\web\Controller;
-use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
@@ -17,26 +15,28 @@ class WebinfoController extends Controller
     /**
      * @inheritdoc
      */
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['POST'],
-                ],
-            ],
-        ];
-    }
+    // public function behaviors()
+    // {
+    //     return [
+    //         'verbs' => [
+    //             'class' => VerbFilter::className(),
+    //             'actions' => [
+    //                 'delete' => ['POST'],
+    //             ],
+    //         ],
+    //     ];
+    // }
 
     /**
      * Lists all Webinfo models.
      * @return mixed
      */
-    public function actionIndex($id =1)
+    public function actionIndex()
     {
+        $webinfo = Webinfo::getinfo();
+
         return $this->render('view', [
-            'model' => $this->findModel($id),
+            'model' => $webinfo,
         ]);
     }
 
@@ -45,10 +45,10 @@ class WebinfoController extends Controller
      * @param integer $id
      * @return mixed
      */
-    public function actionView($id)
-    {
+    // public function actionView($id)
+    // {
 
-    }
+    // }
 
     /**
      * Creates a new Webinfo model.
@@ -74,15 +74,17 @@ class WebinfoController extends Controller
      * @param integer $id
      * @return mixed
      */
-    public function actionUpdate($id)
+    public function actionUpdate()
     {
-        $model = $this->findModel($id);
-
+        $model = new Webinfo();
+        //var_dump(Yii::$app->request->post());
+        $webinfo = Webinfo::getinfo();
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['index']);
         } else {
             return $this->render('update', [
                 'model' => $model,
+                'webinfo'=>$webinfo
             ]);
         }
     }
@@ -107,12 +109,12 @@ class WebinfoController extends Controller
      * @return Webinfo the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
-    protected function findModel($id)
-    {
-        if (($model = Webinfo::findOne($id)) !== null) {
-            return $model;
-        } else {
-            throw new NotFoundHttpException('The requested page does not exist.');
-        }
-    }
+    // protected function findModel($id)
+    // {
+    //     if (($model = Webinfo::findOne($id)) !== null) {
+    //         return $model;
+    //     } else {
+    //         throw new NotFoundHttpException('The requested page does not exist.');
+    //     }
+    // }
 }
