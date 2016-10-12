@@ -4,31 +4,32 @@ use yii\helpers\Html;
 use kartik\grid\GridView;
 
 /* @var $this yii\web\View */
-/* @var $searchModel common\models\FilesSearch */
+/* @var $searchModel common\models\ContactsSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = '文件管理';
+$this->title = '留言';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="files-index">
+<div class="contacts-index">
 
-   <!--  <h1><?= Html::encode($this->title) ?></h1> -->
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
-       // 'filterModel' => $searchModel,
         'export'=>false,
+      //  'filterModel' => $searchModel,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            //'id',
-            'file_url:url',
-            'file_type',
-           // 'file_status',
-            'file_name',
-            // 'created_at',
-            // 'updated_at',
-
+           // 'Id',
+            'name',
+            'phone',
+            'address',
+            'content:ntext',
+            [
+            'attribute'=>'created_at',
+            'format' => ['date', 'php:Y年m月d日 h:i:s'],
+            ],
             ['class' => 'yii\grid\ActionColumn'],
         ],
         'containerOptions' => ['style'=>'overflow: auto'],
@@ -44,7 +45,6 @@ $this->params['breadcrumbs'][] = $this->title;
         'panel' => [
             'type' => GridView::TYPE_PRIMARY,
             'heading'=>$this->title ,
-            'before'=>Html::a('<i class="glyphicon glyphicon-plus"></i> 新增文件', ['create'], ['class' => 'btn btn-success']),
         ],
     ]); ?>
 </div>

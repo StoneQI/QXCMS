@@ -21,12 +21,13 @@ class IndexinfoController extends Controller
     public function actionUpdate()
     {
     	$model = new Indexinfo();
-        var_dump(Yii::$app->request->post());
+        $indexinfo = Indexinfo::getinfo();
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
            return $this->redirect(['index']);
         } else {
           return $this->render('update', [
                 'model' => $model,
+                'indexinfo'=>$indexinfo
              ]);
         }
     }

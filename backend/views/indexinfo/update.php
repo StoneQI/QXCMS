@@ -3,6 +3,8 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
+$this->title = '首页管理';
+$this->params['breadcrumbs'][] = ['label' => '首页管理', 'url' => ['index']];
 /* @var $this yii\web\View */
 /* @var $model common\models\IndexInfo */
 /* @var $form ActiveForm */
@@ -21,39 +23,41 @@ use yii\widgets\ActiveForm;
           <!-- Tab panes -->
           <div class="tab-content">
             <div role="tabpanel" class="tab-pane active" id="home">
-            	 <?= $form->field($model, 'index_img')->textInput() ?>
+            <br>
+            	 <?= $form->field($model, 'index_img')->textInput(['maxlength' => true,'value'=>$indexinfo->index_img]) ?>
             	 <?= $form->field($model, 'index_imgtext')->textInput() ?>
 
             </div>
             <div role="tabpanel" class="tab-pane" id="profile">
+            <br>
             	<?= $form->field($model, 'center_title')->textInput() ?>
             	 <?= $form->field($model, 'center_content')->textInput() ?>
             	 <?= $form->field($model, 'center_title_right')->textInput() ?>
             	 <?= $form->field($model, 'center_content_right')->textInput() ?>
             </div>
             <div role="tabpanel" class="tab-pane" id="messages">
-            	 <h3>新闻一</h3>
+            	 <h4>文章一</h4>
             	 <?= $form->field($model, 'list_img1')->textInput() ?>
             	 <?= $form->field($model, 'list_title1')->textInput() ?>
             	 <?= $form->field($model, 'list_content1')->textInput() ?>
             	 <?= $form->field($model, 'list_url1')->textInput() ?>
-            	 <h3>新闻二</h3>
+            	 <h4>文章二</h4>
             	 <?= $form->field($model, 'list_img2')->textInput() ?>
             	 <?= $form->field($model, 'list_title2')->textInput() ?>
             	 <?= $form->field($model, 'list_content2')->textInput() ?>
             	 <?= $form->field($model, 'list_url2')->textInput() ?>
-            	 <h3>新闻三</h3>
+            	 <h4>文章三</h4>
             	 <?= $form->field($model, 'list_img3')->textInput() ?>
             	 <?= $form->field($model, 'list_title3')->textInput() ?>
             	 <?= $form->field($model, 'list_content3')->textInput() ?>
             	 <?= $form->field($model, 'list_url3')->textInput() ?>
-            	 <h3>新闻四</h3>
+            	 <h4>文章四</h4>
             	 <?= $form->field($model, 'list_img4')->textInput() ?>
             	 <?= $form->field($model, 'list_title4')->textInput() ?>
             	 <?= $form->field($model, 'list_content4')->textInput() ?>
             	 <?= $form->field($model, 'list_url4')->textInput() ?>
             </div>
-            <div role="tabpanel" class="tab-pane" id="settings">
+            <div role="tabpanel" class="tab-pane" id="settings"><br>
             	 <?= $form->field($model, 'footer_left_title')->textInput() ?>
             	 <?= $form->field($model, 'footer_left_content')->textInput() ?>
 
