@@ -44,7 +44,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'post_image',
             'post_video',
             'post_link',
-
+            'post_summarize',
             [                      // the owner name of the model
             'label' => '内容',
             'value' => $model->content?$model->content->content:'文章无内容',

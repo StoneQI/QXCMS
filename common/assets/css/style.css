@@ -39,13 +39,13 @@ img {
 }
 /*------------ Sprites ------------*/
 .more, .subscribe, input[type='submit'] {
-	background: url(../images/interface.png) no-repeat;
+	background: url(../../../images/interface.png) no-repeat;
 }
 .phone, .mail, .home, .fax, #footnote .connect a {
-	background: url(../images/icons.png) no-repeat;
+	background: url(../../../images/icons.png) no-repeat;
 }
 .frame1, .frame2, .frame3, .frame4, .frame5, .news > li {
-	background: url(../images/frames.png) no-repeat;
+	background: url(../../../images/frames.png) no-repeat;
 }
 .more, .subscribe, input[type='submit'] {
 	background-position: -107px 0;
@@ -124,7 +124,7 @@ img {
 }
 /*------------ HEADER ------------*/
 #header {
-	background: #4e5944 url(../images/bg-header.jpg) repeat-x left bottom;
+	background: #4e5944 url(../../../images/bg-header.jpg) repeat-x left bottom;
 	padding: 40px 0 46px;
 }
 /** logo **/
@@ -213,7 +213,7 @@ p a:hover {
 }
 /** Adbox **/
 #adbox {
-	background: url(../images/bg-adbox.png) no-repeat center bottom;
+	background: url(../../../images/bg-adbox.png) no-repeat center bottom;
 	border-bottom: 1px solid #fff;
 	padding-top: 15px;
 }
@@ -251,7 +251,7 @@ p a:hover {
 	margin: 0;
 }
 .highlight {
-	background: #eee url(../images/bg-highlight.jpg) repeat-x left bottom;
+	background: #eee url(../../../images/bg-highlight.jpg) repeat-x left bottom;
 	border-bottom: 1px solid #fff;
 }
 .highlight .clearfix {
@@ -268,9 +268,14 @@ p a:hover {
 	margin-bottom: 24px;
 }
 .testimonial, .main, .sidebar > div h2, .sidebar ul li, .main > .section {
-	background-image: url(../images/border.png);
+	background-image: url(../../../images/border.png);
 	background-position: left top;
 	background-repeat: repeat-y;
+}
+.hrrr{
+	background-image: url(../../../images/border.png);
+	background-position: left top;
+	background-repeat: repeat-x;
 }
 .testimonial {
 	float: right;
@@ -314,8 +319,7 @@ p a:hover {
 }
 .main {
 	float: left;
-	min-height: 960px;
-	width: 600px;
+	width: 660px;
 	padding: 0 0 0 32px;
 }
 .main h1 {
@@ -357,6 +361,7 @@ p a:hover {
 }
 .main > .section ul li p {
 	margin: 6px 0 0;
+	float: right;
 }
 .main > .section ul li p b {
 	display: block;
@@ -395,7 +400,7 @@ p a:hover {
 }
 .sidebar {
 	float: left;
-	width: 290px;
+	width: 230px;
 	padding-right: 18px;
 }
 .sidebar > div {
@@ -430,7 +435,7 @@ p a:hover {
 	background-repeat: repeat-x;
 	display: inline-block;
 	min-height: 36px;
-	width: 280px;
+	width: 220px;
 	padding: 6px 0 10px 10px;
 }
 .sidebar ul li > a span.box {
@@ -543,7 +548,7 @@ p a:hover {
 }
 /*------------ FOOTER ------------*/
 #footer {
-	background: #d9d9d9 url(../images/bg-footer.png) repeat-x left top;
+	background: #d9d9d9 url(../../../images/bg-footer.png) repeat-x left top;
 	border-top: 2px solid #fff;
 }
 #footer .section {
@@ -570,7 +575,7 @@ p a:hover {
 	text-transform: uppercase;
 }
 #footnote {
-	background: url(../images/bg-footnote.jpg) repeat-x left top;
+	background: url(../../../images/bg-footnote.jpg) repeat-x left top;
 	border-top: 1px solid #fff;
 	padding: 6px 0 3px;
 }

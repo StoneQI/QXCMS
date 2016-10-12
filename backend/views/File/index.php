@@ -19,7 +19,7 @@ $this->params['breadcrumbs'][] = $this->title;
        // 'filterModel' => $searchModel,
         'export'=>false,
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
+            ['class' => 'kartik\grid\SerialColumn'],
 
             //'id',
             'file_url:url',
@@ -29,7 +29,9 @@ $this->params['breadcrumbs'][] = $this->title;
             // 'created_at',
             // 'updated_at',
 
-            ['class' => 'yii\grid\ActionColumn'],
+               [
+            'class' => 'kartik\grid\ActionColumn',
+             'width' => '50'],
         ],
         'containerOptions' => ['style'=>'overflow: auto'],
         'pjax' => false,

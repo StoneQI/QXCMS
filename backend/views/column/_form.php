@@ -18,7 +18,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'column_link')->textInput(['maxlength' => true])->label('栏目链接（当你需要链接到其他页面时设置）') ?>
 
-    <?= $form->field($model, 'column_layout')->dropdownList(['1'=>'列表展示','2'=>'图片展示'])->label('栏目布局（根据需要指定该栏目的布局方式）') ?>
+    <?= $form->field($model, 'column_layout')->dropdownList(['list'=>'默认','img_list'=>'图片展示'])->label('栏目布局（根据需要指定该栏目的布局方式）'); ?>
 
     <?= $form->field($model, 'column_image')->textInput(['maxlength' => true])->label('栏目图像') ?>
 
@@ -124,7 +124,7 @@ use yii\widgets\ActiveForm;
             ],
         ]]])->label('栏目内容'); ?>
 
-    <?= $form->field($model, 'column_content_layout')->dropdownList(['1'=>'默认','2'=>'图片展示'])->label('栏目内容布局（指定该栏目下文章布局方式）'); ?>
+    <?= $form->field($model, 'column_content_layout')->dropdownList(['1'=>'默认'])->label('栏目内容布局（指定该栏目下文章布局方式）'); ?>
 
     <?= $form->field($model, 'column_sort')->textInput()->label('栏目排序（输入数字，按由小到大排序）') ?>
 

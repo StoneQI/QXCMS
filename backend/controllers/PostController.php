@@ -92,7 +92,7 @@ class PostController extends Controller
     {
         $model = $this->findModel($id);
         $columns = Columns::getColumn(0);
-        $contens =Contents::find()->where(['posts_id'=>$id])->one();
+        $contents =Contents::find()->where(['posts_id'=>$id])->one();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()  && $this->saveContent($model->attributes['id'],Yii::$app->request->post('contents'),'update') ) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -140,11 +140,9 @@ class PostController extends Controller
         if ($status == 'create') {
             $contents = new Contents();
         }else{
-            $contens = Contents::find()->where(['posts_id'=>$id])->one();
+            $contents = Contents::find()->where(['posts_id'=>$id])->one();
         }
-        echo "$id";
-        var_dump($content);
-        $contents->content = $content['content'];
+        $contents->content = $contents['content'];
         $contents->posts_id =$id;
         if ($contents->save()) {
             return 1;

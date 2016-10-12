@@ -2,68 +2,17 @@
 namespace frontend\controllers;
 
 use Yii;
-use yii\base\InvalidParamException;
-use yii\web\BadRequestHttpException;
 use yii\web\Controller;
-use yii\filters\VerbFilter;
-use yii\filters\AccessControl;
-use frontend\models\LoginForm;
-use frontend\models\PasswordResetRequestForm;
-use frontend\models\ResetPasswordForm;
-use frontend\models\SignupForm;
-use frontend\models\ContactForm;
+use backend\models\Columns;
+use backend\models\Posts;
+use common\models\Contacts;
+use common\models\Webinfo;
 
 /**
  * Site controller
  */
 class SiteController extends Controller
 {
-    /**
-     * @inheritdoc
-     */
-    public function behaviors()
-    {
-        return [
-            'access' => [
-                'class' => AccessControl::className(),
-                'only' => ['logout', 'signup'],
-                'rules' => [
-                    [
-                        'actions' => ['signup'],
-                        'allow' => true,
-                        'roles' => ['?'],
-                    ],
-                    [
-                        'actions' => ['logout'],
-                        'allow' => true,
-                        'roles' => ['@'],
-                    ],
-                ],
-            ],
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'logout' => ['post'],
-                ],
-            ],
-        ];
-    }
-
-    /**
-     * @inheritdoc
-     */
-    public function actions()
-    {
-        return [
-            'error' => [
-                'class' => 'yii\web\ErrorAction',
-            ],
-            'captcha' => [
-                'class' => 'yii\captcha\CaptchaAction',
-                'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
-            ],
-        ];
-    }
 
     /**
      * Displays homepage.
@@ -84,20 +33,30 @@ class SiteController extends Controller
      *
      * @return mixed
      */
-    public function actionLogin()
+    public function actionColumn($id,$pid=-1)
     {
-        if (!Yii::$app->user->isGuest) {
-            return $this->goHome();
-        }
+            $cloumns = Columns::findOne($id);
+            $hig_column['id'] =id;
+            $hig_column['name'] =$cloumns->name;
+            $cloumns = Columns::find()->where(['pid'=>$id])->all();
+            $i=0;
+            foreach ($cloumns as $key => $value) {
 
-        $model = new LoginForm();
-        if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
-        } else {
-            return $this->render('login', [
-                'model' => $model,
+                $column[$i]['name'] = $value->column_name;
+                $column[$i]['id'] = $value->id;
+                $i++;
+            }
+            if ($pid==-1) {
+                $pid = $column['0']['id'];
+            }
+            $posts = Posts::find()->where(['post_column_id'=>$pid])->orderBy('post_sort DESC')->all();
+
+            return $this->render($cloumns->column_layout, [
+                'hig_column' => $hig_column,
+                'column' => $column,
+                'posts' => $posts
             ]);
-        }
+
     }
 
     /**
@@ -117,22 +76,13 @@ class SiteController extends Controller
      *
      * @return mixed
      */
-    public function actionContact()
+    public function actionPost($id)
     {
-        $model = new ContactForm();
-        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
-            if ($model->sendEmail(Yii::$app->params['adminEmail'])) {
-                Yii::$app->session->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
-            } else {
-                Yii::$app->session->setFlash('error', 'There was an error sending email.');
-            }
-
-            return $this->refresh();
-        } else {
-            return $this->render('contact', [
-                'model' => $model,
+            $post = Posts::findOne($id);
+            return $this->render('post', [
+                'post' => $post,
             ]);
-        }
+
     }
 
     /**
@@ -140,10 +90,23 @@ class SiteController extends Controller
      *
      * @return mixed
      */
-    public function actionAbout()
+    public function actionContact()
     {
-        return $this->render('about');
+        $model = new Contacts();
+        $web_config = Webinfo::getinfo();
+
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            Yii::$app->session->setFlash('success', '留言成功');
+            return $this->render('contact',[
+                'web_config'=> $web_config]);
+        } else {
+           // Yii::$app->session->setFlash('error', '留言失败，请重试');
+            return $this->render('contact',[
+                'web_config'=> $web_config]);
+        }
+
     }
+
 
     /**
      * Signs user up.

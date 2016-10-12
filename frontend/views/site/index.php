@@ -1,53 +1,83 @@
 <?php
 
+use common\models\Indexinfo;
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+$this->title = '首页';
+
+$indexinfo = Indexinfo::getinfo();
+
 ?>
-<div class="site-index">
-
-    <div class="jumbotron">
-        <h1>Congratulations!</h1>
-
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
-    </div>
-
-    <div class="body-content">
-
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
+<div id="contents">
+        <div id="adbox">
+            <div class="clearfix">
+            <img src="<?= $indexinfo->index_img ?>" alt="Img" height="382" width="594">
+                <div class="detail">
+                    <h1> <?= $indexinfo->index_imgtext ?></h1>
+                </div>
             </div>
         </div>
-
+        <div class="highlight">
+            <div class="clearfix">
+                <div class="testimonial">
+                    <h2><?= $indexinfo->center_title_right ?></h2>
+                    <p>
+                        &ldquo;<?= $indexinfo->center_content_right ?>&rdquo;
+                    </p>
+                </div>
+                <h1><?= $indexinfo->center_title ?></h1>
+                <p>
+                    <?= $indexinfo->center_content ?>
+                </p>
+            </div>
+        </div>
+        <div class="featured">
+            <h2>最新动态</h2>
+            <ul class="clearfix">
+                <li>
+                    <div class="frame1">
+                        <div class="box">
+                            <img src="<?= $indexinfo->list_img1 ?>" alt="Img" height="130" width="197">
+                        </div>
+                    </div>
+                    <p>
+                        <a href="<?= $indexinfo->list_url1 ?>" ><b><?= $indexinfo->list_title1 ?></b></a><?= $indexinfo->list_content1 ?>
+                    </p>
+                    <a href="<?= $indexinfo->list_url1 ?>" class="more">点击阅读</a>
+                </li>
+                               <li>
+                    <div class="frame1">
+                        <div class="box">
+                            <img src="<?= $indexinfo->list_img2 ?>" alt="Img" height="130" width="197">
+                        </div>
+                    </div>
+                    <p>
+                        <a href="<?= $indexinfo->list_url2 ?>" ><b><?= $indexinfo->list_title2 ?></b></a><?= $indexinfo->list_content2 ?>
+                    </p>
+                    <a href="<?= $indexinfo->list_url2 ?>" class="more">点击阅读</a>
+                </li>
+                                <li>
+                    <div class="frame1">
+                        <div class="box">
+                            <img src="<?= $indexinfo->list_img3 ?>" alt="Img" height="130" width="197">
+                        </div>
+                    </div>
+                    <p>
+                        <a href="<?= $indexinfo->list_url3 ?>" ><b><?= $indexinfo->list_title3 ?></b></a><?= $indexinfo->list_content3 ?>
+                    </p>
+                    <a href="<?= $indexinfo->list_url3 ?>" class="more">点击阅读</a>
+                </li>
+                                <li>
+                    <div class="frame1">
+                        <div class="box">
+                            <img src="<?= $indexinfo->list_img4 ?>" alt="Img" height="130" width="197">
+                        </div>
+                    </div>
+                    <p>
+                        <a href="<?= $indexinfo->list_url4 ?>" ><b><?= $indexinfo->list_title4 ?></b></a><?= $indexinfo->list_content4 ?>
+                    </p>
+                    <a href="<?= $indexinfo->list_url4 ?>" class="more">点击阅读</a>
+                </li>
+            </ul>
+        </div>
     </div>
-</div>

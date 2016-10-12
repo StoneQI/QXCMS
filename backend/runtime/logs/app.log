@@ -20306,3 +20306,2226 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1476189797.0965
     'REQUEST_TIME' => 1476189797
 ]
+2016-10-12 03:38:56 [127.0.0.1][-][jorlekqaraqn0amani86g1bpj3][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: 缺少参数：id in E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\web\Controller.php:93
+Stack trace:
+#0 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\InlineAction.php(49): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#2 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('view', Array)
+#3 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('file/view', Array)
+#4 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 E:\vagrant\www\QXCMS\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2016-10-12 03:38:56 [127.0.0.1][-][jorlekqaraqn0amani86g1bpj3][info][application] $_GET = [
+    'r' => 'file/view'
+]
+
+$_COOKIE = [
+    'Hm_lvt_5fedb3bdce89499492c079ab4a8a0323' => '1474431359'
+    '_csrf-frontend' => '7c6bb1c76ec7d595968a1de3b5323beee1ef313bd5e53acf0aaddbdc0de48bbda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ZFT383z0n607da82oCSHqJ2Q18LvTSrg\";}'
+    'advanced-backend' => 'jorlekqaraqn0amani86g1bpj3'
+    '_csrf-backend' => '881bf673470b2acc93bdbbcea2179838c817d1baf664dd62da4b070b1ee8bd53a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oTGOrlPtRhO-MMILlzuOA5tio0LrXspN\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    '#envTSLOGsss9240' => '133903296'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SC-201605231612'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'DOCKER_TOOLBOX_INSTALL_PATH' => 'D:\\Program Files (x86)\\Docker Toolbox'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GTK_BASEPATH' => 'C:\\Program Files (x86)\\GtkSharp\\2.12\\'
+    'HOME' => 'D:\\emacs'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SC-201605231612'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35-32\\Scripts\\;D:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35-32\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;D:\\software\\nodejs\\;D:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\MySQL\\bin;D:\\Program Files (x86)\\bin;C:\\Program Files\\Calibre2\\;C:\\ProgramData\\chocolatey\\bin;D:\\software\\cmder;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\Program Files (x86)\\Docker Toolbox;D:\\software\\cmder\\vendor\\git-for-windows\\usr\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 18 Model 1 Stepping 0, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '18'
+    'PROCESSOR_REVISION' => '0100'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SC-201605231612'
+    'USERDOMAIN_ROAMINGPROFILE' => 'SC-201605231612'
+    'USERNAME' => 'Admin'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'VBOX_MSI_INSTALL_PATH' => 'D:\\Program Files (x86)\\'
+    'VS140COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'Hm_lvt_5fedb3bdce89499492c079ab4a8a0323=1474431359; _csrf-frontend=7c6bb1c76ec7d595968a1de3b5323beee1ef313bd5e53acf0aaddbdc0de48bbda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ZFT383z0n607da82oCSHqJ2Q18LvTSrg%22%3B%7D; advanced-backend=jorlekqaraqn0amani86g1bpj3; _csrf-backend=881bf673470b2acc93bdbbcea2179838c817d1baf664dd62da4b070b1ee8bd53a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oTGOrlPtRhO-MMILlzuOA5tio0LrXspN%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://localhost/QXCMS/backend/web/index.php?r=file%2Fcreate'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 TheWorld 7'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60830'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/vagrant/WWW'
+    'DOCUMENT_URI' => '/QXCMS/backend/web/index.php'
+    'REQUEST_URI' => '/QXCMS/backend/web/index.php?r=file%2Fview'
+    'SCRIPT_NAME' => '/QXCMS/backend/web/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=file%2Fview'
+    'PATH_TRANSLATED' => 'E:/vagrant/WWW'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/vagrant/WWW/QXCMS/backend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/QXCMS/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476243536.4308
+    'REQUEST_TIME' => 1476243536
+]
+2016-10-12 03:42:43 [127.0.0.1][-][-][error][ParseError] ParseError: syntax error, unexpected ''width'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in E:\vagrant\www\QXCMS\backend\views\post\index.php:120
+Stack trace:
+#0 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('E:\\vagrant\\www\\...', Array)
+#1 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('E:\\vagrant\\www\\...', Array, Object(backend\controllers\PostController))
+#2 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('index', Array, Object(backend\controllers\PostController))
+#3 E:\vagrant\www\QXCMS\backend\controllers\PostController.php(45): yii\base\Controller->render('index', Array)
+#4 [internal function]: backend\controllers\PostController->actionIndex()
+#5 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#7 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#8 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('post/index', Array)
+#9 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 E:\vagrant\www\QXCMS\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2016-10-12 03:42:40 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'post/index'
+]
+
+$_COOKIE = [
+    'Hm_lvt_5fedb3bdce89499492c079ab4a8a0323' => '1474431359'
+    '_csrf-frontend' => '7c6bb1c76ec7d595968a1de3b5323beee1ef313bd5e53acf0aaddbdc0de48bbda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ZFT383z0n607da82oCSHqJ2Q18LvTSrg\";}'
+    'advanced-backend' => 'jorlekqaraqn0amani86g1bpj3'
+    '_csrf-backend' => '881bf673470b2acc93bdbbcea2179838c817d1baf664dd62da4b070b1ee8bd53a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oTGOrlPtRhO-MMILlzuOA5tio0LrXspN\";}'
+]
+
+$_SERVER = [
+    '#envTSLOGsss9240' => '133903296'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SC-201605231612'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'DOCKER_TOOLBOX_INSTALL_PATH' => 'D:\\Program Files (x86)\\Docker Toolbox'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GTK_BASEPATH' => 'C:\\Program Files (x86)\\GtkSharp\\2.12\\'
+    'HOME' => 'D:\\emacs'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SC-201605231612'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35-32\\Scripts\\;D:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35-32\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;D:\\software\\nodejs\\;D:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\MySQL\\bin;D:\\Program Files (x86)\\bin;C:\\Program Files\\Calibre2\\;C:\\ProgramData\\chocolatey\\bin;D:\\software\\cmder;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\Program Files (x86)\\Docker Toolbox;D:\\software\\cmder\\vendor\\git-for-windows\\usr\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 18 Model 1 Stepping 0, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '18'
+    'PROCESSOR_REVISION' => '0100'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SC-201605231612'
+    'USERDOMAIN_ROAMINGPROFILE' => 'SC-201605231612'
+    'USERNAME' => 'Admin'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'VBOX_MSI_INSTALL_PATH' => 'D:\\Program Files (x86)\\'
+    'VS140COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'Hm_lvt_5fedb3bdce89499492c079ab4a8a0323=1474431359; _csrf-frontend=7c6bb1c76ec7d595968a1de3b5323beee1ef313bd5e53acf0aaddbdc0de48bbda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ZFT383z0n607da82oCSHqJ2Q18LvTSrg%22%3B%7D; advanced-backend=jorlekqaraqn0amani86g1bpj3; _csrf-backend=881bf673470b2acc93bdbbcea2179838c817d1baf664dd62da4b070b1ee8bd53a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oTGOrlPtRhO-MMILlzuOA5tio0LrXspN%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://localhost/QXCMS/backend/web/index.php?r=column%2Findex'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 TheWorld 7'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '61163'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/vagrant/WWW'
+    'DOCUMENT_URI' => '/QXCMS/backend/web/index.php'
+    'REQUEST_URI' => '/QXCMS/backend/web/index.php?r=post%2Findex'
+    'SCRIPT_NAME' => '/QXCMS/backend/web/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post%2Findex'
+    'PATH_TRANSLATED' => 'E:/vagrant/WWW'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/vagrant/WWW/QXCMS/backend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/QXCMS/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476243760.8804
+    'REQUEST_TIME' => 1476243760
+]
+2016-10-12 03:42:43 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in E:\vagrant\www\QXCMS\vendor\yiisoft\yii2-debug\LogTarget.php:57
+
+Stack trace:
+#0 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2-debug\LogTarget.php(57): serialize(Array)
+#1 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#2 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(ParseError))
+#6 {main}
+2016-10-12 03:42:40 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'post/index'
+]
+
+$_COOKIE = [
+    'Hm_lvt_5fedb3bdce89499492c079ab4a8a0323' => '1474431359'
+    '_csrf-frontend' => '7c6bb1c76ec7d595968a1de3b5323beee1ef313bd5e53acf0aaddbdc0de48bbda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ZFT383z0n607da82oCSHqJ2Q18LvTSrg\";}'
+    'advanced-backend' => 'jorlekqaraqn0amani86g1bpj3'
+    '_csrf-backend' => '881bf673470b2acc93bdbbcea2179838c817d1baf664dd62da4b070b1ee8bd53a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oTGOrlPtRhO-MMILlzuOA5tio0LrXspN\";}'
+]
+
+$_SERVER = [
+    '#envTSLOGsss9240' => '133903296'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SC-201605231612'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'DOCKER_TOOLBOX_INSTALL_PATH' => 'D:\\Program Files (x86)\\Docker Toolbox'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GTK_BASEPATH' => 'C:\\Program Files (x86)\\GtkSharp\\2.12\\'
+    'HOME' => 'D:\\emacs'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SC-201605231612'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35-32\\Scripts\\;D:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35-32\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;D:\\software\\nodejs\\;D:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\MySQL\\bin;D:\\Program Files (x86)\\bin;C:\\Program Files\\Calibre2\\;C:\\ProgramData\\chocolatey\\bin;D:\\software\\cmder;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\Program Files (x86)\\Docker Toolbox;D:\\software\\cmder\\vendor\\git-for-windows\\usr\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 18 Model 1 Stepping 0, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '18'
+    'PROCESSOR_REVISION' => '0100'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SC-201605231612'
+    'USERDOMAIN_ROAMINGPROFILE' => 'SC-201605231612'
+    'USERNAME' => 'Admin'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'VBOX_MSI_INSTALL_PATH' => 'D:\\Program Files (x86)\\'
+    'VS140COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'Hm_lvt_5fedb3bdce89499492c079ab4a8a0323=1474431359; _csrf-frontend=7c6bb1c76ec7d595968a1de3b5323beee1ef313bd5e53acf0aaddbdc0de48bbda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ZFT383z0n607da82oCSHqJ2Q18LvTSrg%22%3B%7D; advanced-backend=jorlekqaraqn0amani86g1bpj3; _csrf-backend=881bf673470b2acc93bdbbcea2179838c817d1baf664dd62da4b070b1ee8bd53a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oTGOrlPtRhO-MMILlzuOA5tio0LrXspN%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://localhost/QXCMS/backend/web/index.php?r=column%2Findex'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 TheWorld 7'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '61163'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/vagrant/WWW'
+    'DOCUMENT_URI' => '/QXCMS/backend/web/index.php'
+    'REQUEST_URI' => '/QXCMS/backend/web/index.php?r=post%2Findex'
+    'SCRIPT_NAME' => '/QXCMS/backend/web/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post%2Findex'
+    'PATH_TRANSLATED' => 'E:/vagrant/WWW'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/vagrant/WWW/QXCMS/backend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/QXCMS/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476243760.8804
+    'REQUEST_TIME' => 1476243760
+]
+2016-10-12 03:42:55 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\grid\ActionColumn::width in E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Object.php:161
+Stack trace:
+#0 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\BaseYii.php(521): yii\base\Object->__set('width', '50')
+#1 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\grid\ActionColumn), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\di\Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#4 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\di\Container.php(154): yii\di\Container->build('yii\\grid\\Action...', Array, Array)
+#5 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\grid\\Action...', Array, Array)
+#6 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\grid\GridView.php(530): yii\BaseYii::createObject(Array)
+#7 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\grid\GridView.php(275): yii\grid\GridView->initColumns()
+#8 E:\vagrant\www\QXCMS\vendor\kartik-v\yii2-grid\GridView.php(942): yii\grid\GridView->init()
+#9 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Object.php(107): kartik\grid\GridView->init()
+#10 [internal function]: yii\base\Object->__construct(Array)
+#11 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\di\Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#12 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\di\Container.php(154): yii\di\Container->build('kartik\\grid\\Gri...', Array, Array)
+#13 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('kartik\\grid\\Gri...', Array, Array)
+#14 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Widget.php(101): yii\BaseYii::createObject(Array)
+#15 E:\vagrant\www\QXCMS\backend\views\post\index.php(135): yii\base\Widget::widget(Array)
+#16 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\View.php(325): require('E:\\vagrant\\www\\...')
+#17 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('E:\\vagrant\\www\\...', Array)
+#18 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('E:\\vagrant\\www\\...', Array, Object(backend\controllers\PostController))
+#19 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('index', Array, Object(backend\controllers\PostController))
+#20 E:\vagrant\www\QXCMS\backend\controllers\PostController.php(45): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\PostController->actionIndex()
+#22 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#23 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#24 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#25 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('post/index', Array)
+#26 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 E:\vagrant\www\QXCMS\backend\web\index.php(18): yii\base\Application->run()
+#28 {main}
+2016-10-12 03:42:53 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'post/index'
+]
+
+$_COOKIE = [
+    'Hm_lvt_5fedb3bdce89499492c079ab4a8a0323' => '1474431359'
+    '_csrf-frontend' => '7c6bb1c76ec7d595968a1de3b5323beee1ef313bd5e53acf0aaddbdc0de48bbda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ZFT383z0n607da82oCSHqJ2Q18LvTSrg\";}'
+    'advanced-backend' => 'jorlekqaraqn0amani86g1bpj3'
+    '_csrf-backend' => '881bf673470b2acc93bdbbcea2179838c817d1baf664dd62da4b070b1ee8bd53a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oTGOrlPtRhO-MMILlzuOA5tio0LrXspN\";}'
+]
+
+$_SERVER = [
+    '#envTSLOGsss9240' => '133903296'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SC-201605231612'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'DOCKER_TOOLBOX_INSTALL_PATH' => 'D:\\Program Files (x86)\\Docker Toolbox'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GTK_BASEPATH' => 'C:\\Program Files (x86)\\GtkSharp\\2.12\\'
+    'HOME' => 'D:\\emacs'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SC-201605231612'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35-32\\Scripts\\;D:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35-32\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;D:\\software\\nodejs\\;D:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\MySQL\\bin;D:\\Program Files (x86)\\bin;C:\\Program Files\\Calibre2\\;C:\\ProgramData\\chocolatey\\bin;D:\\software\\cmder;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\Program Files (x86)\\Docker Toolbox;D:\\software\\cmder\\vendor\\git-for-windows\\usr\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 18 Model 1 Stepping 0, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '18'
+    'PROCESSOR_REVISION' => '0100'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SC-201605231612'
+    'USERDOMAIN_ROAMINGPROFILE' => 'SC-201605231612'
+    'USERNAME' => 'Admin'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'VBOX_MSI_INSTALL_PATH' => 'D:\\Program Files (x86)\\'
+    'VS140COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'Hm_lvt_5fedb3bdce89499492c079ab4a8a0323=1474431359; _csrf-frontend=7c6bb1c76ec7d595968a1de3b5323beee1ef313bd5e53acf0aaddbdc0de48bbda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ZFT383z0n607da82oCSHqJ2Q18LvTSrg%22%3B%7D; advanced-backend=jorlekqaraqn0amani86g1bpj3; _csrf-backend=881bf673470b2acc93bdbbcea2179838c817d1baf664dd62da4b070b1ee8bd53a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oTGOrlPtRhO-MMILlzuOA5tio0LrXspN%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://localhost/QXCMS/backend/web/index.php?r=column%2Findex'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 TheWorld 7'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '61163'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/vagrant/WWW'
+    'DOCUMENT_URI' => '/QXCMS/backend/web/index.php'
+    'REQUEST_URI' => '/QXCMS/backend/web/index.php?r=post%2Findex'
+    'SCRIPT_NAME' => '/QXCMS/backend/web/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post%2Findex'
+    'PATH_TRANSLATED' => 'E:/vagrant/WWW'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/vagrant/WWW/QXCMS/backend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/QXCMS/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476243773.4476
+    'REQUEST_TIME' => 1476243773
+]
+2016-10-12 03:44:04 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\grid\ActionColumn::width in E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Object.php:161
+Stack trace:
+#0 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\BaseYii.php(521): yii\base\Object->__set('width', '50')
+#1 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\grid\ActionColumn), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\di\Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#4 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\di\Container.php(154): yii\di\Container->build('yii\\grid\\Action...', Array, Array)
+#5 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\grid\\Action...', Array, Array)
+#6 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\grid\GridView.php(530): yii\BaseYii::createObject(Array)
+#7 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\grid\GridView.php(275): yii\grid\GridView->initColumns()
+#8 E:\vagrant\www\QXCMS\vendor\kartik-v\yii2-grid\GridView.php(942): yii\grid\GridView->init()
+#9 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Object.php(107): kartik\grid\GridView->init()
+#10 [internal function]: yii\base\Object->__construct(Array)
+#11 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\di\Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#12 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\di\Container.php(154): yii\di\Container->build('kartik\\grid\\Gri...', Array, Array)
+#13 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('kartik\\grid\\Gri...', Array, Array)
+#14 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Widget.php(101): yii\BaseYii::createObject(Array)
+#15 E:\vagrant\www\QXCMS\backend\views\post\index.php(136): yii\base\Widget::widget(Array)
+#16 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\View.php(325): require('E:\\vagrant\\www\\...')
+#17 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('E:\\vagrant\\www\\...', Array)
+#18 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('E:\\vagrant\\www\\...', Array, Object(backend\controllers\PostController))
+#19 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('index', Array, Object(backend\controllers\PostController))
+#20 E:\vagrant\www\QXCMS\backend\controllers\PostController.php(45): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\PostController->actionIndex()
+#22 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#23 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#24 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#25 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('post/index', Array)
+#26 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 E:\vagrant\www\QXCMS\backend\web\index.php(18): yii\base\Application->run()
+#28 {main}
+2016-10-12 03:44:01 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'post/index'
+]
+
+$_COOKIE = [
+    'Hm_lvt_5fedb3bdce89499492c079ab4a8a0323' => '1474431359'
+    '_csrf-frontend' => '7c6bb1c76ec7d595968a1de3b5323beee1ef313bd5e53acf0aaddbdc0de48bbda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ZFT383z0n607da82oCSHqJ2Q18LvTSrg\";}'
+    'advanced-backend' => 'jorlekqaraqn0amani86g1bpj3'
+    '_csrf-backend' => '881bf673470b2acc93bdbbcea2179838c817d1baf664dd62da4b070b1ee8bd53a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oTGOrlPtRhO-MMILlzuOA5tio0LrXspN\";}'
+]
+
+$_SERVER = [
+    '#envTSLOGsss9240' => '133903296'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SC-201605231612'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'DOCKER_TOOLBOX_INSTALL_PATH' => 'D:\\Program Files (x86)\\Docker Toolbox'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GTK_BASEPATH' => 'C:\\Program Files (x86)\\GtkSharp\\2.12\\'
+    'HOME' => 'D:\\emacs'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SC-201605231612'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35-32\\Scripts\\;D:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35-32\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;D:\\software\\nodejs\\;D:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\MySQL\\bin;D:\\Program Files (x86)\\bin;C:\\Program Files\\Calibre2\\;C:\\ProgramData\\chocolatey\\bin;D:\\software\\cmder;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\Program Files (x86)\\Docker Toolbox;D:\\software\\cmder\\vendor\\git-for-windows\\usr\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 18 Model 1 Stepping 0, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '18'
+    'PROCESSOR_REVISION' => '0100'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SC-201605231612'
+    'USERDOMAIN_ROAMINGPROFILE' => 'SC-201605231612'
+    'USERNAME' => 'Admin'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'VBOX_MSI_INSTALL_PATH' => 'D:\\Program Files (x86)\\'
+    'VS140COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'Hm_lvt_5fedb3bdce89499492c079ab4a8a0323=1474431359; _csrf-frontend=7c6bb1c76ec7d595968a1de3b5323beee1ef313bd5e53acf0aaddbdc0de48bbda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ZFT383z0n607da82oCSHqJ2Q18LvTSrg%22%3B%7D; advanced-backend=jorlekqaraqn0amani86g1bpj3; _csrf-backend=881bf673470b2acc93bdbbcea2179838c817d1baf664dd62da4b070b1ee8bd53a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oTGOrlPtRhO-MMILlzuOA5tio0LrXspN%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://localhost/QXCMS/backend/web/index.php?r=column%2Findex'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 TheWorld 7'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '61209'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/vagrant/WWW'
+    'DOCUMENT_URI' => '/QXCMS/backend/web/index.php'
+    'REQUEST_URI' => '/QXCMS/backend/web/index.php?r=post%2Findex'
+    'SCRIPT_NAME' => '/QXCMS/backend/web/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post%2Findex'
+    'PATH_TRANSLATED' => 'E:/vagrant/WWW'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/vagrant/WWW/QXCMS/backend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/QXCMS/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476243841.8014
+    'REQUEST_TIME' => 1476243841
+]
+2016-10-12 05:36:14 [127.0.0.1][-][-][error][yii\db\IntegrityException] PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY' in E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('QX_posts', Array)
+#3 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal(NULL)
+#4 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\BaseActiveRecord.php(598): yii\db\ActiveRecord->insert(true, NULL)
+#5 E:\vagrant\www\QXCMS\backend\controllers\PostController.php(72): yii\db\BaseActiveRecord->save()
+#6 [internal function]: backend\controllers\PostController->actionCreate()
+#7 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#10 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('post/create', Array)
+#11 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\vagrant\www\QXCMS\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next yii\db\IntegrityException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+The SQL being executed was: INSERT INTO `QX_posts` (`post_column_id`, `post_tiltle`, `post_subtitle`, `post_anthor`, `post_origin`, `post_image`, `post_video`, `post_link`, `post_is_top`, `post_status`, `post_sort`, `created_at`, `updated_at`) VALUES (3, '阿斯打扫�\�', 'asdasdsad', '', '', '', '', '', 0, 1, 121, 1476250574, 1476250574) in E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `QX...')
+#1 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('QX_posts', Array)
+#3 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal(NULL)
+#4 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\BaseActiveRecord.php(598): yii\db\ActiveRecord->insert(true, NULL)
+#5 E:\vagrant\www\QXCMS\backend\controllers\PostController.php(72): yii\db\BaseActiveRecord->save()
+#6 [internal function]: backend\controllers\PostController->actionCreate()
+#7 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#10 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('post/create', Array)
+#11 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\vagrant\www\QXCMS\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1062
+    [2] => Duplicate entry '0' for key 'PRIMARY'
+)
+
+2016-10-12 05:36:11 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'post/create'
+]
+
+$_POST = [
+    '_csrf-backend' => 'c1Z0QWI0Uk0cAjMOEFgCOSE.O2wveRsBHywBDiMBJiQcZjgzOkciAw=='
+    'Posts' => [
+        'post_column_id' => '3'
+        'post_tiltle' => '阿斯打扫大'
+        'post_subtitle' => 'asdasdsad'
+        'post_anthor' => ''
+        'post_origin' => ''
+        'post_image' => ''
+        'post_video' => ''
+        'post_link' => ''
+        'post_is_top' => '0'
+        'post_status' => '1'
+        'post_sort' => '121'
+    ]
+    'Contents' => [
+        'content' => '<p>阿斯打扫大大苏打</p>'
+    ]
+]
+
+$_COOKIE = [
+    'Hm_lvt_5fedb3bdce89499492c079ab4a8a0323' => '1474431359'
+    '_csrf-frontend' => '7c6bb1c76ec7d595968a1de3b5323beee1ef313bd5e53acf0aaddbdc0de48bbda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ZFT383z0n607da82oCSHqJ2Q18LvTSrg\";}'
+    'advanced-backend' => 'jorlekqaraqn0amani86g1bpj3'
+    '_csrf-backend' => '881bf673470b2acc93bdbbcea2179838c817d1baf664dd62da4b070b1ee8bd53a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oTGOrlPtRhO-MMILlzuOA5tio0LrXspN\";}'
+]
+
+$_SERVER = [
+    '#envTSLOGsss9240' => '133903296'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SC-201605231612'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'DOCKER_TOOLBOX_INSTALL_PATH' => 'D:\\Program Files (x86)\\Docker Toolbox'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GTK_BASEPATH' => 'C:\\Program Files (x86)\\GtkSharp\\2.12\\'
+    'HOME' => 'D:\\emacs'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SC-201605231612'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35-32\\Scripts\\;D:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35-32\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;D:\\software\\nodejs\\;D:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\MySQL\\bin;D:\\Program Files (x86)\\bin;C:\\Program Files\\Calibre2\\;C:\\ProgramData\\chocolatey\\bin;D:\\software\\cmder;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\Program Files (x86)\\Docker Toolbox;D:\\software\\cmder\\vendor\\git-for-windows\\usr\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 18 Model 1 Stepping 0, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '18'
+    'PROCESSOR_REVISION' => '0100'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SC-201605231612'
+    'USERDOMAIN_ROAMINGPROFILE' => 'SC-201605231612'
+    'USERNAME' => 'Admin'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'VBOX_MSI_INSTALL_PATH' => 'D:\\Program Files (x86)\\'
+    'VS140COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'Hm_lvt_5fedb3bdce89499492c079ab4a8a0323=1474431359; _csrf-frontend=7c6bb1c76ec7d595968a1de3b5323beee1ef313bd5e53acf0aaddbdc0de48bbda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ZFT383z0n607da82oCSHqJ2Q18LvTSrg%22%3B%7D; advanced-backend=jorlekqaraqn0amani86g1bpj3; _csrf-backend=881bf673470b2acc93bdbbcea2179838c817d1baf664dd62da4b070b1ee8bd53a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oTGOrlPtRhO-MMILlzuOA5tio0LrXspN%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/QXCMS/backend/web/index.php?r=post%2Fcreate'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 TheWorld 7'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONTENT_LENGTH' => '509'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '64154'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/vagrant/WWW'
+    'DOCUMENT_URI' => '/QXCMS/backend/web/index.php'
+    'REQUEST_URI' => '/QXCMS/backend/web/index.php?r=post%2Fcreate'
+    'SCRIPT_NAME' => '/QXCMS/backend/web/index.php'
+    'CONTENT_LENGTH' => '509'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=post%2Fcreate'
+    'PATH_TRANSLATED' => 'E:/vagrant/WWW'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/vagrant/WWW/QXCMS/backend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/QXCMS/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476250571.7938
+    'REQUEST_TIME' => 1476250571
+]
+2016-10-12 05:38:21 [127.0.0.1][-][-][error][yii\db\IntegrityException] PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY' in E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('QX_posts', Array)
+#3 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal(NULL)
+#4 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\BaseActiveRecord.php(598): yii\db\ActiveRecord->insert(true, NULL)
+#5 E:\vagrant\www\QXCMS\backend\controllers\PostController.php(72): yii\db\BaseActiveRecord->save()
+#6 [internal function]: backend\controllers\PostController->actionCreate()
+#7 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#10 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('post/create', Array)
+#11 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\vagrant\www\QXCMS\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next yii\db\IntegrityException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+The SQL being executed was: INSERT INTO `QX_posts` (`post_column_id`, `post_tiltle`, `post_subtitle`, `post_anthor`, `post_origin`, `post_image`, `post_video`, `post_link`, `post_is_top`, `post_status`, `post_sort`, `created_at`, `updated_at`) VALUES (3, '阿斯打扫�\�', 'asdasdsad', '', '', '', '', '', 0, 1, 121, 1476250701, 1476250701) in E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `QX...')
+#1 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('QX_posts', Array)
+#3 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal(NULL)
+#4 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\BaseActiveRecord.php(598): yii\db\ActiveRecord->insert(true, NULL)
+#5 E:\vagrant\www\QXCMS\backend\controllers\PostController.php(72): yii\db\BaseActiveRecord->save()
+#6 [internal function]: backend\controllers\PostController->actionCreate()
+#7 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#10 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('post/create', Array)
+#11 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\vagrant\www\QXCMS\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1062
+    [2] => Duplicate entry '0' for key 'PRIMARY'
+)
+
+2016-10-12 05:38:19 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'post/create'
+]
+
+$_POST = [
+    '_csrf-backend' => 'UUxUMENkQ2I.GBN/MQgTFgMkGx0OKQouPTYhfwJRNws.fBhCGxczLA=='
+    'Posts' => [
+        'post_column_id' => '3'
+        'post_tiltle' => '阿斯打扫大'
+        'post_subtitle' => 'asdasdsad'
+        'post_anthor' => ''
+        'post_origin' => ''
+        'post_image' => ''
+        'post_video' => ''
+        'post_link' => ''
+        'post_is_top' => '0'
+        'post_status' => '1'
+        'post_sort' => '121'
+    ]
+    'Contents' => [
+        'content' => '<p>阿斯打扫大大苏打</p>'
+    ]
+]
+
+$_COOKIE = [
+    'Hm_lvt_5fedb3bdce89499492c079ab4a8a0323' => '1474431359'
+    '_csrf-frontend' => '7c6bb1c76ec7d595968a1de3b5323beee1ef313bd5e53acf0aaddbdc0de48bbda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ZFT383z0n607da82oCSHqJ2Q18LvTSrg\";}'
+    'advanced-backend' => 'jorlekqaraqn0amani86g1bpj3'
+    '_csrf-backend' => '881bf673470b2acc93bdbbcea2179838c817d1baf664dd62da4b070b1ee8bd53a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oTGOrlPtRhO-MMILlzuOA5tio0LrXspN\";}'
+]
+
+$_SERVER = [
+    '#envTSLOGsss9240' => '133903296'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SC-201605231612'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'DOCKER_TOOLBOX_INSTALL_PATH' => 'D:\\Program Files (x86)\\Docker Toolbox'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GTK_BASEPATH' => 'C:\\Program Files (x86)\\GtkSharp\\2.12\\'
+    'HOME' => 'D:\\emacs'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SC-201605231612'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35-32\\Scripts\\;D:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35-32\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;D:\\software\\nodejs\\;D:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\MySQL\\bin;D:\\Program Files (x86)\\bin;C:\\Program Files\\Calibre2\\;C:\\ProgramData\\chocolatey\\bin;D:\\software\\cmder;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\Program Files (x86)\\Docker Toolbox;D:\\software\\cmder\\vendor\\git-for-windows\\usr\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 18 Model 1 Stepping 0, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '18'
+    'PROCESSOR_REVISION' => '0100'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SC-201605231612'
+    'USERDOMAIN_ROAMINGPROFILE' => 'SC-201605231612'
+    'USERNAME' => 'Admin'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'VBOX_MSI_INSTALL_PATH' => 'D:\\Program Files (x86)\\'
+    'VS140COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'Hm_lvt_5fedb3bdce89499492c079ab4a8a0323=1474431359; _csrf-frontend=7c6bb1c76ec7d595968a1de3b5323beee1ef313bd5e53acf0aaddbdc0de48bbda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ZFT383z0n607da82oCSHqJ2Q18LvTSrg%22%3B%7D; advanced-backend=jorlekqaraqn0amani86g1bpj3; _csrf-backend=881bf673470b2acc93bdbbcea2179838c817d1baf664dd62da4b070b1ee8bd53a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oTGOrlPtRhO-MMILlzuOA5tio0LrXspN%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/QXCMS/backend/web/index.php?r=post%2Fcreate'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 TheWorld 7'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONTENT_LENGTH' => '511'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '64199'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/vagrant/WWW'
+    'DOCUMENT_URI' => '/QXCMS/backend/web/index.php'
+    'REQUEST_URI' => '/QXCMS/backend/web/index.php?r=post%2Fcreate'
+    'SCRIPT_NAME' => '/QXCMS/backend/web/index.php'
+    'CONTENT_LENGTH' => '511'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=post%2Fcreate'
+    'PATH_TRANSLATED' => 'E:/vagrant/WWW'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/vagrant/WWW/QXCMS/backend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/QXCMS/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476250699.3969
+    'REQUEST_TIME' => 1476250699
+]
+2016-10-12 05:40:05 [127.0.0.1][-][-][error][yii\db\IntegrityException] PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY' in E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('QX_posts', Array)
+#3 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal(NULL)
+#4 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\BaseActiveRecord.php(598): yii\db\ActiveRecord->insert(true, NULL)
+#5 E:\vagrant\www\QXCMS\backend\controllers\PostController.php(72): yii\db\BaseActiveRecord->save()
+#6 [internal function]: backend\controllers\PostController->actionCreate()
+#7 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#10 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('post/create', Array)
+#11 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\vagrant\www\QXCMS\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next yii\db\IntegrityException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+The SQL being executed was: INSERT INTO `QX_posts` (`post_column_id`, `post_tiltle`, `post_subtitle`, `post_anthor`, `post_origin`, `post_image`, `post_video`, `post_link`, `post_is_top`, `post_status`, `post_sort`, `created_at`, `updated_at`) VALUES (3, '阿斯打扫�\�', 'asdasdsad', '', '', '', '', '', 0, 1, 121, 1476250805, 1476250805) in E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `QX...')
+#1 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('QX_posts', Array)
+#3 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal(NULL)
+#4 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\BaseActiveRecord.php(598): yii\db\ActiveRecord->insert(true, NULL)
+#5 E:\vagrant\www\QXCMS\backend\controllers\PostController.php(72): yii\db\BaseActiveRecord->save()
+#6 [internal function]: backend\controllers\PostController->actionCreate()
+#7 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#10 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('post/create', Array)
+#11 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\vagrant\www\QXCMS\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1062
+    [2] => Duplicate entry '0' for key 'PRIMARY'
+)
+
+2016-10-12 05:40:03 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'post/create'
+]
+
+$_POST = [
+    '_csrf-backend' => 'UUxUMENkQ2I.GBN/MQgTFgMkGx0OKQouPTYhfwJRNws.fBhCGxczLA=='
+    'Posts' => [
+        'post_column_id' => '3'
+        'post_tiltle' => '阿斯打扫大'
+        'post_subtitle' => 'asdasdsad'
+        'post_anthor' => ''
+        'post_origin' => ''
+        'post_image' => ''
+        'post_video' => ''
+        'post_link' => ''
+        'post_is_top' => '0'
+        'post_status' => '1'
+        'post_sort' => '121'
+    ]
+    'Contents' => [
+        'content' => '<p>阿斯打扫大大苏打</p>'
+    ]
+]
+
+$_COOKIE = [
+    'Hm_lvt_5fedb3bdce89499492c079ab4a8a0323' => '1474431359'
+    '_csrf-frontend' => '7c6bb1c76ec7d595968a1de3b5323beee1ef313bd5e53acf0aaddbdc0de48bbda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ZFT383z0n607da82oCSHqJ2Q18LvTSrg\";}'
+    'advanced-backend' => 'jorlekqaraqn0amani86g1bpj3'
+    '_csrf-backend' => '881bf673470b2acc93bdbbcea2179838c817d1baf664dd62da4b070b1ee8bd53a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oTGOrlPtRhO-MMILlzuOA5tio0LrXspN\";}'
+]
+
+$_SERVER = [
+    '#envTSLOGsss9240' => '133903296'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SC-201605231612'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'DOCKER_TOOLBOX_INSTALL_PATH' => 'D:\\Program Files (x86)\\Docker Toolbox'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GTK_BASEPATH' => 'C:\\Program Files (x86)\\GtkSharp\\2.12\\'
+    'HOME' => 'D:\\emacs'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SC-201605231612'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35-32\\Scripts\\;D:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35-32\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;D:\\software\\nodejs\\;D:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\MySQL\\bin;D:\\Program Files (x86)\\bin;C:\\Program Files\\Calibre2\\;C:\\ProgramData\\chocolatey\\bin;D:\\software\\cmder;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\Program Files (x86)\\Docker Toolbox;D:\\software\\cmder\\vendor\\git-for-windows\\usr\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 18 Model 1 Stepping 0, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '18'
+    'PROCESSOR_REVISION' => '0100'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SC-201605231612'
+    'USERDOMAIN_ROAMINGPROFILE' => 'SC-201605231612'
+    'USERNAME' => 'Admin'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'VBOX_MSI_INSTALL_PATH' => 'D:\\Program Files (x86)\\'
+    'VS140COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'Hm_lvt_5fedb3bdce89499492c079ab4a8a0323=1474431359; _csrf-frontend=7c6bb1c76ec7d595968a1de3b5323beee1ef313bd5e53acf0aaddbdc0de48bbda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ZFT383z0n607da82oCSHqJ2Q18LvTSrg%22%3B%7D; advanced-backend=jorlekqaraqn0amani86g1bpj3; _csrf-backend=881bf673470b2acc93bdbbcea2179838c817d1baf664dd62da4b070b1ee8bd53a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oTGOrlPtRhO-MMILlzuOA5tio0LrXspN%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/QXCMS/backend/web/index.php?r=post%2Fcreate'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 TheWorld 7'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONTENT_LENGTH' => '511'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '64254'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/vagrant/WWW'
+    'DOCUMENT_URI' => '/QXCMS/backend/web/index.php'
+    'REQUEST_URI' => '/QXCMS/backend/web/index.php?r=post%2Fcreate'
+    'SCRIPT_NAME' => '/QXCMS/backend/web/index.php'
+    'CONTENT_LENGTH' => '511'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=post%2Fcreate'
+    'PATH_TRANSLATED' => 'E:/vagrant/WWW'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/vagrant/WWW/QXCMS/backend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/QXCMS/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476250803.3895
+    'REQUEST_TIME' => 1476250803
+]
+2016-10-12 05:42:04 [127.0.0.1][-][-][error][yii\db\IntegrityException] PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY' in E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('QX_posts', Array)
+#3 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal(NULL)
+#4 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\BaseActiveRecord.php(598): yii\db\ActiveRecord->insert(true, NULL)
+#5 E:\vagrant\www\QXCMS\backend\controllers\PostController.php(72): yii\db\BaseActiveRecord->save()
+#6 [internal function]: backend\controllers\PostController->actionCreate()
+#7 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#10 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('post/create', Array)
+#11 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\vagrant\www\QXCMS\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next yii\db\IntegrityException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+The SQL being executed was: INSERT INTO `QX_posts` (`post_column_id`, `post_tiltle`, `post_subtitle`, `post_anthor`, `post_origin`, `post_image`, `post_video`, `post_link`, `post_is_top`, `post_status`, `post_sort`, `created_at`, `updated_at`) VALUES (3, '阿斯打扫�\�', 'asdasdsad', '', '', '', '', '', 0, 1, 121, 1476250924, 1476250924) in E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `QX...')
+#1 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('QX_posts', Array)
+#3 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal(NULL)
+#4 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\BaseActiveRecord.php(598): yii\db\ActiveRecord->insert(true, NULL)
+#5 E:\vagrant\www\QXCMS\backend\controllers\PostController.php(72): yii\db\BaseActiveRecord->save()
+#6 [internal function]: backend\controllers\PostController->actionCreate()
+#7 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#10 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('post/create', Array)
+#11 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\vagrant\www\QXCMS\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1062
+    [2] => Duplicate entry '0' for key 'PRIMARY'
+)
+
+2016-10-12 05:42:01 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'post/create'
+]
+
+$_POST = [
+    '_csrf-backend' => 'OGpqTmpQbGdXPi0BGDw8E2oCJWMnHSUrVBAfAStlGA5XWiY8MiMcKQ=='
+    'Posts' => [
+        'post_column_id' => '3'
+        'post_tiltle' => '阿斯打扫大'
+        'post_subtitle' => 'asdasdsad'
+        'post_anthor' => ''
+        'post_origin' => ''
+        'post_image' => ''
+        'post_video' => ''
+        'post_link' => ''
+        'post_is_top' => '0'
+        'post_status' => '1'
+        'post_sort' => '121'
+    ]
+    'Contents' => [
+        'content' => ''
+    ]
+]
+
+$_COOKIE = [
+    'Hm_lvt_5fedb3bdce89499492c079ab4a8a0323' => '1474431359'
+    '_csrf-frontend' => '7c6bb1c76ec7d595968a1de3b5323beee1ef313bd5e53acf0aaddbdc0de48bbda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ZFT383z0n607da82oCSHqJ2Q18LvTSrg\";}'
+    'advanced-backend' => 'jorlekqaraqn0amani86g1bpj3'
+    '_csrf-backend' => '881bf673470b2acc93bdbbcea2179838c817d1baf664dd62da4b070b1ee8bd53a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oTGOrlPtRhO-MMILlzuOA5tio0LrXspN\";}'
+]
+
+$_SERVER = [
+    '#envTSLOGsss9240' => '133903296'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SC-201605231612'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'DOCKER_TOOLBOX_INSTALL_PATH' => 'D:\\Program Files (x86)\\Docker Toolbox'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GTK_BASEPATH' => 'C:\\Program Files (x86)\\GtkSharp\\2.12\\'
+    'HOME' => 'D:\\emacs'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SC-201605231612'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35-32\\Scripts\\;D:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35-32\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;D:\\software\\nodejs\\;D:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\MySQL\\bin;D:\\Program Files (x86)\\bin;C:\\Program Files\\Calibre2\\;C:\\ProgramData\\chocolatey\\bin;D:\\software\\cmder;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\Program Files (x86)\\Docker Toolbox;D:\\software\\cmder\\vendor\\git-for-windows\\usr\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 18 Model 1 Stepping 0, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '18'
+    'PROCESSOR_REVISION' => '0100'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SC-201605231612'
+    'USERDOMAIN_ROAMINGPROFILE' => 'SC-201605231612'
+    'USERNAME' => 'Admin'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'VBOX_MSI_INSTALL_PATH' => 'D:\\Program Files (x86)\\'
+    'VS140COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'Hm_lvt_5fedb3bdce89499492c079ab4a8a0323=1474431359; _csrf-frontend=7c6bb1c76ec7d595968a1de3b5323beee1ef313bd5e53acf0aaddbdc0de48bbda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ZFT383z0n607da82oCSHqJ2Q18LvTSrg%22%3B%7D; advanced-backend=jorlekqaraqn0amani86g1bpj3; _csrf-backend=881bf673470b2acc93bdbbcea2179838c817d1baf664dd62da4b070b1ee8bd53a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oTGOrlPtRhO-MMILlzuOA5tio0LrXspN%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/QXCMS/backend/web/index.php?r=post%2Fcreate'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 TheWorld 7'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONTENT_LENGTH' => '420'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '64299'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/vagrant/WWW'
+    'DOCUMENT_URI' => '/QXCMS/backend/web/index.php'
+    'REQUEST_URI' => '/QXCMS/backend/web/index.php?r=post%2Fcreate'
+    'SCRIPT_NAME' => '/QXCMS/backend/web/index.php'
+    'CONTENT_LENGTH' => '420'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=post%2Fcreate'
+    'PATH_TRANSLATED' => 'E:/vagrant/WWW'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/vagrant/WWW/QXCMS/backend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/QXCMS/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476250921.6897
+    'REQUEST_TIME' => 1476250921
+]
+2016-10-12 05:44:09 [127.0.0.1][-][-][error][yii\db\IntegrityException] PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY' in E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('QX_posts', Array)
+#3 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal(NULL)
+#4 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\BaseActiveRecord.php(598): yii\db\ActiveRecord->insert(true, NULL)
+#5 E:\vagrant\www\QXCMS\backend\controllers\PostController.php(72): yii\db\BaseActiveRecord->save()
+#6 [internal function]: backend\controllers\PostController->actionCreate()
+#7 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#10 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('post/create', Array)
+#11 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\vagrant\www\QXCMS\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next yii\db\IntegrityException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+The SQL being executed was: INSERT INTO `QX_posts` (`post_column_id`, `post_tiltle`, `post_subtitle`, `post_anthor`, `post_origin`, `post_image`, `post_video`, `post_link`, `post_is_top`, `post_status`, `post_sort`, `created_at`, `updated_at`) VALUES (3, '企鹅权威·', 'adadasq', '', '', '', '', '', 0, 1, 123, 1476251049, 1476251049) in E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `QX...')
+#1 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('QX_posts', Array)
+#3 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal(NULL)
+#4 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\db\BaseActiveRecord.php(598): yii\db\ActiveRecord->insert(true, NULL)
+#5 E:\vagrant\www\QXCMS\backend\controllers\PostController.php(72): yii\db\BaseActiveRecord->save()
+#6 [internal function]: backend\controllers\PostController->actionCreate()
+#7 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#10 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('post/create', Array)
+#11 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\vagrant\www\QXCMS\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1062
+    [2] => Duplicate entry '0' for key 'PRIMARY'
+)
+
+2016-10-12 05:44:07 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'post/create'
+]
+
+$_POST = [
+    '_csrf-backend' => 'TkZBTmJ0VlIhEgYBEBgGJhwuDmMvOR8eIjw0ASNBIjshdg08OgcmHA=='
+    'Posts' => [
+        'post_column_id' => '3'
+        'post_tiltle' => '企鹅权威·'
+        'post_subtitle' => 'adadasq'
+        'post_anthor' => ''
+        'post_origin' => ''
+        'post_image' => ''
+        'post_video' => ''
+        'post_link' => ''
+        'post_is_top' => '0'
+        'post_status' => '1'
+        'post_sort' => '123'
+    ]
+    'Contents' => [
+        'content' => '<p>阿斯打扫打扫打扫打扫</p>'
+    ]
+]
+
+$_COOKIE = [
+    'Hm_lvt_5fedb3bdce89499492c079ab4a8a0323' => '1474431359'
+    '_csrf-frontend' => '7c6bb1c76ec7d595968a1de3b5323beee1ef313bd5e53acf0aaddbdc0de48bbda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ZFT383z0n607da82oCSHqJ2Q18LvTSrg\";}'
+    'advanced-backend' => 'jorlekqaraqn0amani86g1bpj3'
+    '_csrf-backend' => '881bf673470b2acc93bdbbcea2179838c817d1baf664dd62da4b070b1ee8bd53a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oTGOrlPtRhO-MMILlzuOA5tio0LrXspN\";}'
+]
+
+$_SERVER = [
+    '#envTSLOGsss9240' => '133903296'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SC-201605231612'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'DOCKER_TOOLBOX_INSTALL_PATH' => 'D:\\Program Files (x86)\\Docker Toolbox'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GTK_BASEPATH' => 'C:\\Program Files (x86)\\GtkSharp\\2.12\\'
+    'HOME' => 'D:\\emacs'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SC-201605231612'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35-32\\Scripts\\;D:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35-32\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;D:\\software\\nodejs\\;D:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\MySQL\\bin;D:\\Program Files (x86)\\bin;C:\\Program Files\\Calibre2\\;C:\\ProgramData\\chocolatey\\bin;D:\\software\\cmder;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\Program Files (x86)\\Docker Toolbox;D:\\software\\cmder\\vendor\\git-for-windows\\usr\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 18 Model 1 Stepping 0, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '18'
+    'PROCESSOR_REVISION' => '0100'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SC-201605231612'
+    'USERDOMAIN_ROAMINGPROFILE' => 'SC-201605231612'
+    'USERNAME' => 'Admin'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'VBOX_MSI_INSTALL_PATH' => 'D:\\Program Files (x86)\\'
+    'VS140COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'Hm_lvt_5fedb3bdce89499492c079ab4a8a0323=1474431359; _csrf-frontend=7c6bb1c76ec7d595968a1de3b5323beee1ef313bd5e53acf0aaddbdc0de48bbda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ZFT383z0n607da82oCSHqJ2Q18LvTSrg%22%3B%7D; advanced-backend=jorlekqaraqn0amani86g1bpj3; _csrf-backend=881bf673470b2acc93bdbbcea2179838c817d1baf664dd62da4b070b1ee8bd53a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oTGOrlPtRhO-MMILlzuOA5tio0LrXspN%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/QXCMS/backend/web/index.php?r=post%2Fcreate'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 TheWorld 7'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONTENT_LENGTH' => '522'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '64317'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/vagrant/WWW'
+    'DOCUMENT_URI' => '/QXCMS/backend/web/index.php'
+    'REQUEST_URI' => '/QXCMS/backend/web/index.php?r=post%2Fcreate'
+    'SCRIPT_NAME' => '/QXCMS/backend/web/index.php'
+    'CONTENT_LENGTH' => '522'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=post%2Fcreate'
+    'PATH_TRANSLATED' => 'E:/vagrant/WWW'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/vagrant/WWW/QXCMS/backend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/QXCMS/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476251047.5369
+    'REQUEST_TIME' => 1476251047
+]
+2016-10-12 06:08:31 [127.0.0.1][-][-][error][ParseError] ParseError: syntax error, unexpected ''created_at'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in E:\vagrant\www\QXCMS\backend\models\Posts.php:78
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\\models\\...')
+#1 E:\vagrant\www\QXCMS\backend\models\PostsSearch.php(13): spl_autoload_call('backend\\models\\...')
+#2 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\BaseYii.php(288): include('E:\\vagrant\\www\\...')
+#3 [internal function]: yii\BaseYii::autoload('backend\\models\\...')
+#4 E:\vagrant\www\QXCMS\backend\controllers\PostController.php(40): spl_autoload_call('backend\\models\\...')
+#5 [internal function]: backend\controllers\PostController->actionIndex()
+#6 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#9 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('post/index', Array)
+#10 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 E:\vagrant\www\QXCMS\backend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+2016-10-12 06:08:31 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'post/index'
+]
+
+$_COOKIE = [
+    'Hm_lvt_5fedb3bdce89499492c079ab4a8a0323' => '1474431359'
+    '_csrf-frontend' => '7c6bb1c76ec7d595968a1de3b5323beee1ef313bd5e53acf0aaddbdc0de48bbda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ZFT383z0n607da82oCSHqJ2Q18LvTSrg\";}'
+    'advanced-backend' => 'jorlekqaraqn0amani86g1bpj3'
+    '_csrf-backend' => '881bf673470b2acc93bdbbcea2179838c817d1baf664dd62da4b070b1ee8bd53a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oTGOrlPtRhO-MMILlzuOA5tio0LrXspN\";}'
+]
+
+$_SERVER = [
+    '#envTSLOGsss9240' => '133903296'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SC-201605231612'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'DOCKER_TOOLBOX_INSTALL_PATH' => 'D:\\Program Files (x86)\\Docker Toolbox'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GTK_BASEPATH' => 'C:\\Program Files (x86)\\GtkSharp\\2.12\\'
+    'HOME' => 'D:\\emacs'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SC-201605231612'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35-32\\Scripts\\;D:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35-32\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;D:\\software\\nodejs\\;D:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\MySQL\\bin;D:\\Program Files (x86)\\bin;C:\\Program Files\\Calibre2\\;C:\\ProgramData\\chocolatey\\bin;D:\\software\\cmder;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\Program Files (x86)\\Docker Toolbox;D:\\software\\cmder\\vendor\\git-for-windows\\usr\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 18 Model 1 Stepping 0, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '18'
+    'PROCESSOR_REVISION' => '0100'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SC-201605231612'
+    'USERDOMAIN_ROAMINGPROFILE' => 'SC-201605231612'
+    'USERNAME' => 'Admin'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'VBOX_MSI_INSTALL_PATH' => 'D:\\Program Files (x86)\\'
+    'VS140COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'Hm_lvt_5fedb3bdce89499492c079ab4a8a0323=1474431359; _csrf-frontend=7c6bb1c76ec7d595968a1de3b5323beee1ef313bd5e53acf0aaddbdc0de48bbda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ZFT383z0n607da82oCSHqJ2Q18LvTSrg%22%3B%7D; advanced-backend=jorlekqaraqn0amani86g1bpj3; _csrf-backend=881bf673470b2acc93bdbbcea2179838c817d1baf664dd62da4b070b1ee8bd53a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oTGOrlPtRhO-MMILlzuOA5tio0LrXspN%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://localhost/QXCMS/backend/web/index.php?r=post%2Fview&id=3'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 TheWorld 7'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '64639'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/vagrant/WWW'
+    'DOCUMENT_URI' => '/QXCMS/backend/web/index.php'
+    'REQUEST_URI' => '/QXCMS/backend/web/index.php?r=post%2Findex'
+    'SCRIPT_NAME' => '/QXCMS/backend/web/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post%2Findex'
+    'PATH_TRANSLATED' => 'E:/vagrant/WWW'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/vagrant/WWW/QXCMS/backend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/QXCMS/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476252511.6035
+    'REQUEST_TIME' => 1476252511
+]
+2016-10-12 06:08:31 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in E:\vagrant\www\QXCMS\vendor\yiisoft\yii2-debug\LogTarget.php:57
+
+Stack trace:
+#0 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2-debug\LogTarget.php(57): serialize(Array)
+#1 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#2 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(ParseError))
+#6 {main}
+2016-10-12 06:08:31 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'post/index'
+]
+
+$_COOKIE = [
+    'Hm_lvt_5fedb3bdce89499492c079ab4a8a0323' => '1474431359'
+    '_csrf-frontend' => '7c6bb1c76ec7d595968a1de3b5323beee1ef313bd5e53acf0aaddbdc0de48bbda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ZFT383z0n607da82oCSHqJ2Q18LvTSrg\";}'
+    'advanced-backend' => 'jorlekqaraqn0amani86g1bpj3'
+    '_csrf-backend' => '881bf673470b2acc93bdbbcea2179838c817d1baf664dd62da4b070b1ee8bd53a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oTGOrlPtRhO-MMILlzuOA5tio0LrXspN\";}'
+]
+
+$_SERVER = [
+    '#envTSLOGsss9240' => '133903296'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SC-201605231612'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'DOCKER_TOOLBOX_INSTALL_PATH' => 'D:\\Program Files (x86)\\Docker Toolbox'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GTK_BASEPATH' => 'C:\\Program Files (x86)\\GtkSharp\\2.12\\'
+    'HOME' => 'D:\\emacs'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SC-201605231612'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35-32\\Scripts\\;D:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35-32\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;D:\\software\\nodejs\\;D:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\MySQL\\bin;D:\\Program Files (x86)\\bin;C:\\Program Files\\Calibre2\\;C:\\ProgramData\\chocolatey\\bin;D:\\software\\cmder;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\Program Files (x86)\\Docker Toolbox;D:\\software\\cmder\\vendor\\git-for-windows\\usr\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 18 Model 1 Stepping 0, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '18'
+    'PROCESSOR_REVISION' => '0100'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SC-201605231612'
+    'USERDOMAIN_ROAMINGPROFILE' => 'SC-201605231612'
+    'USERNAME' => 'Admin'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'VBOX_MSI_INSTALL_PATH' => 'D:\\Program Files (x86)\\'
+    'VS140COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'Hm_lvt_5fedb3bdce89499492c079ab4a8a0323=1474431359; _csrf-frontend=7c6bb1c76ec7d595968a1de3b5323beee1ef313bd5e53acf0aaddbdc0de48bbda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ZFT383z0n607da82oCSHqJ2Q18LvTSrg%22%3B%7D; advanced-backend=jorlekqaraqn0amani86g1bpj3; _csrf-backend=881bf673470b2acc93bdbbcea2179838c817d1baf664dd62da4b070b1ee8bd53a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oTGOrlPtRhO-MMILlzuOA5tio0LrXspN%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://localhost/QXCMS/backend/web/index.php?r=post%2Fview&id=3'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 TheWorld 7'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '64639'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/vagrant/WWW'
+    'DOCUMENT_URI' => '/QXCMS/backend/web/index.php'
+    'REQUEST_URI' => '/QXCMS/backend/web/index.php?r=post%2Findex'
+    'SCRIPT_NAME' => '/QXCMS/backend/web/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post%2Findex'
+    'PATH_TRANSLATED' => 'E:/vagrant/WWW'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/vagrant/WWW/QXCMS/backend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/QXCMS/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476252511.6035
+    'REQUEST_TIME' => 1476252511
+]
+2016-10-12 06:12:49 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: contents in E:\vagrant\www\QXCMS\backend\controllers\PostController.php:103
+Stack trace:
+#0 E:\vagrant\www\QXCMS\backend\controllers\PostController.php(103): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'E:\\vagrant\\www\\...', 103, Array)
+#1 [internal function]: backend\controllers\PostController->actionUpdate('2')
+#2 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('update', Array)
+#5 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('post/update', Array)
+#6 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 E:\vagrant\www\QXCMS\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2016-10-12 06:12:46 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'post/update'
+    'id' => '2'
+]
+
+$_COOKIE = [
+    'Hm_lvt_5fedb3bdce89499492c079ab4a8a0323' => '1474431359'
+    '_csrf-frontend' => '7c6bb1c76ec7d595968a1de3b5323beee1ef313bd5e53acf0aaddbdc0de48bbda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ZFT383z0n607da82oCSHqJ2Q18LvTSrg\";}'
+    'advanced-backend' => 'jorlekqaraqn0amani86g1bpj3'
+    '_csrf-backend' => '881bf673470b2acc93bdbbcea2179838c817d1baf664dd62da4b070b1ee8bd53a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oTGOrlPtRhO-MMILlzuOA5tio0LrXspN\";}'
+]
+
+$_SERVER = [
+    '#envTSLOGsss9240' => '133903296'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SC-201605231612'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'DOCKER_TOOLBOX_INSTALL_PATH' => 'D:\\Program Files (x86)\\Docker Toolbox'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GTK_BASEPATH' => 'C:\\Program Files (x86)\\GtkSharp\\2.12\\'
+    'HOME' => 'D:\\emacs'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SC-201605231612'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35-32\\Scripts\\;D:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35-32\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;D:\\software\\nodejs\\;D:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\MySQL\\bin;D:\\Program Files (x86)\\bin;C:\\Program Files\\Calibre2\\;C:\\ProgramData\\chocolatey\\bin;D:\\software\\cmder;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\Program Files (x86)\\Docker Toolbox;D:\\software\\cmder\\vendor\\git-for-windows\\usr\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 18 Model 1 Stepping 0, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '18'
+    'PROCESSOR_REVISION' => '0100'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SC-201605231612'
+    'USERDOMAIN_ROAMINGPROFILE' => 'SC-201605231612'
+    'USERNAME' => 'Admin'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'VBOX_MSI_INSTALL_PATH' => 'D:\\Program Files (x86)\\'
+    'VS140COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'Hm_lvt_5fedb3bdce89499492c079ab4a8a0323=1474431359; _csrf-frontend=7c6bb1c76ec7d595968a1de3b5323beee1ef313bd5e53acf0aaddbdc0de48bbda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ZFT383z0n607da82oCSHqJ2Q18LvTSrg%22%3B%7D; advanced-backend=jorlekqaraqn0amani86g1bpj3; _csrf-backend=881bf673470b2acc93bdbbcea2179838c817d1baf664dd62da4b070b1ee8bd53a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oTGOrlPtRhO-MMILlzuOA5tio0LrXspN%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://localhost/QXCMS/backend/web/index.php?r=post%2Findex'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 TheWorld 7'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '64739'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/vagrant/WWW'
+    'DOCUMENT_URI' => '/QXCMS/backend/web/index.php'
+    'REQUEST_URI' => '/QXCMS/backend/web/index.php?r=post%2Fupdate&id=2'
+    'SCRIPT_NAME' => '/QXCMS/backend/web/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post%2Fupdate&id=2'
+    'PATH_TRANSLATED' => 'E:/vagrant/WWW'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/vagrant/WWW/QXCMS/backend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/QXCMS/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476252766.7989
+    'REQUEST_TIME' => 1476252766
+]
+2016-10-12 06:14:18 [127.0.0.1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Creating default object from empty value in E:\vagrant\www\QXCMS\backend\controllers\PostController.php:145
+Stack trace:
+#0 E:\vagrant\www\QXCMS\backend\controllers\PostController.php(145): yii\base\ErrorHandler->handleError(2, 'Creating defaul...', 'E:\\vagrant\\www\\...', 145, Array)
+#1 E:\vagrant\www\QXCMS\backend\controllers\PostController.php(97): backend\controllers\PostController->saveContent(2, NULL, 'update')
+#2 [internal function]: backend\controllers\PostController->actionUpdate('2')
+#3 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('update', Array)
+#6 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('post/update', Array)
+#7 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 E:\vagrant\www\QXCMS\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+2016-10-12 06:14:15 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'post/update'
+    'id' => '2'
+]
+
+$_POST = [
+    '_csrf-backend' => 'd3VRaUFneXUYIRYmMwspASUdHkQMKjA5Gw8kJgBSDRwYRR0bGRQJOw=='
+    'Posts' => [
+        'post_column_id' => '3'
+        'post_tiltle' => '企鹅权威·'
+        'post_subtitle' => 'adadasq'
+        'post_anthor' => ''
+        'post_origin' => ''
+        'post_image' => ''
+        'post_video' => ''
+        'post_link' => ''
+        'post_summarize' => '撒打算打算打打双打搭档'
+        'post_is_top' => '0'
+        'post_status' => '1'
+        'post_sort' => '123'
+    ]
+    'Contents' => [
+        'content' => '<p>阿斯打扫打扫打扫打扫</p>'
+    ]
+]
+
+$_COOKIE = [
+    'Hm_lvt_5fedb3bdce89499492c079ab4a8a0323' => '1474431359'
+    '_csrf-frontend' => '7c6bb1c76ec7d595968a1de3b5323beee1ef313bd5e53acf0aaddbdc0de48bbda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ZFT383z0n607da82oCSHqJ2Q18LvTSrg\";}'
+    'advanced-backend' => 'jorlekqaraqn0amani86g1bpj3'
+    '_csrf-backend' => '881bf673470b2acc93bdbbcea2179838c817d1baf664dd62da4b070b1ee8bd53a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oTGOrlPtRhO-MMILlzuOA5tio0LrXspN\";}'
+]
+
+$_SERVER = [
+    '#envTSLOGsss9240' => '133903296'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SC-201605231612'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'DOCKER_TOOLBOX_INSTALL_PATH' => 'D:\\Program Files (x86)\\Docker Toolbox'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GTK_BASEPATH' => 'C:\\Program Files (x86)\\GtkSharp\\2.12\\'
+    'HOME' => 'D:\\emacs'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SC-201605231612'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35-32\\Scripts\\;D:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35-32\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;D:\\software\\nodejs\\;D:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\MySQL\\bin;D:\\Program Files (x86)\\bin;C:\\Program Files\\Calibre2\\;C:\\ProgramData\\chocolatey\\bin;D:\\software\\cmder;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\Program Files (x86)\\Docker Toolbox;D:\\software\\cmder\\vendor\\git-for-windows\\usr\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 18 Model 1 Stepping 0, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '18'
+    'PROCESSOR_REVISION' => '0100'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SC-201605231612'
+    'USERDOMAIN_ROAMINGPROFILE' => 'SC-201605231612'
+    'USERNAME' => 'Admin'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'VBOX_MSI_INSTALL_PATH' => 'D:\\Program Files (x86)\\'
+    'VS140COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'Hm_lvt_5fedb3bdce89499492c079ab4a8a0323=1474431359; _csrf-frontend=7c6bb1c76ec7d595968a1de3b5323beee1ef313bd5e53acf0aaddbdc0de48bbda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ZFT383z0n607da82oCSHqJ2Q18LvTSrg%22%3B%7D; advanced-backend=jorlekqaraqn0amani86g1bpj3; _csrf-backend=881bf673470b2acc93bdbbcea2179838c817d1baf664dd62da4b070b1ee8bd53a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oTGOrlPtRhO-MMILlzuOA5tio0LrXspN%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/QXCMS/backend/web/index.php?r=post%2Fupdate&id=2'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 TheWorld 7'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONTENT_LENGTH' => '648'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '64755'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/vagrant/WWW'
+    'DOCUMENT_URI' => '/QXCMS/backend/web/index.php'
+    'REQUEST_URI' => '/QXCMS/backend/web/index.php?r=post%2Fupdate&id=2'
+    'SCRIPT_NAME' => '/QXCMS/backend/web/index.php'
+    'CONTENT_LENGTH' => '648'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=post%2Fupdate&id=2'
+    'PATH_TRANSLATED' => 'E:/vagrant/WWW'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/vagrant/WWW/QXCMS/backend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/QXCMS/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476252855.639
+    'REQUEST_TIME' => 1476252855
+]
+2016-10-12 07:46:53 [127.0.0.1][-][jorlekqaraqn0amani86g1bpj3][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: contact/creat in E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('creat', Array)
+#1 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('contact/creat', Array)
+#2 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\vagrant\www\QXCMS\backend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: 页面未找到。 in E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\vagrant\www\QXCMS\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-10-12 07:46:53 [127.0.0.1][-][jorlekqaraqn0amani86g1bpj3][info][application] $_GET = [
+    'r' => 'contact/creat'
+]
+
+$_COOKIE = [
+    'Hm_lvt_5fedb3bdce89499492c079ab4a8a0323' => '1474431359'
+    '_csrf-frontend' => '7c6bb1c76ec7d595968a1de3b5323beee1ef313bd5e53acf0aaddbdc0de48bbda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ZFT383z0n607da82oCSHqJ2Q18LvTSrg\";}'
+    'advanced-backend' => 'jorlekqaraqn0amani86g1bpj3'
+    '_csrf-backend' => '881bf673470b2acc93bdbbcea2179838c817d1baf664dd62da4b070b1ee8bd53a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oTGOrlPtRhO-MMILlzuOA5tio0LrXspN\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    '#envTSLOGsss9240' => '133903296'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SC-201605231612'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'DOCKER_TOOLBOX_INSTALL_PATH' => 'D:\\Program Files (x86)\\Docker Toolbox'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GTK_BASEPATH' => 'C:\\Program Files (x86)\\GtkSharp\\2.12\\'
+    'HOME' => 'D:\\emacs'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SC-201605231612'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35-32\\Scripts\\;D:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35-32\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;D:\\software\\nodejs\\;D:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\MySQL\\bin;D:\\Program Files (x86)\\bin;C:\\Program Files\\Calibre2\\;C:\\ProgramData\\chocolatey\\bin;D:\\software\\cmder;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\Program Files (x86)\\Docker Toolbox;D:\\software\\cmder\\vendor\\git-for-windows\\usr\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 18 Model 1 Stepping 0, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '18'
+    'PROCESSOR_REVISION' => '0100'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SC-201605231612'
+    'USERDOMAIN_ROAMINGPROFILE' => 'SC-201605231612'
+    'USERNAME' => 'Admin'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'VBOX_MSI_INSTALL_PATH' => 'D:\\Program Files (x86)\\'
+    'VS140COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'Hm_lvt_5fedb3bdce89499492c079ab4a8a0323=1474431359; _csrf-frontend=7c6bb1c76ec7d595968a1de3b5323beee1ef313bd5e53acf0aaddbdc0de48bbda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ZFT383z0n607da82oCSHqJ2Q18LvTSrg%22%3B%7D; advanced-backend=jorlekqaraqn0amani86g1bpj3; _csrf-backend=881bf673470b2acc93bdbbcea2179838c817d1baf664dd62da4b070b1ee8bd53a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oTGOrlPtRhO-MMILlzuOA5tio0LrXspN%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 TheWorld 7'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '49705'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/vagrant/WWW'
+    'DOCUMENT_URI' => '/QXCMS/backend/web/index.php'
+    'REQUEST_URI' => '/QXCMS/backend/web/index.php?r=contact%2Fcreat'
+    'SCRIPT_NAME' => '/QXCMS/backend/web/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=contact%2Fcreat'
+    'PATH_TRANSLATED' => 'E:/vagrant/WWW'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/vagrant/WWW/QXCMS/backend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/QXCMS/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476258413.3966
+    'REQUEST_TIME' => 1476258413
+]
+2016-10-12 09:37:42 [127.0.0.1][-][-][error][Error] Error: Class 'backend\models\ContactForm' not found in E:\vagrant\www\QXCMS\backend\controllers\SiteController.php:119
+Stack trace:
+#0 [internal function]: backend\controllers\SiteController->actionContact()
+#1 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#2 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#3 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('contact', Array)
+#4 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('site/contact', Array)
+#5 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 E:\vagrant\www\QXCMS\backend\web\index.php(18): yii\base\Application->run()
+#7 {main}
+2016-10-12 09:37:42 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    'Hm_lvt_5fedb3bdce89499492c079ab4a8a0323' => '1474431359'
+    '_csrf-frontend' => '7c6bb1c76ec7d595968a1de3b5323beee1ef313bd5e53acf0aaddbdc0de48bbda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ZFT383z0n607da82oCSHqJ2Q18LvTSrg\";}'
+    'advanced-backend' => 'jorlekqaraqn0amani86g1bpj3'
+    '_csrf-backend' => '881bf673470b2acc93bdbbcea2179838c817d1baf664dd62da4b070b1ee8bd53a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oTGOrlPtRhO-MMILlzuOA5tio0LrXspN\";}'
+    'advanced-frontend' => '161e2fodom90o011h0gg63f911'
+]
+
+$_SERVER = [
+    '#envTSLOGsss9240' => '133903296'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SC-201605231612'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'DOCKER_TOOLBOX_INSTALL_PATH' => 'D:\\Program Files (x86)\\Docker Toolbox'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GTK_BASEPATH' => 'C:\\Program Files (x86)\\GtkSharp\\2.12\\'
+    'HOME' => 'D:\\emacs'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SC-201605231612'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35-32\\Scripts\\;D:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35-32\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;D:\\software\\nodejs\\;D:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\MySQL\\bin;D:\\Program Files (x86)\\bin;C:\\Program Files\\Calibre2\\;C:\\ProgramData\\chocolatey\\bin;D:\\software\\cmder;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\Program Files (x86)\\Docker Toolbox;D:\\software\\cmder\\vendor\\git-for-windows\\usr\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 18 Model 1 Stepping 0, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '18'
+    'PROCESSOR_REVISION' => '0100'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SC-201605231612'
+    'USERDOMAIN_ROAMINGPROFILE' => 'SC-201605231612'
+    'USERNAME' => 'Admin'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'VBOX_MSI_INSTALL_PATH' => 'D:\\Program Files (x86)\\'
+    'VS140COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'Hm_lvt_5fedb3bdce89499492c079ab4a8a0323=1474431359; _csrf-frontend=7c6bb1c76ec7d595968a1de3b5323beee1ef313bd5e53acf0aaddbdc0de48bbda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ZFT383z0n607da82oCSHqJ2Q18LvTSrg%22%3B%7D; advanced-backend=jorlekqaraqn0amani86g1bpj3; _csrf-backend=881bf673470b2acc93bdbbcea2179838c817d1baf664dd62da4b070b1ee8bd53a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oTGOrlPtRhO-MMILlzuOA5tio0LrXspN%22%3B%7D; advanced-frontend=161e2fodom90o011h0gg63f911'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 TheWorld 7'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '51583'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/vagrant/WWW'
+    'DOCUMENT_URI' => '/QXCMS/backend/web/index.php'
+    'REQUEST_URI' => '/QXCMS/backend/web/index.php?r=site%2Fcontact'
+    'SCRIPT_NAME' => '/QXCMS/backend/web/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'PATH_TRANSLATED' => 'E:/vagrant/WWW'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/vagrant/WWW/QXCMS/backend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/QXCMS/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476265062.7753
+    'REQUEST_TIME' => 1476265062
+]
+2016-10-12 09:37:43 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in E:\vagrant\www\QXCMS\vendor\yiisoft\yii2-debug\LogTarget.php:57
+
+Stack trace:
+#0 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2-debug\LogTarget.php(57): serialize(Array)
+#1 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#2 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#6 {main}
+2016-10-12 09:37:42 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    'Hm_lvt_5fedb3bdce89499492c079ab4a8a0323' => '1474431359'
+    '_csrf-frontend' => '7c6bb1c76ec7d595968a1de3b5323beee1ef313bd5e53acf0aaddbdc0de48bbda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ZFT383z0n607da82oCSHqJ2Q18LvTSrg\";}'
+    'advanced-backend' => 'jorlekqaraqn0amani86g1bpj3'
+    '_csrf-backend' => '881bf673470b2acc93bdbbcea2179838c817d1baf664dd62da4b070b1ee8bd53a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oTGOrlPtRhO-MMILlzuOA5tio0LrXspN\";}'
+    'advanced-frontend' => '161e2fodom90o011h0gg63f911'
+]
+
+$_SERVER = [
+    '#envTSLOGsss9240' => '133903296'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SC-201605231612'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'DOCKER_TOOLBOX_INSTALL_PATH' => 'D:\\Program Files (x86)\\Docker Toolbox'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GTK_BASEPATH' => 'C:\\Program Files (x86)\\GtkSharp\\2.12\\'
+    'HOME' => 'D:\\emacs'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SC-201605231612'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35-32\\Scripts\\;D:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35-32\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;D:\\software\\nodejs\\;D:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\MySQL\\bin;D:\\Program Files (x86)\\bin;C:\\Program Files\\Calibre2\\;C:\\ProgramData\\chocolatey\\bin;D:\\software\\cmder;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\Program Files (x86)\\Docker Toolbox;D:\\software\\cmder\\vendor\\git-for-windows\\usr\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 18 Model 1 Stepping 0, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '18'
+    'PROCESSOR_REVISION' => '0100'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SC-201605231612'
+    'USERDOMAIN_ROAMINGPROFILE' => 'SC-201605231612'
+    'USERNAME' => 'Admin'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'VBOX_MSI_INSTALL_PATH' => 'D:\\Program Files (x86)\\'
+    'VS140COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'Hm_lvt_5fedb3bdce89499492c079ab4a8a0323=1474431359; _csrf-frontend=7c6bb1c76ec7d595968a1de3b5323beee1ef313bd5e53acf0aaddbdc0de48bbda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ZFT383z0n607da82oCSHqJ2Q18LvTSrg%22%3B%7D; advanced-backend=jorlekqaraqn0amani86g1bpj3; _csrf-backend=881bf673470b2acc93bdbbcea2179838c817d1baf664dd62da4b070b1ee8bd53a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oTGOrlPtRhO-MMILlzuOA5tio0LrXspN%22%3B%7D; advanced-frontend=161e2fodom90o011h0gg63f911'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 TheWorld 7'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '51583'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/vagrant/WWW'
+    'DOCUMENT_URI' => '/QXCMS/backend/web/index.php'
+    'REQUEST_URI' => '/QXCMS/backend/web/index.php?r=site%2Fcontact'
+    'SCRIPT_NAME' => '/QXCMS/backend/web/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'PATH_TRANSLATED' => 'E:/vagrant/WWW'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/vagrant/WWW/QXCMS/backend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/QXCMS/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476265062.7753
+    'REQUEST_TIME' => 1476265062
+]
+2016-10-12 09:37:58 [127.0.0.1][-][jorlekqaraqn0amani86g1bpj3][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "s". in E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('s', Array)
+#1 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\vagrant\www\QXCMS\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: 页面未找到。 in E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 E:\vagrant\www\QXCMS\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\vagrant\www\QXCMS\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-10-12 09:37:58 [127.0.0.1][-][jorlekqaraqn0amani86g1bpj3][info][application] $_GET = [
+    'r' => 's'
+]
+
+$_COOKIE = [
+    'Hm_lvt_5fedb3bdce89499492c079ab4a8a0323' => '1474431359'
+    '_csrf-frontend' => '7c6bb1c76ec7d595968a1de3b5323beee1ef313bd5e53acf0aaddbdc0de48bbda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ZFT383z0n607da82oCSHqJ2Q18LvTSrg\";}'
+    'advanced-backend' => 'jorlekqaraqn0amani86g1bpj3'
+    '_csrf-backend' => '881bf673470b2acc93bdbbcea2179838c817d1baf664dd62da4b070b1ee8bd53a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oTGOrlPtRhO-MMILlzuOA5tio0LrXspN\";}'
+    'advanced-frontend' => '161e2fodom90o011h0gg63f911'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    '#envTSLOGsss9240' => '133903296'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SC-201605231612'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'DOCKER_TOOLBOX_INSTALL_PATH' => 'D:\\Program Files (x86)\\Docker Toolbox'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GTK_BASEPATH' => 'C:\\Program Files (x86)\\GtkSharp\\2.12\\'
+    'HOME' => 'D:\\emacs'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SC-201605231612'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35-32\\Scripts\\;D:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35-32\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;D:\\software\\nodejs\\;D:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\MySQL\\bin;D:\\Program Files (x86)\\bin;C:\\Program Files\\Calibre2\\;C:\\ProgramData\\chocolatey\\bin;D:\\software\\cmder;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\Program Files (x86)\\Docker Toolbox;D:\\software\\cmder\\vendor\\git-for-windows\\usr\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 18 Model 1 Stepping 0, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '18'
+    'PROCESSOR_REVISION' => '0100'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SC-201605231612'
+    'USERDOMAIN_ROAMINGPROFILE' => 'SC-201605231612'
+    'USERNAME' => 'Admin'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'VBOX_MSI_INSTALL_PATH' => 'D:\\Program Files (x86)\\'
+    'VS140COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'Hm_lvt_5fedb3bdce89499492c079ab4a8a0323=1474431359; _csrf-frontend=7c6bb1c76ec7d595968a1de3b5323beee1ef313bd5e53acf0aaddbdc0de48bbda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ZFT383z0n607da82oCSHqJ2Q18LvTSrg%22%3B%7D; advanced-backend=jorlekqaraqn0amani86g1bpj3; _csrf-backend=881bf673470b2acc93bdbbcea2179838c817d1baf664dd62da4b070b1ee8bd53a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oTGOrlPtRhO-MMILlzuOA5tio0LrXspN%22%3B%7D; advanced-frontend=161e2fodom90o011h0gg63f911'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 TheWorld 7'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '51583'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/vagrant/WWW'
+    'DOCUMENT_URI' => '/QXCMS/backend/web/index.php'
+    'REQUEST_URI' => '/QXCMS/backend/web/index.php?r=s'
+    'SCRIPT_NAME' => '/QXCMS/backend/web/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=s'
+    'PATH_TRANSLATED' => 'E:/vagrant/WWW'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/vagrant/WWW/QXCMS/backend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/QXCMS/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476265078.3466
+    'REQUEST_TIME' => 1476265078
+]

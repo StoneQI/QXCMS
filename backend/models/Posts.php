@@ -51,6 +51,7 @@ class Posts extends \yii\db\ActiveRecord
             [['post_tiltle', 'post_subtitle'], 'string', 'max' => 255],
             [['post_image', 'post_video', 'post_link'], 'string', 'max' => 200],
             [['post_anthor'], 'string', 'max' => 50],
+             [['post_summarize'], 'string', 'max' => 500],
             [['post_origin'], 'string', 'max' => 100],
         ];
     }
@@ -73,6 +74,7 @@ class Posts extends \yii\db\ActiveRecord
             'post_column_id' => '所属栏目',
             'post_status' => '发布',
             'post_sort' => '文章排序',
+            'post_summarize'=>'文章简述',
             'created_at' => '创建时间',
             'updated_at' => '修改时间',
         ];

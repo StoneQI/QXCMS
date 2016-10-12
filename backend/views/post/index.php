@@ -116,8 +116,10 @@ $this->params['breadcrumbs'][] = $this->title;
              //             ]
              //     ],
 
-            ['class' => 'yii\grid\ActionColumn'],
-            ],
+            [
+            'class' => 'kartik\grid\ActionColumn',
+             'width' => '50'],
+        ],
         'containerOptions' => ['style'=>'overflow: auto'],
         'pjax' => false,
         'resizableColumns'=>true,

@@ -12,8 +12,6 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-<!--     <?= $form->field($model, 'id')->dropdownList($columns); ?> -->
-
     <?= $form->field($model, 'post_column_id')->dropdownList($columns)->label('所属栏目（必须填写）'); ?>
 
     <?= $form->field($model, 'post_tiltle')->textInput(['maxlength' => true])->label('文章标题（必须填写）'); ?>
@@ -29,6 +27,7 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'post_video')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'post_link')->textInput(['maxlength' => true]) ?>
+     <?= $form->field($model, 'post_summarize')->textInput(['maxlength' => true]) ?>
 
 
 
