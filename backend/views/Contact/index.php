@@ -30,6 +30,15 @@ $this->params['breadcrumbs'][] = $this->title;
             'attribute'=>'created_at',
             'format' => ['date', 'php:Y年m月d日 h:i:s'],
             ],
+            [
+            'label' => '是否已读',
+            'attribute'=>'status',
+            'vAlign'=>'middle',
+            'width'=>'8%',
+            'value'=>function ($model, $key, $index, $widget) {
+                    return $model->status?'已读':'未读';
+                },
+            ],
                   [
             'class' => 'kartik\grid\ActionColumn',
              'width' => '50'],

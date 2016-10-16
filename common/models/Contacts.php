@@ -37,6 +37,7 @@ class Contacts extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
+             ['status', 'default', 'value' => 0],
             [['content'], 'required'],
             [['content'], 'string'],
             [['name', 'address'], 'string', 'max' => 255],

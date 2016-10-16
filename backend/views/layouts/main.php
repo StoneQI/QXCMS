@@ -34,6 +34,7 @@ AppAsset::register($this);
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
     ]);
+    if (!Yii::$app->user->isGuest) {
     $menuItems = [
         ['label' => '首页管理', 'url' => ['/indexinfo/index']],
         ['label' => '栏目管理', 'url' => ['/column/index']],
@@ -42,6 +43,7 @@ AppAsset::register($this);
         ['label' => '文件管理', 'url' => ['/file/index']],
         ['label' => '网站配置', 'url' => ['/webinfo/index']],
     ];
+    }
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => '注册', 'url' => ['/site/signup']];
         $menuItems[] = ['label' => '登录', 'url' => ['/site/login']];

@@ -5,13 +5,27 @@ namespace backend\controllers;
 use Yii;
 use common\models\Webinfo;
 use yii\web\Controller;
-use yii\filters\VerbFilter;
-
+use yii\filters\AccessControl;
 /**
  * WebinfoController implements the CRUD actions for Webinfo model.
  */
 class WebinfoController extends Controller
 {
+    public function behaviors()
+    {
+        return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'only' => ['index', 'update'],
+                'rules' => [
+                    [
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
+        ];
+    }
     /**
      * @inheritdoc
      */

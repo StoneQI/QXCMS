@@ -1,7 +1,7 @@
 <?php
 
 use yii\helpers\Html;
-use yii\widgets\DetailView;
+use \kartik\detail\DetailView;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Contacts */
@@ -37,6 +37,12 @@ $this->params['breadcrumbs'][] = $this->title;
             'attribute'=>'created_at',
             'format' => ['date', 'php:Y年m月d日 h:i:s'],
             ],
+            [
+                'attribute'=>'status',
+                'label'=>'是否已读',
+                'format'=>'raw',
+                'value'=>$model->status ? '<span class="label label-success">已读</span>' : '<span class="label label-danger">未读</span>',
+                ],
         ],
     ]) ?>
 
