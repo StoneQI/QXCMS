@@ -1,5 +1,5 @@
 ﻿# Host: localhost  (Version: 5.5.47)
-# Date: 2016-10-16 17:00:41
+# Date: 2016-10-16 20:34:17
 # Generator: MySQL-Front 5.3  (Build 4.234)
 
 /*!40101 SET NAMES utf8 */;
@@ -55,13 +55,13 @@ CREATE TABLE `qx_columns` (
   KEY `column_sort` (`column_sort`) USING BTREE,
   KEY `created_at` (`created_at`),
   KEY `column_status` (`column_status`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4;
 
 #
 # Data for table "qx_columns"
 #
 
-INSERT INTO `qx_columns` VALUES (1,0,'首页',NULL,'',NULL,NULL,'',0,'',1,0,0);
+INSERT INTO `qx_columns` VALUES (1,0,'首页',NULL,'',NULL,NULL,'',0,'',1,0,0),(2,1,'产品展示','','img_list','',NULL,'1',1,'',1,1476615911,1476615911),(3,1,'新闻中心','','list','',NULL,'1',2,'',1,1476616777,1476616777),(4,1,'关于我们','','SGP-aboutus','images/thumb-up.jpg',NULL,'1',7,'<p><span style=\"font-size: 24px;\">立业测试</span><span style=\"font-size: 24px;\">立业测试</span></p><p><span style=\"font-size: 24px;\"><br/></span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试立业测试立业测试立业测试立业测试立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试立业测试立业测试立业测试立业测试立业测试立业测试立业测试立业测试立业测试立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\"><br/></span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\"><br/></span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\"><br/></span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\"><br/></span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\">立业测试立业测试</span></p><p><span style=\"font-size: 16px;\"><br/></span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\"><br/></span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\"><br/></span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\">立业测试立业测试</span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试</span></p>',1,1476617312,1476617312),(5,2,'产品1','','img_list','',NULL,'1',1,'',1,1476617425,1476617425),(6,2,'产品2','','img_list','',NULL,'1',2,'',1,1476617451,1476617503),(7,2,'产品3','','img_list','',NULL,'1',3,'',1,1476617481,1476617481),(8,3,'新闻1','','list','',NULL,'1',1,'',1,1476617537,1476617537),(9,3,'新闻2','','list','',NULL,'1',2,'',1,1476617560,1476617613),(10,3,'新闻3','','list','',NULL,'1',3,'',1,1476617591,1476617637);
 
 #
 # Structure for table "qx_contacts"
@@ -78,13 +78,13 @@ CREATE TABLE `qx_contacts` (
   `updated_at` int(11) NOT NULL DEFAULT '0',
   `status` int(4) NOT NULL DEFAULT '1',
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 #
 # Data for table "qx_contacts"
 #
 
-INSERT INTO `qx_contacts` VALUES (1,'你好','sadasd','asdasdsad',' 阿大苏打',1476604708,1476607122,1),(2,'擦擦','长安商场','擦擦',' academic',1476607773,1476607773,0),(3,'dadas','dadasasdasd','dadasasdasdasdasd',' dadasasdasdasdasddasdasdsa',1476607791,1476607840,1),(4,'等我等我期待','大苏打','dasdasd',' 阿迪达斯',1476607801,1476607801,0);
+INSERT INTO `qx_contacts` VALUES (1,'你好','sadasd','asdasdsad',' 阿大苏打',1476604708,1476607122,1),(2,'擦擦','长安商场','擦擦',' academic',1476607773,1476607773,0),(3,'dadas','dadasasdasd','dadasasdasdasdasd',' dadasasdasdasdasddasdasdsa',1476607791,1476607840,1),(4,'等我等我期待','大苏打','dasdasd',' 阿迪达斯',1476607801,1476607801,0),(5,'a阿萨德','asdasdsad','asdasdsad',' asdasdsad',1476614546,1476614546,0);
 
 #
 # Structure for table "qx_contents"
@@ -103,6 +103,7 @@ CREATE TABLE `qx_contents` (
 # Data for table "qx_contents"
 #
 
+INSERT INTO `qx_contents` VALUES (1,'<p>asdasdasdsad</p>',6),(2,'<p>asdasdasdsad</p>',7),(3,'<p>asdasdasdasd asdsd saas das</p><p>asdasddasd</p>',8),(4,'<p>产品描述产品描述产品描述产品描述产品描述产品描述</p>',9),(5,'<p><span style=\"font-size: 24px;\">新闻2新闻2新闻2新闻2新闻2</span></p><p><span style=\"font-size: 24px;\"><img src=\"http://img.baidu.com/hi/jx2/j_0026.gif\"/><img src=\"http://img.baidu.com/hi/jx2/j_0028.gif\"/><img src=\"http://img.baidu.com/hi/jx2/j_0061.gif\"/><img src=\"http://img.baidu.com/hi/jx2/j_0074.gif\"/></span></p><p>新闻2新闻2新闻2新闻2</p><p>新闻2新闻2新闻2新闻2</p><p>新闻2新闻2新闻2新闻2</p><p>新闻2新闻2新闻2新闻2</p><p>新闻2新闻2新闻2新闻2</p><p>新闻2新闻2新闻2新闻2</p><p>新闻2新闻2新闻2</p><p>新闻2新闻2新闻2</p><p>新闻2新闻2新闻2</p><p>新闻2新闻2新闻2</p>',10),(6,'<p>新闻1新闻1新闻1新闻1新闻1新闻1</p><p>新闻1新闻1新闻1</p><p>新闻1新闻1新闻1新闻1</p><p><br/></p><p>新闻1新闻1新闻1新闻1</p><p>新闻1新闻1新闻1新闻1<img src=\"http://img.baidu.com/hi/jx2/j_0004.gif\"/><img src=\"http://img.baidu.com/hi/bobo/B_0016.gif\"/></p>',11);
 
 #
 # Structure for table "qx_files"
@@ -198,9 +199,10 @@ CREATE TABLE `qx_posts` (
   KEY `post_sort` (`post_sort`),
   KEY `post_status` (`post_status`),
   KEY `created_at` (`created_at`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
 
 #
 # Data for table "qx_posts"
 #
 
+INSERT INTO `qx_posts` VALUES (6,'nihao','ada','','','','','',1,5,1,1,1476619565,1476619565,'asdasdasdas'),(7,'nihao','ada','','','','','',1,5,1,1,1476619573,1476619573,'asdasdasdas'),(8,'sadasd','asdadd','','','','asdas','',0,1,-1,2,1476619641,1476620025,''),(9,'产品描述','产品描述','','','','','',0,5,1,NULL,1476620063,1476620063,'产品描述产品描述产品描述'),(10,'新闻2','新闻2','','','','系统','原创',0,9,1,4,1476620256,1476620256,'新闻2新闻2新闻2新闻2新闻2新闻2'),(11,'新闻1','新闻1新闻1','','','','新闻1新闻1新闻1','',0,8,1,5,1476620779,1476620779,'新闻1新闻1新闻1新闻1新闻1新闻1');

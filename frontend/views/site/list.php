@@ -8,7 +8,7 @@ use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 use yii\captcha\Captcha;
 
-$this->title = $hig_column['name'];
+$this->title = $parsent_column['name'];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div id="contents">
@@ -22,7 +22,7 @@ $this->params['breadcrumbs'][] = $this->title;
                   foreach ($column as $key => $value) {
                     ?>
                     <li>
-              <a href="<?=Url::toRoute(['site/column', 'id' => $hig_column['id'],'pid'=>$value['id']]); ?>"><?= $value['name']?></a>
+              <a href="<?=Url::toRoute(['site/column', 'id' => $parsent_column['id'],'pid'=>$value['id']]); ?>"><?= $value['name']?></a>
             </li>
                     <?php
                   }

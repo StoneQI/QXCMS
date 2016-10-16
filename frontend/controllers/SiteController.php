@@ -33,29 +33,43 @@ class SiteController extends Controller
      *
      * @return mixed
      */
-    public function actionColumn($id,$pid=-1)
+    public function actionColumn($id,$pid= -1)
     {
             $cloumns = Columns::findOne($id);
-            $hig_column['id'] =id;
-            $hig_column['name'] =$cloumns->name;
-            $cloumns = Columns::find()->where(['pid'=>$id])->all();
-            $i=0;
-            foreach ($cloumns as $key => $value) {
+            if ( substr($cloumns->column_layout,0,3) =='SGP') {
+                $layouts = substr($cloumns->column_layout,4);
+                return $this->render($layouts,[
+                    'columns'=>$cloumns
+                ]);
+            }else{
+                $parsent_column = array();
+                $sub_column = array();
+                $posts = array();
+                $parsent_column['id'] =$id;
+                $parsent_column['name'] =$cloumns->column_name;
+                $sub_cloumns = Columns::find()->where(['pid'=>$id])->all();
+                if ($sub_cloumns) {
+                    $i=0;
+                    foreach ($sub_cloumns as $key => $value) {
 
-                $column[$i]['name'] = $value->column_name;
-                $column[$i]['id'] = $value->id;
-                $i++;
+                        $sub_column[$i]['name'] = $value->column_name;
+                        $sub_column[$i]['id'] = $value->id;
+                        $i++;
+                    }
+                    if ($pid == -1) {
+                        foreach ($sub_column as $key => $value) {
+                            $column_id[] = $value['id'];
+                        }
+                    }else{
+                        $column_id[] = $pid;
+                    }
+                    $posts = Posts::find()->where(['in', 'post_column_id',$column_id])->orderBy(['post_is_top' => SORT_DESC,'post_sort' => SORT_DESC, 'updated_at' =>SORT_DESC])->all(); }
+                return $this->render($cloumns->column_layout, [
+                    'parsent_column' => $parsent_column,
+                    'column' => $sub_column,
+                    'posts' => $posts
+                ]);
             }
-            if ($pid==-1) {
-                $pid = $column['0']['id'];
-            }
-            $posts = Posts::find()->where(['post_column_id'=>$pid])->orderBy('post_sort DESC')->all();
-
-            return $this->render($cloumns->column_layout, [
-                'hig_column' => $hig_column,
-                'column' => $column,
-                'posts' => $posts
-            ]);
 
     }
 

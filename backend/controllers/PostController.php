@@ -79,7 +79,7 @@ class PostController extends Controller
         $columns = Columns::getColumn(0);
         $contents =new Contents();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save() && $this->saveContent($model->attributes['id'],Yii::$app->request->post('Contents'),'create') ) {
+        if (Yii::$app->request->post() && $this->saveContent($model,$contents,Yii::$app->request->post())) {
             //echo array_values($model->getFirstErrors())[0];exit;
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
@@ -103,8 +103,7 @@ class PostController extends Controller
         $model = $this->findModel($id);
         $columns = Columns::getColumn(0);
         $contents =Contents::find()->where(['posts_id'=>$id])->one();
-
-        if ($model->load(Yii::$app->request->post()) && $model->save()  && $this->saveContent($model->attributes['id'],Yii::$app->request->post('contents'),'update') ) {
+        if (Yii::$app->request->post() && $this->saveContent($model,$contents,Yii::$app->request->post()) ) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [
@@ -145,20 +144,27 @@ class PostController extends Controller
             throw new NotFoundHttpException('这个请求页面不存在.');
         }
     }
-    protected function saveContent($id,$content,$status)
+
+    protected function saveContent($post,$content,$params)
     {
-        if ($status == 'create') {
-            $contents = new Contents();
-        }else{
-            $contents = Contents::find()->where(['posts_id'=>$id])->one();
-        }
-        $contents->content = $contents['content'];
-        $contents->posts_id =$id;
-        if ($contents->save()) {
+        $tr = Yii::$app->db->beginTransaction();
+        try {
+            $post->load($params);
+            $post->save();
+            $content->content = $params['Contents']['content'];
+            $content->posts_id = $post->attributes['id'];
+            if (!$content->save()) {
+                 throw new Exception("插入错误", 1);
+            }
+            $tr->commit();
             return 1;
+        } catch (Exception $e) {
+            $tr->rollBack();
+            return 0;
         }
-        return 0;
     }
+
+
     public function actions()
     {
         return [

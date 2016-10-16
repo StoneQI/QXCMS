@@ -13,13 +13,7 @@ use common\models\Indexinfo;
 
 
 $indexinfo = Indexinfo::getinfo();
-
-
-
-//AppAsset::register($this);
 CommonAsset::register($this);
-
-
 $web_config = Webinfo::getinfo();
 ?>
 <?php $this->beginPage() ?>
@@ -49,7 +43,6 @@ $web_config = Webinfo::getinfo();
               $columns = Columns::find()->where(['pid'=>1])->all();
 
               foreach ($columns as $key => $value) {
-               // var_dump($value);
 
             ?>
                 <li <?php echo $value->column_name==$this->title?'class="active"':'' ; ?> >
