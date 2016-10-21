@@ -4,12 +4,10 @@
   /* @var $form yii\bootstrap\ActiveForm */
   /* @var $model \frontend\models\ContactForm */
   use yii\helpers\Url;
-  use yii\helpers\Html;
-  use yii\bootstrap\ActiveForm;
-  use yii\captcha\Captcha;
+
 
   $this->title = $parsent_column['name'];
-  $this->params['breadcrumbs'][] = $this->title;
+
   ?>
   <div id="contents">
           <div class="clearfix">

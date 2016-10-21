@@ -7,7 +7,9 @@ use backend\models\Columns;
 use backend\models\Posts;
 use common\models\Contacts;
 use common\models\Webinfo;
-
+use common\models\Labor;
+use common\models\LaborSearch;
+use yii\data\Pagination;
 /**
  * Site controller
  */
@@ -96,6 +98,18 @@ class SiteController extends Controller
             return $this->render('post', [
                 'post' => $post,
             ]);
+
+    }
+
+    public function actionLabor()
+    {
+                $searchModel = new LaborSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+
+        return $this->render('labor', [
+            'searchModel' => $searchModel,
+            'dataProvider' => $dataProvider,
+        ]);
 
     }
 

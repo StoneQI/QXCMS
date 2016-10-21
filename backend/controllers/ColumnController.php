@@ -77,9 +77,8 @@ class ColumnController extends Controller
     {
         $model = new Columns();
         $columns = Columns::getColumn(0);
-        var_dump(Yii::$app->request->post());
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        if ( $this->isChange($model,Yii::$app->request->post())) {
+           return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -94,11 +93,29 @@ class ColumnController extends Controller
      * @param integer $id
      * @return mixed
      */
+    protected function isChange($model,$params){
+        if (!$params) {
+           return 0;
+        }
+        if ($params['Columns']['pid'] == 1) {
+            if ($model->pid == 1) {
+                Yii::$app->session->setFlash('error', '不能修改根栏目');
+                return 0;
+            }
+            Yii::$app->session->setFlash('error', $model->isNewRecord ? '不能新建根栏目' : '不能修改为根栏目');
+            return 0;
+        }
+        if ( $model->load($params)&& $model->save()) {
+           return 1;
+        }
+
+    }
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
         $columns = Columns::getColumn(0);
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+
+        if ( $this->isChange($model,Yii::$app->request->post())) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [
@@ -116,9 +133,10 @@ class ColumnController extends Controller
      */
     public function actionDelete($id)
     {
-        if (!Columns::find()->where(['pid'=>$id])->one()) {
+        $column =  $this->findModel($id);
+        if (($column->pid != 1) && (!Columns::find()->where(['pid'=>$id])->one())) {
            if (!Posts::find()->where(['post_column_id'=>$id])->one()) {
-                $this->findModel($id)->delete();
+               $column->delete();
             }else{
                 Yii::$app->session->setFlash('error', '不能删除有文章的栏目');
             }

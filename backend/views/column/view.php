@@ -44,8 +44,16 @@ $this->params['breadcrumbs'][] = $this->title;
             'column_content_layout',
             'column_sort',
   //          'column_status',
-            'created_at:datetime',
-            'updated_at:datetime',
+            [                      // the owner name of the model
+            'label' => '新建时间',
+            'value' => $model->created_at,
+            'format' => ['date', 'php:Y年m月d日 h:i:s'],
+            ],
+            [                      // the owner name of the model
+            'label' => '修改时间',
+            'value' => $model->updated_at,
+            'format' => ['date', 'php:Y年m月d日 h:i:s'],
+            ],
         ],
     ]) ?>
 

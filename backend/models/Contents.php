@@ -27,7 +27,7 @@ class Contents extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [[ 'content', 'posts_id'], 'required'],
+            [[ 'posts_id'], 'required'],
             [[ 'posts_id'], 'integer'],
             [['content'], 'string'],
         ];

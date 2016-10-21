@@ -4,12 +4,9 @@
 /* @var $form yii\bootstrap\ActiveForm */
 /* @var $model \frontend\models\ContactForm */
 use yii\helpers\Url;
-use yii\helpers\Html;
-use yii\bootstrap\ActiveForm;
-use yii\captcha\Captcha;
 
 $this->title = $parsent_column['name'];
-$this->params['breadcrumbs'][] = $this->title;
+
 ?>
 <div id="contents">
         <div class="clearfix">
@@ -55,7 +52,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                 </div>
                             </div>
                             <p>
-                            <a href="<?=Url::toRoute(['site/post', 'id' => $value->id]); ?>" > <b><?= $value->post_tiltle?></b></a>
+                            <a href="<?=Url::to(['site/post', 'id' => $value->id]); ?>" > <b><?= $value->post_tiltle?></b></a>
                                 <?= $value->post_summarize?>
                             </p>
                         </li>

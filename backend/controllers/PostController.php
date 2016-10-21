@@ -154,11 +154,11 @@ class PostController extends Controller
             $content->content = $params['Contents']['content'];
             $content->posts_id = $post->attributes['id'];
             if (!$content->save()) {
-                 throw new Exception("插入错误", 1);
+                 throw new ErrorException ("插入数据错误");
             }
             $tr->commit();
             return 1;
-        } catch (Exception $e) {
+        } catch (ErrorException  $e) {
             $tr->rollBack();
             return 0;
         }

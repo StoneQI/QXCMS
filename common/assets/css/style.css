@@ -434,9 +434,8 @@ p a:hover {
 	background-position: left bottom;
 	background-repeat: repeat-x;
 	display: inline-block;
-	min-height: 36px;
 	width: 220px;
-	padding: 6px 0 10px 10px;
+	padding: 10px 0 10px 10px;
 }
 .sidebar ul li > a span.box {
 	float: left;
@@ -444,7 +443,7 @@ p a:hover {
 }
 .sidebar ul li a {
 	color: #755c02;
-	font: 13px/24px Arial, Helvetica, sans-serif;
+	font: 18px/24px Arial, Helvetica, sans-serif;
 	text-decoration: none;
 }
 .sidebar ul li a:hover {
@@ -554,7 +553,7 @@ p a:hover {
 #footer .section {
 	float: left;
 	min-height: 146px;
-	width: 259px;
+	width: 320px;
 	border-left: 1px solid #c2c2c2;
 	padding: 30px;
 }

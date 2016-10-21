@@ -40,6 +40,7 @@ AppAsset::register($this);
         ['label' => '栏目管理', 'url' => ['/column/index']],
         ['label' => '文章管理', 'url' => ['/post/index']],
         ['label' => '留言管理', 'url' => ['/contact/index']],
+        ['label' => '劳务信息', 'url' => ['/labor/index']],
         ['label' => '文件管理', 'url' => ['/file/index']],
         ['label' => '网站配置', 'url' => ['/webinfo/index']],
     ];

@@ -10,7 +10,9 @@ use frontend\assets\CommonAsset;
 use common\models\Webinfo;
 use common\models\Indexinfo;
 /* @var $this yii\web\View */
+use frontend\assets\AppAsset;
 
+AppAsset::register($this);
 
 $indexinfo = Indexinfo::getinfo();
 CommonAsset::register($this);
@@ -49,6 +51,9 @@ $web_config = Webinfo::getinfo();
                     <a href="<?=Url::toRoute(['site/column', 'id' => $value->id]); ?>"><?php echo $value->column_name; ?></a>
                 </li>
             <?php  }?>
+                <li <?php echo '劳务信息'==$this->title?'class="active"':'' ; ?>>
+                    <a href="<?=Url::toRoute(['site/labor']); ?>">劳务信息</a>
+                </li>
                 <li <?php echo '留言'==$this->title?'class="active"':'' ; ?>>
                     <a href="<?=Url::toRoute(['site/contact']); ?>">留言</a>
                 </li>

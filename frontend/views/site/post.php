@@ -4,10 +4,8 @@
 /* @var $form yii\bootstrap\ActiveForm */
 /* @var $model \common\models\LoginForm */
 
-use yii\helpers\Html;
-use yii\bootstrap\ActiveForm;
 $this->title = $post->post_tiltle;
-$this->params['breadcrumbs'][] = $this->title;
+
 ?>
 <div id="contents">
         <div class="clearfix">

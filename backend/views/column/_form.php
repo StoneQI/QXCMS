@@ -18,7 +18,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'column_link')->textInput(['maxlength' => true])->label('栏目链接（当你需要链接到其他页面时设置）') ?>
 
-    <?= $form->field($model, 'column_layout')->dropdownList(['list'=>'默认','img_list'=>'图片展示','SGP-aboutus'=>'单页布局--关于我们'])->label('栏目布局（根据需要指定该栏目的布局方式）'); ?>
+    <?= $form->field($model, 'column_layout')->dropdownList(['list'=>'默认','img_list'=>'图片展示','SGP-aboutus'=>'单页布局--关于我们','SGP-cooperate'=>'单页布局--合作平台'])->label('栏目布局（根据需要指定该栏目的布局方式）'); ?>
 
     <?= $form->field($model, 'column_image')->textInput(['maxlength' => true])->label('栏目图像') ?>
 

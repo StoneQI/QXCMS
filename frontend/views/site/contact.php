@@ -8,7 +8,15 @@ use yii\helpers\Url;
 use yii\widgets\ActiveForm;
 $this->title = '留言';
 ?>
+<div class="container text-center">
 
+
+<?php if (Yii::$app->session->hasFlash('success')): ?>
+                <h3 class="alert alert-warning alert-dismissable">
+                    <?php echo Yii::$app->session->getFlash('success') ?>
+                 </h3>
+                 <?php endif ?>
+</div>
 <div id="contents">
         <div class="clearfix">
             <div class="sidebar">
@@ -39,11 +47,7 @@ $this->title = '留言';
                 </div>
             </div>
             <div class="main">
-            <?php if (Yii::$app->session->hasFlash('success')): ?>
-                <div class="alert alert-success alert-dismissable">
-                    <?php echo ' <h1>'.Yii::$app->session->getFlash('success').'</h1>' ?>
-                 </div>
-                 <?php endif ?>
+
                 <h1>留言
                 <h2>发送消息给我们</h2>
                 <!-- <p>

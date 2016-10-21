@@ -6,7 +6,7 @@ use yii\helpers\Html;
 /* @var $model backend\models\Posts */
 
 $this->title = '修改文章: ' . $model->post_tiltle;
-$this->params['breadcrumbs'][] = ['label' => 'Posts', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => '文章管理', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->post_tiltle, 'url' => ['view', 'id' => $model->id]];
 $this->params['breadcrumbs'][] = '修改';
 ?>

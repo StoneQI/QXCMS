@@ -25,44 +25,44 @@ $this->params['breadcrumbs'][] = ['label' => '首页管理', 'url' => ['index']]
             <div role="tabpanel" class="tab-pane active" id="home">
             <br>
             	 <?= $form->field($model, 'index_img')->textInput(['maxlength' => true,'value'=>$indexinfo->index_img]) ?>
-            	 <?= $form->field($model, 'index_imgtext')->textInput() ?>
+            	 <?= $form->field($model, 'index_imgtext')->textInput(['maxlength' => true,'value'=>$indexinfo->index_imgtext]) ?>
 
             </div>
             <div role="tabpanel" class="tab-pane" id="profile">
             <br>
-            	<?= $form->field($model, 'center_title')->textInput() ?>
-            	 <?= $form->field($model, 'center_content')->textInput() ?>
-            	 <?= $form->field($model, 'center_title_right')->textInput() ?>
-            	 <?= $form->field($model, 'center_content_right')->textInput() ?>
+            	<?= $form->field($model, 'center_title')->textInput(['maxlength' => true,'value'=>$indexinfo->center_title]) ?>
+            	 <?= $form->field($model, 'center_content')->textInput(['maxlength' => true,'value'=>$indexinfo->center_content]) ?>
+            	 <?= $form->field($model, 'center_title_right')->textInput(['maxlength' => true,'value'=>$indexinfo->center_title_right]) ?>
+            	 <?= $form->field($model, 'center_content_right')->textInput(['maxlength' => true,'value'=>$indexinfo->center_content_right]) ?>
             </div>
             <div role="tabpanel" class="tab-pane" id="messages">
             	 <h4>文章一</h4>
-            	 <?= $form->field($model, 'list_img1')->textInput() ?>
-            	 <?= $form->field($model, 'list_title1')->textInput() ?>
-            	 <?= $form->field($model, 'list_content1')->textInput() ?>
-            	 <?= $form->field($model, 'list_url1')->textInput() ?>
+            	 <?= $form->field($model, 'list_img1')->textInput(['maxlength' => true,'value'=>$indexinfo->list_img1]) ?>
+            	 <?= $form->field($model, 'list_title1')->textInput(['maxlength' => true,'value'=>$indexinfo->list_title1]) ?>
+            	 <?= $form->field($model, 'list_content1')->textInput(['maxlength' => true,'value'=>$indexinfo->list_content1]) ?>
+            	 <?= $form->field($model, 'list_url1')->textInput(['maxlength' => true,'value'=>$indexinfo->list_url1]) ?>
             	 <h4>文章二</h4>
-            	 <?= $form->field($model, 'list_img2')->textInput() ?>
-            	 <?= $form->field($model, 'list_title2')->textInput() ?>
-            	 <?= $form->field($model, 'list_content2')->textInput() ?>
-            	 <?= $form->field($model, 'list_url2')->textInput() ?>
+            	 <?= $form->field($model, 'list_img2')->textInput(['maxlength' => true,'value'=>$indexinfo->list_img2]) ?>
+            	 <?= $form->field($model, 'list_title2')->textInput(['maxlength' => true,'value'=>$indexinfo->list_title2]) ?>
+            	 <?= $form->field($model, 'list_content2')->textInput(['maxlength' => true,'value'=>$indexinfo->list_content2]) ?>
+            	 <?= $form->field($model, 'list_url2')->textInput(['maxlength' => true,'value'=>$indexinfo->list_url2]) ?>
             	 <h4>文章三</h4>
-            	 <?= $form->field($model, 'list_img3')->textInput() ?>
-            	 <?= $form->field($model, 'list_title3')->textInput() ?>
-            	 <?= $form->field($model, 'list_content3')->textInput() ?>
-            	 <?= $form->field($model, 'list_url3')->textInput() ?>
+            	 <?= $form->field($model, 'list_img3')->textInput(['maxlength' => true,'value'=>$indexinfo->list_img3]) ?>
+            	 <?= $form->field($model, 'list_title3')->textInput(['maxlength' => true,'value'=>$indexinfo->list_title3]) ?>
+            	 <?= $form->field($model, 'list_content3')->textInput(['maxlength' => true,'value'=>$indexinfo->list_content3]) ?>
+            	 <?= $form->field($model, 'list_url3')->textInput(['maxlength' => true,'value'=>$indexinfo->list_url3]) ?>
             	 <h4>文章四</h4>
-            	 <?= $form->field($model, 'list_img4')->textInput() ?>
-            	 <?= $form->field($model, 'list_title4')->textInput() ?>
-            	 <?= $form->field($model, 'list_content4')->textInput() ?>
-            	 <?= $form->field($model, 'list_url4')->textInput() ?>
+            	 <?= $form->field($model, 'list_img4')->textInput(['maxlength' => true,'value'=>$indexinfo->list_img4]) ?>
+            	 <?= $form->field($model, 'list_title4')->textInput(['maxlength' => true,'value'=>$indexinfo->list_title4]) ?>
+            	 <?= $form->field($model, 'list_content4')->textInput(['maxlength' => true,'value'=>$indexinfo->list_content4]) ?>
+            	 <?= $form->field($model, 'list_url4')->textInput(['maxlength' => true,'value'=>$indexinfo->list_url4]) ?>
             </div>
             <div role="tabpanel" class="tab-pane" id="settings"><br>
-            	 <?= $form->field($model, 'footer_left_title')->textInput() ?>
-            	 <?= $form->field($model, 'footer_left_content')->textInput() ?>
+            	 <?= $form->field($model, 'footer_left_title')->textInput(['maxlength' => true,'value'=>$indexinfo->footer_left_title]) ?>
+            	 <?= $form->field($model, 'footer_left_content')->textInput(['maxlength' => true,'value'=>$indexinfo->footer_left_content]) ?>
 
-            	 <?= $form->field($model, 'footer_right_title')->textInput() ?>
-            	 <?= $form->field($model, 'footer_right_content')->textInput() ?>
+            	 <?= $form->field($model, 'footer_right_title')->textInput(['maxlength' => true,'value'=>$indexinfo->footer_right_title]) ?>
+            	 <?= $form->field($model, 'footer_right_content')->textInput(['maxlength' => true,'value'=>$indexinfo->footer_right_content]) ?>
             </div>
           </div>
 
