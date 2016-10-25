@@ -39,6 +39,7 @@ class Files extends \yii\db\ActiveRecord
         return [
             [[ 'file_url'], 'required'],
             [[ 'file_status'], 'integer'],
+            ['file_status', 'default', 'value' => 1],
             [['file_url'], 'string', 'max' => 255],
             [['file_type'], 'string', 'max' => 200],
         ];

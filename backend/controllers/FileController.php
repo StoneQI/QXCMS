@@ -79,8 +79,7 @@ class FileController extends Controller
         $upload_form = new UploadForm();
 
         if ($model->load(Yii::$app->request->post())) {
-            $upload_form->file = UploadedFile::getInstance($upload_form, 'file');
-            if ($filename = $upload_form->upload()) {
+            if ($filename = $upload_form->upload($upload_form)) {
                 $model->file_url = $filename;
                 $model->save();
                 return $this->redirect(['view', 'id' => $model->id]);
@@ -102,18 +101,18 @@ class FileController extends Controller
      * @param integer $id
      * @return mixed
      */
-    public function actionUpdate($id)
-    {
-        $model = $this->findModel($id);
+    // public function actionUpdate($id)
+    // {
+    //     $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
-        } else {
-            return $this->render('update', [
-                'model' => $model,
-            ]);
-        }
-    }
+    //     if ($model->load(Yii::$app->request->post()) && $model->save()) {
+    //         return $this->redirect(['view', 'id' => $model->id]);
+    //     } else {
+    //         return $this->render('update', [
+    //             'model' => $model,
+    //         ]);
+    //     }
+    // }
 
     /**
      * Deletes an existing Files model.
@@ -123,8 +122,11 @@ class FileController extends Controller
      */
     public function actionDelete($id)
     {
-        $this->findModel($id)->delete();
-
+        $files = $this->findModel($id);
+        if ($files) {
+            $files->file_status = 0;
+            $files->save();
+        }
         return $this->redirect(['index']);
     }
 

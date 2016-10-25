@@ -27,6 +27,8 @@ $this->params['breadcrumbs'][] = ['label' => '网站信息', 'url' => ['index']]
             [
                 'attribute'=>'web_logo',
                 'label'=>'网站LOGO',
+                 'value'=>$model->web_logo?$model->web_logo:null,
+                'format'=>['image']
             ],
                         [
                 'attribute'=>'record_id',

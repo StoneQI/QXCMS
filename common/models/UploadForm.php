@@ -18,16 +18,27 @@ class UploadForm extends Model
         ];
     }
 
-    public function upload()
+    public function upload($models,$filename = 'file')
     {
+        $this->file = UploadedFile::getInstance($models, $filename);
         if ($this->validate()) {
-            $file_name = 'upload/' . $this->file->baseName . '.' . $this->file->extension;
+            $randStr = str_shuffle('ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890');
+            $rand = substr($randStr,0,6);
+            $file_name = 'upload/'. time() .'-'.$rand. '.' . $this->file->extension;
             if ($this->file->saveAs($file_name)) {
-                return $file_name;
+                return \Yii::$app->params['assets_path'].$file_name;
             }
              return false;
         } else {
             return false;
         }
+    }
+
+
+    public function attributeLabels()
+    {
+        return [
+            'file' => '文件',
+        ];
     }
 }

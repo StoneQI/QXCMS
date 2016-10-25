@@ -7,7 +7,9 @@ use common\models\Labor;
 /* @var $this yii\web\View */
 /* @var $searchModel common\models\LaborSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
+use frontend\assets\AppAsset;
 
+AppAsset::register($this);
 $this->title = '劳务信息';
 ?>
 <br>
@@ -41,7 +43,13 @@ $this->title = '劳务信息';
             ],
             'name',
             'sex',
-            'technician',
+            [
+                'attribute'=>'technician',
+                'value'=>function ($model, $key, $index, $widget) {
+                    return Html::a('点击查看技工证','#',['onclick'=>'BootstrapDialog.show({title: "技工证",message: \'<img src="'.$model->technician.'">\',buttons: [{label: "关闭", action: function(dialogItself){dialogItself.close(); } }]});']);
+    },
+            'format'=>'raw',
+            ],
         ],
         'containerOptions' => ['style'=>'overflow: auto'],
         'pjax' => false,

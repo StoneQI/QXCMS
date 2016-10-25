@@ -12,6 +12,10 @@ return [
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
+        'cache' => [
+            'class' => 'yii\caching\FileCache',
+        ],
+
         'request' => [
             'csrfParam' => '_csrf-frontend',
         ],

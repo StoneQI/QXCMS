@@ -22,7 +22,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'post_origin')->textInput(['maxlength' => true])->label('文章来源') ?>
 
-    <?= $form->field($model, 'post_image')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'post_image')->textInput(['maxlength' => true])->label('文章图像（可不设置，如要设置请先在文件管理功能里取得图片地址复制到此）') ?>
 
     <?= $form->field($model, 'post_video')->textInput(['maxlength' => true]) ?>
 
@@ -140,11 +140,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'post_status')->dropdownList(['1'=>'发布','0'=>'草稿']) ?>
 
-<?= $form->field($model, 'post_sort')->textInput() ?>
-
- <!--      <?= $form->field($model, 'created_at')->textInput() ?>
-
-    <?= $form->field($model, 'updated_at')->textInput() ?> -->
+    <?= $form->field($model, 'post_sort')->textInput() ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? '新建' : '修改', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

@@ -12,8 +12,6 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="contacts-view">
 
-    <h1><?= Html::encode($this->title) ?></h1>
-
     <p>
         <?= Html::a('修改', ['update', 'id' => $model->Id], ['class' => 'btn btn-primary']) ?>
         <?= Html::a('删除', ['delete', 'id' => $model->Id], [
@@ -33,7 +31,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'phone',
             'address',
             'content:ntext',
-                        [
+            [
             'attribute'=>'created_at',
             'format' => ['date', 'php:Y年m月d日 h:i:s'],
             ],

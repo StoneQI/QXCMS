@@ -41,7 +41,7 @@ class FilesSearch extends Files
      */
     public function search($params)
     {
-        $query = Files::find();
+        $query = Files::find()->where('file_status = 1');
 
         // add conditions that should always apply here
 

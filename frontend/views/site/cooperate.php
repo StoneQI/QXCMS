@@ -6,14 +6,11 @@
   use yii\helpers\Url;
 
 
-  $this->title = $parsent_column['name'];
+  $this->title = "合作平台";
 
   ?>
   <div id="contents">
           <div class="clearfix">
-              <div class="main">
-
-                <div class="section">
                       <ul class="practices">
                         <?php
                         if ($posts) {
@@ -34,7 +31,5 @@
 
                         ?>
                       </ul>
-                    </div>
-              </div>
           </div>
       </div>

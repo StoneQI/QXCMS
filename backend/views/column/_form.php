@@ -6,6 +6,12 @@ use yii\widgets\ActiveForm;
 /* @var $this yii\web\View */
 /* @var $model backend\models\Columns */
 /* @var $form yii\widgets\ActiveForm */
+// $this->registerJs('
+//     $("#from_submit").on("click", function () {
+//     $("#w0").data("yiiActiveForm").validated?$(this).button("loading"):""}
+//   })',\yii\web\View::POS_LOAD);
+
+
 ?>
 
 <div class="columns-form ">
@@ -18,9 +24,9 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'column_link')->textInput(['maxlength' => true])->label('栏目链接（当你需要链接到其他页面时设置）') ?>
 
-    <?= $form->field($model, 'column_layout')->dropdownList(['list'=>'默认','img_list'=>'图片展示','SGP-aboutus'=>'单页布局--关于我们','SGP-cooperate'=>'单页布局--合作平台'])->label('栏目布局（根据需要指定该栏目的布局方式）'); ?>
+    <?= $form->field($model, 'column_layout')->dropdownList(['list'=>'新闻中心','img_list'=>'产品展示','SGP-aboutus'=>'单页布局--关于我们','cooperate'=>'单页布局--合作平台'])->label('栏目布局（根据需要指定该栏目的布局方式）'); ?>
 
-    <?= $form->field($model, 'column_image')->textInput(['maxlength' => true])->label('栏目图像') ?>
+    <?= $form->field($model, 'column_image')->textInput(['maxlength' => true])->label('栏目图像（可不设置，如要设置请先在文件管理功能里取得图片地址复制到此）') ?>
 
     <?= $form->field($model, 'column_content')->widget('kucha\ueditor\UEditor',[
     'clientOptions' => [
@@ -122,7 +128,7 @@ use yii\widgets\ActiveForm;
         'drafts', // 从草稿箱加载
         'charts', // 图表
             ],
-        ]]])->label('栏目内容'); ?>
+        ]]])->label('栏目内容（一般栏目布局为单页模版时设置）'); ?>
 
     <?= $form->field($model, 'column_content_layout')->dropdownList(['1'=>'默认'])->label('栏目内容布局（指定该栏目下文章布局方式）'); ?>
 
@@ -130,7 +136,7 @@ use yii\widgets\ActiveForm;
 
 
     <div class="form-group">
-        <?= Html::submitButton($model->isNewRecord ? '新建' : '修改', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+        <?= Html::submitButton($model->isNewRecord ? '新建' : '修改', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary','data-loading-text'=>'提交中'])  ?>
     </div>
 
     <?php ActiveForm::end(); ?>

@@ -24,7 +24,7 @@ $this->params['breadcrumbs'][] = ['label' => '首页管理', 'url' => ['index']]
           <div class="tab-content">
             <div role="tabpanel" class="tab-pane active" id="home">
             <br>
-            	 <?= $form->field($model, 'index_img')->textInput(['maxlength' => true,'value'=>$indexinfo->index_img]) ?>
+            	 <?= $form->field($model, 'index_img')->textInput(['maxlength' => true,'value'=>$indexinfo->index_img])->label('首页大图（请先在文件管理功能里取得图片地址复制到此）') ?>
             	 <?= $form->field($model, 'index_imgtext')->textInput(['maxlength' => true,'value'=>$indexinfo->index_imgtext]) ?>
 
             </div>
@@ -36,26 +36,26 @@ $this->params['breadcrumbs'][] = ['label' => '首页管理', 'url' => ['index']]
             	 <?= $form->field($model, 'center_content_right')->textInput(['maxlength' => true,'value'=>$indexinfo->center_content_right]) ?>
             </div>
             <div role="tabpanel" class="tab-pane" id="messages">
-            	 <h4>文章一</h4>
-            	 <?= $form->field($model, 'list_img1')->textInput(['maxlength' => true,'value'=>$indexinfo->list_img1]) ?>
+                 <h3><b>文章一</b></h3>
+            	 <?= $form->field($model, 'list_img1')->textInput(['maxlength' => true,'value'=>$indexinfo->list_img1])->label('文章一图片（请先在文件管理功能里取得图片地址复制到此）') ?>
             	 <?= $form->field($model, 'list_title1')->textInput(['maxlength' => true,'value'=>$indexinfo->list_title1]) ?>
             	 <?= $form->field($model, 'list_content1')->textInput(['maxlength' => true,'value'=>$indexinfo->list_content1]) ?>
-            	 <?= $form->field($model, 'list_url1')->textInput(['maxlength' => true,'value'=>$indexinfo->list_url1]) ?>
-            	 <h4>文章二</h4>
-            	 <?= $form->field($model, 'list_img2')->textInput(['maxlength' => true,'value'=>$indexinfo->list_img2]) ?>
+            	 <?= $form->field($model, 'list_url1')->textInput(['maxlength' => true,'value'=>$indexinfo->list_url1])->label('文章一地址（请先在文章管理功能里取得文章地址复制到此）') ?>
+            	 <h3><b>文章二</b></h3>
+            	 <?= $form->field($model, 'list_img2')->textInput(['maxlength' => true,'value'=>$indexinfo->list_img2])->label('文章二图片（请先在文件管理功能里取得图片地址复制到此）') ?>
             	 <?= $form->field($model, 'list_title2')->textInput(['maxlength' => true,'value'=>$indexinfo->list_title2]) ?>
             	 <?= $form->field($model, 'list_content2')->textInput(['maxlength' => true,'value'=>$indexinfo->list_content2]) ?>
-            	 <?= $form->field($model, 'list_url2')->textInput(['maxlength' => true,'value'=>$indexinfo->list_url2]) ?>
-            	 <h4>文章三</h4>
-            	 <?= $form->field($model, 'list_img3')->textInput(['maxlength' => true,'value'=>$indexinfo->list_img3]) ?>
+            	 <?= $form->field($model, 'list_url2')->textInput(['maxlength' => true,'value'=>$indexinfo->list_url2])->label('文章二地址（请先在文章管理功能里取得文章地址复制到此）') ?>
+            	 <h3><b>文章三</b></h3>
+            	 <?= $form->field($model, 'list_img3')->textInput(['maxlength' => true,'value'=>$indexinfo->list_img3])->label('文章三图片（请先在文件管理功能里取得图片地址复制到此）') ?>
             	 <?= $form->field($model, 'list_title3')->textInput(['maxlength' => true,'value'=>$indexinfo->list_title3]) ?>
             	 <?= $form->field($model, 'list_content3')->textInput(['maxlength' => true,'value'=>$indexinfo->list_content3]) ?>
-            	 <?= $form->field($model, 'list_url3')->textInput(['maxlength' => true,'value'=>$indexinfo->list_url3]) ?>
-            	 <h4>文章四</h4>
-            	 <?= $form->field($model, 'list_img4')->textInput(['maxlength' => true,'value'=>$indexinfo->list_img4]) ?>
+            	 <?= $form->field($model, 'list_url3')->textInput(['maxlength' => true,'value'=>$indexinfo->list_url3])->label('文章三地址（请先在文章管理功能里取得文章地址复制到此）') ?>
+            	 <h3><b>文章四</b></h3>
+            	 <?= $form->field($model, 'list_img4')->textInput(['maxlength' => true,'value'=>$indexinfo->list_img4])->label('文章四图片（请先在文件管理功能里取得图片地址复制到此）') ?>
             	 <?= $form->field($model, 'list_title4')->textInput(['maxlength' => true,'value'=>$indexinfo->list_title4]) ?>
             	 <?= $form->field($model, 'list_content4')->textInput(['maxlength' => true,'value'=>$indexinfo->list_content4]) ?>
-            	 <?= $form->field($model, 'list_url4')->textInput(['maxlength' => true,'value'=>$indexinfo->list_url4]) ?>
+            	 <?= $form->field($model, 'list_url4')->textInput(['maxlength' => true,'value'=>$indexinfo->list_url4])->label('文章四地址（请先在文章管理功能里取得文章地址复制到此）') ?>
             </div>
             <div role="tabpanel" class="tab-pane" id="settings"><br>
             	 <?= $form->field($model, 'footer_left_title')->textInput(['maxlength' => true,'value'=>$indexinfo->footer_left_title]) ?>

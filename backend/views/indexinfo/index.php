@@ -31,6 +31,7 @@ $this->params['breadcrumbs'][] = ['label' => '首页管理', 'url' => ['index']]
             [     'attribute'=>'index_img',
                   'label'=>'首页大图',
                   'valueColOptions'=>['style'=>'width:70%'],
+                  'format'=>['image']
               ],
               [
                   'attribute'=>'index_imgtext',
@@ -72,6 +73,7 @@ $this->params['breadcrumbs'][] = ['label' => '首页管理', 'url' => ['index']]
           [     'attribute'=>'list_img1',
                 'label'=>'文章一图片',
                 'valueColOptions'=>['style'=>'width:70%'],
+                'format'=>['image']
             ],
             [
                 'attribute'=>'list_title1',
@@ -84,10 +86,12 @@ $this->params['breadcrumbs'][] = ['label' => '首页管理', 'url' => ['index']]
             [
                 'attribute'=>'list_url1',
                 'label'=>'文章一链接',
+                'format'=>['url',['target'=>'view_window']]
             ],
-                      [     'attribute'=>'list_img2',
+            [    'attribute'=>'list_img2',
                 'label'=>'文章二图片',
                 'valueColOptions'=>['style'=>'width:70%'],
+                'format'=>['image']
             ],
             [
                 'attribute'=>'list_title2',
@@ -100,10 +104,12 @@ $this->params['breadcrumbs'][] = ['label' => '首页管理', 'url' => ['index']]
             [
                 'attribute'=>'list_url2',
                 'label'=>'文章二链接',
+                'format'=>['url',['target'=>'view_window']]
             ],
                       [     'attribute'=>'list_img3',
                 'label'=>'文章三图片',
                 'valueColOptions'=>['style'=>'width:70%'],
+                'format'=>['image']
             ],
             [
                 'attribute'=>'list_title3',
@@ -116,10 +122,12 @@ $this->params['breadcrumbs'][] = ['label' => '首页管理', 'url' => ['index']]
             [
                 'attribute'=>'list_url3',
                 'label'=>'文章三链接',
+                'format'=>['url',['target'=>'view_window']]
             ],
                        [     'attribute'=>'list_img4',
                  'label'=>'文章四图片',
                  'valueColOptions'=>['style'=>'width:70%'],
+                 'format'=>['image']
              ],
              [
                  'attribute'=>'list_title4',
@@ -132,6 +140,7 @@ $this->params['breadcrumbs'][] = ['label' => '首页管理', 'url' => ['index']]
              [
                  'attribute'=>'list_url4',
                  'label'=>'文章四链接',
+                 'format'=>['url',['target'=>'view_window']]
              ]
         ],
     ]) ?>

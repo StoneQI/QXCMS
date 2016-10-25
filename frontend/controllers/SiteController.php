@@ -21,6 +21,8 @@ class SiteController extends Controller
      *
      * @return mixed
      */
+
+
     public function actionIndex()
     {
 
@@ -47,6 +49,7 @@ class SiteController extends Controller
                 $parsent_column = array();
                 $sub_column = array();
                 $posts = array();
+                $column_id = array();
                 $parsent_column['id'] =$id;
                 $parsent_column['name'] =$cloumns->column_name;
                 $sub_cloumns = Columns::find()->where(['pid'=>$id])->all();
@@ -62,10 +65,13 @@ class SiteController extends Controller
                         foreach ($sub_column as $key => $value) {
                             $column_id[] = $value['id'];
                         }
+
                     }else{
                         $column_id[] = $pid;
                     }
-                    $posts = Posts::find()->where(['in', 'post_column_id',$column_id])->orderBy(['post_is_top' => SORT_DESC,'post_sort' => SORT_DESC, 'updated_at' =>SORT_DESC])->all(); }
+                }
+                array_push($column_id,$id);
+                $posts = Posts::find()->where(['in', 'post_column_id',$column_id])->orderBy(['post_is_top' => SORT_DESC,'post_sort' => SORT_DESC, 'updated_at' =>SORT_DESC])->all();
                 return $this->render($cloumns->column_layout, [
                     'parsent_column' => $parsent_column,
                     'column' => $sub_column,
@@ -103,7 +109,7 @@ class SiteController extends Controller
 
     public function actionLabor()
     {
-                $searchModel = new LaborSearch();
+        $searchModel = new LaborSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('labor', [

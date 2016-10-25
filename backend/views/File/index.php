@@ -21,16 +21,21 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'kartik\grid\SerialColumn'],
 
-            //'id',
-            'file_url:url',
-            'file_type',
-           // 'file_status',
+            [
+            'attribute' => 'file_url',
+            'format'=>['url',['target'=>'view_window']]
+            ],
+            [
+              'attribute'=>'file_type',
+              'value'=>function($model, $key, $index){
+                $content = array('1'=>'图片','2'=>'文档');
+                return $content[$model->file_type];
+              }],
             'file_name',
-            // 'created_at',
-            // 'updated_at',
 
                [
             'class' => 'kartik\grid\ActionColumn',
+            'updateOptions' => ['label' => ''],
              'width' => '50'],
         ],
         'containerOptions' => ['style'=>'overflow: auto'],

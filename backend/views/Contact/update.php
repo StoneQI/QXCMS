@@ -6,13 +6,11 @@ use yii\helpers\Html;
 /* @var $model common\models\Contacts */
 
 $this->title = '修改留言: ' . $model->name;
-$this->params['breadcrumbs'][] = ['label' => 'Contacts', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => '留言管理', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->name, 'url' => ['view', 'id' => $model->Id]];
-$this->params['breadcrumbs'][] = 'Update';
+$this->params['breadcrumbs'][] = '修改';
 ?>
 <div class="contacts-update">
-
-    <h1><?= Html::encode($this->title) ?></h1>
 
     <?= $this->render('_form', [
         'model' => $model,

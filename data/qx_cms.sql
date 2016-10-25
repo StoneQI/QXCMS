@@ -1,5 +1,5 @@
 ﻿# Host: localhost  (Version: 5.5.47)
-# Date: 2016-10-16 20:34:17
+# Date: 2016-10-21 11:12:47
 # Generator: MySQL-Front 5.3  (Build 4.234)
 
 /*!40101 SET NAMES utf8 */;
@@ -84,7 +84,7 @@ CREATE TABLE `qx_contacts` (
 # Data for table "qx_contacts"
 #
 
-INSERT INTO `qx_contacts` VALUES (1,'你好','sadasd','asdasdsad',' 阿大苏打',1476604708,1476607122,1),(2,'擦擦','长安商场','擦擦',' academic',1476607773,1476607773,0),(3,'dadas','dadasasdasd','dadasasdasdasdasd',' dadasasdasdasdasddasdasdsa',1476607791,1476607840,1),(4,'等我等我期待','大苏打','dasdasd',' 阿迪达斯',1476607801,1476607801,0),(5,'a阿萨德','asdasdsad','asdasdsad',' asdasdsad',1476614546,1476614546,0);
+INSERT INTO `qx_contacts` VALUES (2,'擦擦','长安商场','擦擦',' academic',1476607773,1476607773,0),(4,'等我等我期待','大苏打','dasdasd',' 阿迪达斯',1476607801,1476607801,0),(5,'a阿萨德','asdasdsad','asdasdsad',' asdasdsad',1476614546,1476614546,0);
 
 #
 # Structure for table "qx_contents"
@@ -93,17 +93,17 @@ INSERT INTO `qx_contacts` VALUES (1,'你好','sadasd','asdasdsad',' 阿大苏打
 DROP TABLE IF EXISTS `qx_contents`;
 CREATE TABLE `qx_contents` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `content` longtext NOT NULL,
+  `content` longtext,
   `posts_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `contents_posts_id` (`posts_id`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4;
 
 #
 # Data for table "qx_contents"
 #
 
-INSERT INTO `qx_contents` VALUES (1,'<p>asdasdasdsad</p>',6),(2,'<p>asdasdasdsad</p>',7),(3,'<p>asdasdasdasd asdsd saas das</p><p>asdasddasd</p>',8),(4,'<p>产品描述产品描述产品描述产品描述产品描述产品描述</p>',9),(5,'<p><span style=\"font-size: 24px;\">新闻2新闻2新闻2新闻2新闻2</span></p><p><span style=\"font-size: 24px;\"><img src=\"http://img.baidu.com/hi/jx2/j_0026.gif\"/><img src=\"http://img.baidu.com/hi/jx2/j_0028.gif\"/><img src=\"http://img.baidu.com/hi/jx2/j_0061.gif\"/><img src=\"http://img.baidu.com/hi/jx2/j_0074.gif\"/></span></p><p>新闻2新闻2新闻2新闻2</p><p>新闻2新闻2新闻2新闻2</p><p>新闻2新闻2新闻2新闻2</p><p>新闻2新闻2新闻2新闻2</p><p>新闻2新闻2新闻2新闻2</p><p>新闻2新闻2新闻2新闻2</p><p>新闻2新闻2新闻2</p><p>新闻2新闻2新闻2</p><p>新闻2新闻2新闻2</p><p>新闻2新闻2新闻2</p>',10),(6,'<p>新闻1新闻1新闻1新闻1新闻1新闻1</p><p>新闻1新闻1新闻1</p><p>新闻1新闻1新闻1新闻1</p><p><br/></p><p>新闻1新闻1新闻1新闻1</p><p>新闻1新闻1新闻1新闻1<img src=\"http://img.baidu.com/hi/jx2/j_0004.gif\"/><img src=\"http://img.baidu.com/hi/bobo/B_0016.gif\"/></p>',11);
+INSERT INTO `qx_contents` VALUES (1,'<p>asdasdasdsad</p>',6),(2,'<p>asdasdasdsad</p>',7),(3,'<p>asdasdasdasd asdsd saas das</p><p>asdasddasd</p>',8),(4,'<p>产品描述产品描述产品描述产品描述产品描述产品描述</p>',9),(5,'<p><span style=\"font-size: 24px;\">新闻2新闻2新闻2新闻2新闻2</span></p><p><span style=\"font-size: 24px;\"><img src=\"http://img.baidu.com/hi/jx2/j_0026.gif\"/><img src=\"http://img.baidu.com/hi/jx2/j_0028.gif\"/><img src=\"http://img.baidu.com/hi/jx2/j_0061.gif\"/><img src=\"http://img.baidu.com/hi/jx2/j_0074.gif\"/></span></p><p>新闻2新闻2新闻2新闻2</p><p>新闻2新闻2新闻2新闻2</p><p>新闻2新闻2新闻2新闻2</p><p>新闻2新闻2新闻2新闻2</p><p>新闻2新闻2新闻2新闻2</p><p>新闻2新闻2新闻2新闻2</p><p>新闻2新闻2新闻2</p><p>新闻2新闻2新闻2</p><p>新闻2新闻2新闻2</p><p>新闻2新闻2新闻2</p>',10),(6,'<p>新闻1新闻1新闻1新闻1新闻1新闻1</p><p>新闻1新闻1新闻1</p><p>新闻1新闻1新闻1新闻1</p><p><br/></p><p>新闻1新闻1新闻1新闻1</p><p>新闻1新闻1新闻1新闻1<img src=\"http://img.baidu.com/hi/jx2/j_0004.gif\"/><img src=\"http://img.baidu.com/hi/bobo/B_0016.gif\"/></p>',11),(7,'',13);
 
 #
 # Structure for table "qx_files"
@@ -154,6 +154,32 @@ CREATE TABLE `qx_frontend_user` (
 
 
 #
+# Structure for table "qx_labor"
+#
+
+DROP TABLE IF EXISTS `qx_labor`;
+CREATE TABLE `qx_labor` (
+  `Id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `sex` varchar(8) NOT NULL,
+  `age` varchar(8) NOT NULL,
+  `species` varchar(50) DEFAULT NULL,
+  `technician` varchar(200) NOT NULL,
+  `license_number` varchar(18) NOT NULL,
+  `address` varchar(250) NOT NULL,
+  `phone` varchar(11) DEFAULT NULL,
+  `remarks` varchar(500) DEFAULT NULL,
+  `status` int(2) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+
+#
+# Data for table "qx_labor"
+#
+
+INSERT INTO `qx_labor` VALUES (1,'adasdsa','男','asdas','计算的话','asdasdsad','dasdasd','dasdasd','asdasdsad','达到sad',1),(2,'礼物','男','23','水泥工','sadasdas','12312322222','12312312','12312312312','312312312312312312',1),(3,'你撒大量','男','23','123123','312312312','12312312','123123123','12312312','123123123',1),(4,'我去恶趣味','男','2323','13123','12312312','3123123','12312312','123123123','123123123123123',1),(5,'123','男','123123','213123','123123123','123123123','12312312','123123123','12312312312',1),(6,'123123123','男','12312312','12312312','12312312','123123123','21312312123','312312321','312312312312312',1);
+
+#
 # Structure for table "qx_migration"
 #
 
@@ -199,10 +225,10 @@ CREATE TABLE `qx_posts` (
   KEY `post_sort` (`post_sort`),
   KEY `post_status` (`post_status`),
   KEY `created_at` (`created_at`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4;
 
 #
 # Data for table "qx_posts"
 #
 
-INSERT INTO `qx_posts` VALUES (6,'nihao','ada','','','','','',1,5,1,1,1476619565,1476619565,'asdasdasdas'),(7,'nihao','ada','','','','','',1,5,1,1,1476619573,1476619573,'asdasdasdas'),(8,'sadasd','asdadd','','','','asdas','',0,1,-1,2,1476619641,1476620025,''),(9,'产品描述','产品描述','','','','','',0,5,1,NULL,1476620063,1476620063,'产品描述产品描述产品描述'),(10,'新闻2','新闻2','','','','系统','原创',0,9,1,4,1476620256,1476620256,'新闻2新闻2新闻2新闻2新闻2新闻2'),(11,'新闻1','新闻1新闻1','','','','新闻1新闻1新闻1','',0,8,1,5,1476620779,1476620779,'新闻1新闻1新闻1新闻1新闻1新闻1');
+INSERT INTO `qx_posts` VALUES (6,'nihao','ada','','','','','',1,5,1,1,1476619565,1476619565,'asdasdasdas'),(7,'nihao','ada','','','','','',1,5,1,1,1476619573,1476619573,'asdasdasdas'),(8,'sadasd','asdadd','','','','asdas','',0,1,-1,2,1476619641,1476620025,''),(9,'产品描述','产品描述','','','','','',0,5,1,NULL,1476620063,1476620063,'产品描述产品描述产品描述'),(10,'新闻2','新闻2','','','','系统','原创',0,9,1,4,1476620256,1476620256,'新闻2新闻2新闻2新闻2新闻2新闻2'),(11,'新闻1','新闻1新闻1','','','','新闻1新闻1新闻1','',0,8,1,5,1476620779,1476620779,'新闻1新闻1新闻1新闻1新闻1新闻1'),(13,'行啊dad撒','','','','','','',0,1,-1,NULL,1476960548,1476960696,'');

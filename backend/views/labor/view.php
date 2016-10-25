@@ -32,7 +32,12 @@ $this->params['breadcrumbs'][] = $this->title;
             'sex',
             'age',
             'species',
-            'technician',
+            //'technician',
+            [
+            'attribute' => 'technician',
+            'value'=>$model->technician?$model->technician:null,
+            'format'=>['image']
+            ],
             'license_number',
             'address',
             'phone',

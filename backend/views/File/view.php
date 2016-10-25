@@ -1,6 +1,7 @@
 <?php
 
 use yii\helpers\Html;
+use yii\helpers\ArrayHelper;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
@@ -15,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
   <!--   <h1><?= Html::encode($this->title) ?></h1> -->
 
     <p>
-        <?= Html::a('修改', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
+<!--         <?= Html::a('修改', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?> -->
         <?= Html::a('删除', ['delete', 'id' => $model->id], [
             'class' => 'btn btn-danger',
             'data' => [
@@ -28,11 +29,23 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'id',
-            'file_url:url',
-            'file_type',
+            //'id'
+            [
+            'label'=>'文件',
+            'value'=>$model->file_url?$model->file_url:null,
+            'format'=>['image']
+            ],
+            //'file_url:url',
+           // 'file_type',
+            [
+                'attribute'=>'file_type',
+                'value'=>ArrayHelper::getValue(['1'=>'图片','2'=>'文档'], $model->file_type)
+            ],
            // 'file_status',
-            'file_name',
+            [
+             'attribute'=>'file_name',
+             'value'=>$model->file_name?$model->file_name:null,
+            ],
             [                      // the owner name of the model
             'label' => '新建时间',
             'value' => $model->created_at,

@@ -10,9 +10,7 @@ use frontend\assets\CommonAsset;
 use common\models\Webinfo;
 use common\models\Indexinfo;
 /* @var $this yii\web\View */
-use frontend\assets\AppAsset;
 
-AppAsset::register($this);
 
 $indexinfo = Indexinfo::getinfo();
 CommonAsset::register($this);

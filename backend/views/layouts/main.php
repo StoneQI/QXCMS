@@ -11,6 +11,17 @@ use backend\assets\AppAsset;
 use common\widgets\Alert;
 
 AppAsset::register($this);
+
+$this->registerJs("
+$('form').on('afterValidate', function (e) {
+    if (cheched = $('#w0').data('yiiActiveForm').validated == false) {
+        $(':submit').removeAttr('disabled').removeClass('disabled');
+    }
+});
+$('form').on('beforeSubmit', function (e) {
+    $(':submit').attr('disabled', true).addClass('disabled');
+})",\yii\web\View::POS_LOAD);
+
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>

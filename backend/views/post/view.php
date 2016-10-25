@@ -38,12 +38,23 @@ $this->params['breadcrumbs'][] = $this->title;
 
             ],
             'post_tiltle',
-            'post_subtitle',
+            [
+                'label' => '文章地址',
+                'value'=>'http://localhost:8000/post/'.$model->id,
+                'format'=>['url',['target'=>'view_window']],
+            ],
             'post_anthor',
             'post_origin',
-            'post_image',
+            [
+            'attribute' => 'post_image',
+            'value'=>$model->post_image?$model->post_image:null,
+            'format'=>['image']
+            ],
             'post_video',
-            'post_link',
+            [
+                'attribute'=>'post_link',
+                'format'=>['url',['target'=>'view_window']]
+            ],
             'post_summarize',
             [                      // the owner name of the model
             'label' => '内容',

@@ -38,10 +38,24 @@ $this->params['breadcrumbs'][] = $this->title;
                             },
                // 'detail'=>function ($model, $key, $index, $column){},
             ],
-            'column_link',
-            'column_layout',
+            [
+            'attribute' => 'column_link',
+            'format'=>['url',['target'=>'view_window']]
+            ],
+            [
+              'attribute'=>'column_layout',
+              'value'=>function($model, $key, $index){
+                $content = array('list'=>'新闻中心','img_list'=>'产品展示','SGP-aboutus'=>'单页布局--关于我们','cooperate'=>'单页布局--合作平台');
+                return $content[$model->column_layout];
+              }],
             // 'column_image',
             // 'column_content_id',
+            [
+              'attribute'=>'column_content_layout',
+              'value'=>function($model, $key, $index){
+                $content = array('1'=>'默认');
+                return $content[$model->column_content_layout];
+              }],
             'column_content_layout',
             'column_sort',
             // 'createtime:datetime',

@@ -25,7 +25,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'name',
             'phone',
             'address',
-            'content:ntext',
+            //'content:ntext',
             [
             'attribute'=>'created_at',
             'format' => ['date', 'php:Y年m月d日 h:i:s'],

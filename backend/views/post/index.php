@@ -46,8 +46,12 @@ $this->params['breadcrumbs'][] = $this->title;
                 'width'=>'20%',
             ],
             [
-                'attribute' => 'post_subtitle',
+                'label' => '文章地址',
                 'vAlign'=>'middle',
+                'value'=>function ($model, $key, $index, $widget) {
+                    return 'http://localhost:8000/post/'.$model->id;
+                },
+                'format'=>['url',['target'=>'view_window']],
                 'width'=>'15%',
             ],
             [

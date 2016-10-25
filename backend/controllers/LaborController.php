@@ -112,10 +112,11 @@ class LaborController extends Controller
     public function actionDelete($id)
     {
         $labor = $this->findModel($id);
-        $labor->status = 0;
-        if ($labor->save()) {
-           return $this->redirect(['index']);
+        if ($labor) {
+            $labor->status = 0;
+            $labor->save();
         }
+        return $this->redirect(['index']);
 
     }
 

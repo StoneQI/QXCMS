@@ -22,7 +22,8 @@
         "kartik-v/yii2-widgets": "*",
         "kucha/ueditor": "*",
         "kartik-v/yii2-detail-view": "*",
-        "2amigos/yii2-file-upload-widget": "~1.0"
+        "2amigos/yii2-file-upload-widget": "~1.0",
+        "lightyii2-lock-form": "~1.0.2"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
