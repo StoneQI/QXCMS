@@ -1,5 +1,5 @@
-﻿# Host: localhost  (Version: 5.5.47)
-# Date: 2016-10-21 11:12:47
+﻿# Host: localhost  (Version: 5.5.47-log)
+# Date: 2016-11-05 14:58:20
 # Generator: MySQL-Front 5.3  (Build 4.234)
 
 /*!40101 SET NAMES utf8 */;
@@ -55,13 +55,13 @@ CREATE TABLE `qx_columns` (
   KEY `column_sort` (`column_sort`) USING BTREE,
   KEY `created_at` (`created_at`),
   KEY `column_status` (`column_status`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4;
 
 #
 # Data for table "qx_columns"
 #
 
-INSERT INTO `qx_columns` VALUES (1,0,'首页',NULL,'',NULL,NULL,'',0,'',1,0,0),(2,1,'产品展示','','img_list','',NULL,'1',1,'',1,1476615911,1476615911),(3,1,'新闻中心','','list','',NULL,'1',2,'',1,1476616777,1476616777),(4,1,'关于我们','','SGP-aboutus','images/thumb-up.jpg',NULL,'1',7,'<p><span style=\"font-size: 24px;\">立业测试</span><span style=\"font-size: 24px;\">立业测试</span></p><p><span style=\"font-size: 24px;\"><br/></span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试立业测试立业测试立业测试立业测试立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试立业测试立业测试立业测试立业测试立业测试立业测试立业测试立业测试立业测试立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\"><br/></span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\"><br/></span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\"><br/></span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\"><br/></span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\">立业测试立业测试</span></p><p><span style=\"font-size: 16px;\"><br/></span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\"><br/></span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\"><br/></span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\">立业测试立业测试</span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试</span></p>',1,1476617312,1476617312),(5,2,'产品1','','img_list','',NULL,'1',1,'',1,1476617425,1476617425),(6,2,'产品2','','img_list','',NULL,'1',2,'',1,1476617451,1476617503),(7,2,'产品3','','img_list','',NULL,'1',3,'',1,1476617481,1476617481),(8,3,'新闻1','','list','',NULL,'1',1,'',1,1476617537,1476617537),(9,3,'新闻2','','list','',NULL,'1',2,'',1,1476617560,1476617613),(10,3,'新闻3','','list','',NULL,'1',3,'',1,1476617591,1476617637);
+INSERT INTO `qx_columns` VALUES (1,0,'首页',NULL,'',NULL,NULL,'',0,'',1,0,0),(2,1,'产品展示','','img_list','',NULL,'1',1,'',1,1476615911,1476615911),(3,1,'新闻中心','','list','',NULL,'1',2,'',1,1476616777,1476616777),(4,1,'关于我们','','SGP-aboutus','images/thumb-up.jpg',NULL,'1',7,'<p><span style=\"font-size: 24px;\">立业测试</span><span style=\"font-size: 24px;\">立业测试</span></p><p><span style=\"font-size: 24px;\"><br/></span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试立业测试立业测试立业测试立业测试立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试立业测试立业测试立业测试立业测试立业测试立业测试立业测试立业测试立业测试立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\"><br/></span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\"><br/></span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\"><br/></span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\"><br/></span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\">立业测试立业测试</span></p><p><span style=\"font-size: 16px;\"><br/></span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\"><br/></span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\"><br/></span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试</span></p><p><span style=\"font-size: 16px;\">立业测试立业测试</span></p><p><span style=\"font-size: 16px;\">立业测试立业测试立业测试</span></p>',1,1476617312,1476617312),(5,2,'产品1','','img_list','',NULL,'1',1,'',1,1476617425,1476617425),(6,2,'产品2','','img_list','',NULL,'1',2,'',1,1476617451,1476617503),(7,2,'产品3','','img_list','',NULL,'1',3,'',1,1476617481,1476617481),(8,3,'新闻1','','list','',NULL,'1',1,'',1,1476617537,1476617537),(9,3,'新闻2','','list','',NULL,'1',2,'',1,1476617560,1476617613),(10,3,'新闻3','','list','',NULL,'1',3,'',1,1476617591,1476617637),(11,1,'合作平台','','cooperate','',NULL,'1',4,'',1,1477025417,1477025417);
 
 #
 # Structure for table "qx_contacts"
@@ -84,7 +84,7 @@ CREATE TABLE `qx_contacts` (
 # Data for table "qx_contacts"
 #
 
-INSERT INTO `qx_contacts` VALUES (2,'擦擦','长安商场','擦擦',' academic',1476607773,1476607773,0),(4,'等我等我期待','大苏打','dasdasd',' 阿迪达斯',1476607801,1476607801,0),(5,'a阿萨德','asdasdsad','asdasdsad',' asdasdsad',1476614546,1476614546,0);
+INSERT INTO `qx_contacts` VALUES (2,'擦擦','长安商场','擦擦',' academic',1476607773,1477048938,1),(4,'等我等我期待','大苏打','dasdasd',' 阿迪达斯',1476607801,1477049097,1),(5,'a阿萨德','asdasdsad','asdasdsad',' asdasdsad',1476614546,1476614546,0);
 
 #
 # Structure for table "qx_contents"
@@ -97,13 +97,13 @@ CREATE TABLE `qx_contents` (
   `posts_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `contents_posts_id` (`posts_id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4;
 
 #
 # Data for table "qx_contents"
 #
 
-INSERT INTO `qx_contents` VALUES (1,'<p>asdasdasdsad</p>',6),(2,'<p>asdasdasdsad</p>',7),(3,'<p>asdasdasdasd asdsd saas das</p><p>asdasddasd</p>',8),(4,'<p>产品描述产品描述产品描述产品描述产品描述产品描述</p>',9),(5,'<p><span style=\"font-size: 24px;\">新闻2新闻2新闻2新闻2新闻2</span></p><p><span style=\"font-size: 24px;\"><img src=\"http://img.baidu.com/hi/jx2/j_0026.gif\"/><img src=\"http://img.baidu.com/hi/jx2/j_0028.gif\"/><img src=\"http://img.baidu.com/hi/jx2/j_0061.gif\"/><img src=\"http://img.baidu.com/hi/jx2/j_0074.gif\"/></span></p><p>新闻2新闻2新闻2新闻2</p><p>新闻2新闻2新闻2新闻2</p><p>新闻2新闻2新闻2新闻2</p><p>新闻2新闻2新闻2新闻2</p><p>新闻2新闻2新闻2新闻2</p><p>新闻2新闻2新闻2新闻2</p><p>新闻2新闻2新闻2</p><p>新闻2新闻2新闻2</p><p>新闻2新闻2新闻2</p><p>新闻2新闻2新闻2</p>',10),(6,'<p>新闻1新闻1新闻1新闻1新闻1新闻1</p><p>新闻1新闻1新闻1</p><p>新闻1新闻1新闻1新闻1</p><p><br/></p><p>新闻1新闻1新闻1新闻1</p><p>新闻1新闻1新闻1新闻1<img src=\"http://img.baidu.com/hi/jx2/j_0004.gif\"/><img src=\"http://img.baidu.com/hi/bobo/B_0016.gif\"/></p>',11),(7,'',13);
+INSERT INTO `qx_contents` VALUES (1,'<p>asdasdasdsad</p>',6),(2,'<p>asdasdasdsad</p>',7),(3,'<p>asdasdasdasd asdsd saas das</p><p>asdasddasd</p>',8),(4,'<p>产品描述产品描述产品描述产品描述产品描述产品描述</p>',9),(5,'<p><span style=\"font-size: 24px;\">新闻2新闻2新闻2新闻2新闻2</span></p><p><span style=\"font-size: 24px;\"><img src=\"http://img.baidu.com/hi/jx2/j_0026.gif\"/><img src=\"http://img.baidu.com/hi/jx2/j_0028.gif\"/><img src=\"http://img.baidu.com/hi/jx2/j_0061.gif\"/><img src=\"http://img.baidu.com/hi/jx2/j_0074.gif\"/></span></p><p>新闻2新闻2新闻2新闻2</p><p>新闻2新闻2新闻2新闻2</p><p>新闻2新闻2新闻2新闻2</p><p>新闻2新闻2新闻2新闻2</p><p>新闻2新闻2新闻2新闻2</p><p>新闻2新闻2新闻2新闻2</p><p>新闻2新闻2新闻2</p><p>新闻2新闻2新闻2</p><p>新闻2新闻2新闻2</p><p>新闻2新闻2新闻2</p>',10),(6,'<p>新闻1新闻1新闻1新闻1新闻1新闻1</p><p>新闻1新闻1新闻1</p><p>新闻1新闻1新闻1新闻1</p><p><br/></p><p>新闻1新闻1新闻1新闻1</p><p>新闻1新闻1新闻1新闻1<img src=\"http://img.baidu.com/hi/jx2/j_0004.gif\"/><img src=\"http://img.baidu.com/hi/bobo/B_0016.gif\"/></p>',11),(7,'',13),(8,'',14),(9,'',15),(10,'',16),(11,'',17),(12,'',18),(13,'',19),(14,'',14),(15,'',15),(16,'',16),(17,'',17),(18,'',18),(19,'',19),(20,'',20);
 
 #
 # Structure for table "qx_files"
@@ -125,7 +125,7 @@ CREATE TABLE `qx_files` (
 # Data for table "qx_files"
 #
 
-INSERT INTO `qx_files` VALUES (1,'upload/php.php','1',NULL,'',1476243536,1476243536),(2,'upload/GitHubLog.txt','1',NULL,'',1476243607,1476243607);
+INSERT INTO `qx_files` VALUES (1,'http://localhost:8002/upload/1477123488-NLROSW.jpg','1',1,'',1477123488,1477123488),(2,'http://localhost:8002/upload/1477124614-5XRTQO.jpg','1',1,'',1477124614,1477124614);
 
 #
 # Structure for table "qx_frontend_user"
@@ -177,7 +177,7 @@ CREATE TABLE `qx_labor` (
 # Data for table "qx_labor"
 #
 
-INSERT INTO `qx_labor` VALUES (1,'adasdsa','男','asdas','计算的话','asdasdsad','dasdasd','dasdasd','asdasdsad','达到sad',1),(2,'礼物','男','23','水泥工','sadasdas','12312322222','12312312','12312312312','312312312312312312',1),(3,'你撒大量','男','23','123123','312312312','12312312','123123123','12312312','123123123',1),(4,'我去恶趣味','男','2323','13123','12312312','3123123','12312312','123123123','123123123123123',1),(5,'123','男','123123','213123','123123123','123123123','12312312','123123123','12312312312',1),(6,'123123123','男','12312312','12312312','12312312','123123123','21312312123','312312321','312312312312312',1);
+INSERT INTO `qx_labor` VALUES (1,'adasdsa','男','asdas','计算的话','http://localhost:8002/upload/1477123488-NLROSW.jpg','dasdasd','dasdasd','asdasdsad','达到sad',1),(2,'礼物','男','23','水泥工','sadasdas','12312322222','12312312','12312312312','312312312312312312',1),(3,'你撒大量','男','23','123123','312312312','12312312','123123123','12312312','123123123',1),(4,'我去恶趣味','男','2323','13123','12312312','3123123','12312312','123123123','123123123123123',1),(5,'123','男','123123','213123','123123123','123123123','12312312','123123123','12312312312',1),(6,'123123123','男','12312312','12312312','12312312','123123123','21312312123','312312321','312312312312312',0);
 
 #
 # Structure for table "qx_migration"
@@ -225,10 +225,10 @@ CREATE TABLE `qx_posts` (
   KEY `post_sort` (`post_sort`),
   KEY `post_status` (`post_status`),
   KEY `created_at` (`created_at`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4;
 
 #
 # Data for table "qx_posts"
 #
 
-INSERT INTO `qx_posts` VALUES (6,'nihao','ada','','','','','',1,5,1,1,1476619565,1476619565,'asdasdasdas'),(7,'nihao','ada','','','','','',1,5,1,1,1476619573,1476619573,'asdasdasdas'),(8,'sadasd','asdadd','','','','asdas','',0,1,-1,2,1476619641,1476620025,''),(9,'产品描述','产品描述','','','','','',0,5,1,NULL,1476620063,1476620063,'产品描述产品描述产品描述'),(10,'新闻2','新闻2','','','','系统','原创',0,9,1,4,1476620256,1476620256,'新闻2新闻2新闻2新闻2新闻2新闻2'),(11,'新闻1','新闻1新闻1','','','','新闻1新闻1新闻1','',0,8,1,5,1476620779,1476620779,'新闻1新闻1新闻1新闻1新闻1新闻1'),(13,'行啊dad撒','','','','','','',0,1,-1,NULL,1476960548,1476960696,'');
+INSERT INTO `qx_posts` VALUES (6,'nihao','ada','','','','','',1,5,1,1,1476619565,1476619565,'asdasdasdas'),(7,'nihao','ada','','','','','',1,5,1,1,1476619573,1476619573,'asdasdasdas'),(8,'sadasd','asdadd','','','','asdas','',0,1,-1,2,1476619641,1476620025,''),(9,'产品描述','产品描述','','','','','',0,5,1,NULL,1476620063,1476620063,'产品描述产品描述产品描述'),(10,'新闻2','新闻2','','','','系统','原创',0,11,1,4,1476620256,1477025911,'新闻2新闻2新闻2新闻2新闻2新闻2'),(11,'新闻1','新闻1新闻1','','','','新闻1新闻1新闻1','',0,8,1,5,1476620779,1476620779,'新闻1新闻1新闻1新闻1新闻1新闻1'),(13,'行啊dad撒','','','','','','',0,1,-1,NULL,1476960548,1476960696,''),(14,'123123','','','','','','',0,1,1,31231,1477308447,1477308447,''),(15,'123123','','','','','','',0,1,1,31231,1477308450,1477308450,''),(16,'123123','','','','','','',0,1,1,31231,1477308452,1477308452,''),(17,'123123','','','','','','',0,1,1,31231,1477308455,1477308455,''),(18,'123','','','','','','',0,1,1,NULL,1477309500,1477309500,''),(19,'123','','','','','','',0,1,1,NULL,1477311151,1477311151,''),(20,'123','','','','','','',0,1,1,NULL,1477311200,1477311200,'');

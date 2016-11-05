@@ -171,9 +171,8 @@ class PostController extends Controller
             'upload' => [
                 'class' => 'kucha\ueditor\UEditorAction',
                 'config' => [
-                                "imageUrlPrefix"  => "http://localhost:8002/",//图片访问路径前缀
-                                "imagePathFormat" => "upload/image/{yyyy}{mm}{dd}/{time}{rand:6}", //上传保存路径
-                              //  "imageRoot" => Yii::getAlias("@common"),
+                                "imageUrlPrefix"  => "http://localhost:8002/",//图片访问路径前缀(默认后台路径)
+                                "upload/imagePathFormat" => "image/{yyyy}{mm}{dd}/{time}{rand:6}",
                             ],
             ]
         ];

@@ -28,6 +28,7 @@ class UploadForm extends Model
             if ($this->file->saveAs($file_name)) {
                 return \Yii::$app->params['assets_path'].$file_name;
             }
+
              return false;
         } else {
             return false;

@@ -29,6 +29,7 @@ $('form').on('beforeSubmit', function (e) {
 <head>
     <meta charset="<?= Yii::$app->charset ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
@@ -42,6 +43,8 @@ $('form').on('beforeSubmit', function (e) {
         'brandLabel' => '潍坊千行信息科技',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
+            'id'=>'w1',
+            'tag'=>'div',
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
     ]);
@@ -85,13 +88,13 @@ $('form').on('beforeSubmit', function (e) {
     </div>
 </div>
 
-<footer class="footer">
+<div class="footer">
     <div class="container">
         <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
 
         <p class="pull-right">潍坊千行信息科技有限公司技术支持</p>
     </div>
-</footer>
+</div>
 
 <?php $this->endBody() ?>
 </body>
