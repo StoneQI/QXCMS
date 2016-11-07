@@ -171,7 +171,7 @@ class PostController extends Controller
             'upload' => [
                 'class' => 'kucha\ueditor\UEditorAction',
                 'config' => [
-                                "imageUrlPrefix"  => "http://localhost:8002/",//图片访问路径前缀(默认后台路径)
+                                "imageUrlPrefix"  => "http://localhost:8001/",//图片访问路径前缀(默认后台路径)
                                 "upload/imagePathFormat" => "image/{yyyy}{mm}{dd}/{time}{rand:6}",
                             ],
             ]
