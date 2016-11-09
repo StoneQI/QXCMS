@@ -8,7 +8,6 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use backend\models\LoginForm;
-use backend\models\ResetPasswordForm;
 use backend\models\SignupForm;
 use backend\models\ContactForm;
 
@@ -121,6 +120,11 @@ class SiteController extends Controller
         return $this->render('signup', [
             'model' => $model,
         ]);
+    }
+
+    public function actionRequestPasswordReset()
+    {
+        return $this->render('requestPasswordResetToken');
     }
 
 
