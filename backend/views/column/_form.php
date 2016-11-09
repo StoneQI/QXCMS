@@ -25,8 +25,10 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'column_link')->textInput(['maxlength' => true])->label('栏目链接（当你需要链接到其他页面时设置）') ?>
 
     <?= $form->field($model, 'column_layout')->dropdownList(['list'=>'新闻中心','img_list'=>'产品展示','SGP-aboutus'=>'单页布局--关于我们','cooperate'=>'单页布局--合作平台'])->label('栏目布局（根据需要指定该栏目的布局方式）'); ?>
+    <?= Html::label('栏目图片') ?><br>
+    <?php echo $model->column_image?Html::img($model->column_image, ['alt' => '栏目图片']):"" ?>
+    <?= $form->field($upload_form, 'file')->fileInput()->label('') ?>
 
-    <?= $form->field($model, 'column_image')->textInput(['maxlength' => true])->label('栏目图像（可不设置，如要设置请先在文件管理功能里取得图片地址复制到此）') ?>
 
     <?= $form->field($model, 'column_content')->widget('kucha\ueditor\UEditor',[
     'clientOptions' => [

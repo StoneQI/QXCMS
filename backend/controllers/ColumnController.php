@@ -10,6 +10,7 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
+use common\models\UploadForm;
 
 /**
  * ColumnController implements the CRUD actions for Columns model.
@@ -77,12 +78,15 @@ class ColumnController extends Controller
     {
         $model = new Columns();
         $columns = Columns::getColumn(0);
-        if ( $this->isChange($model,Yii::$app->request->post())) {
+        $upload_form = new UploadForm();
+
+        if ( $this->isChange($model,Yii::$app->request->post(),$upload_form)) {
            return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
                 'model' => $model,
                 'columns' => $columns,
+                'upload_form'=>$upload_form
             ]);
         }
     }
@@ -93,7 +97,7 @@ class ColumnController extends Controller
      * @param integer $id
      * @return mixed
      */
-    protected function isChange($model,$params){
+    protected function isChange($model,$params,$upload_form){
         if (!$params) {
            return 0;
         }
@@ -103,24 +107,31 @@ class ColumnController extends Controller
                 return 0;
             }
             Yii::$app->session->setFlash('error', $model->isNewRecord ? '不能新建根栏目' : '不能修改为根栏目');
-            return 0;
+            return false;
         }
-        if ( $model->load($params)&& $model->save()) {
-           return 1;
+        if ( $model->load($params)&& $model->validate()) {
+           if ($filename = $upload_form->upload($upload_form)) {
+               $model->column_image = $filename;
+               if ($model->save()) {
+                    return true;
+               }
+           return false;
+            }
         }
-
     }
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
         $columns = Columns::getColumn(0);
+        $upload_form = new UploadForm();
 
-        if ( $this->isChange($model,Yii::$app->request->post())) {
+        if ( $this->isChange($model,Yii::$app->request->post(),$upload_form)) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [
                 'model' => $model,
-                'columns' => $columns
+                'columns' => $columns,
+                'upload_form'=>$upload_form
             ]);
         }
     }

@@ -1,41 +1,25 @@
 <?php
 namespace backend\models;
 
+use Yii;
 use yii\base\Model;
 use yii\base\InvalidParamException;
-use backend\models\User;
 
 /**
  * Password reset form
  */
 class ResetPasswordForm extends Model
 {
+    public $oldpassword;
     public $password;
+    public $password_repeat;
 
     /**
-     * @var \common\models\User
+     * @var \backend\models\User
      */
     private $_user;
 
 
-    /**
-     * Creates a form model given a token.
-     *
-     * @param string $token
-     * @param array $config name-value pairs that will be used to initialize the object properties
-     * @throws \yii\base\InvalidParamException if token is empty or not valid
-     */
-    public function __construct($token, $config = [])
-    {
-        if (empty($token) || !is_string($token)) {
-            throw new InvalidParamException('Password reset token cannot be blank.');
-        }
-        $this->_user = User::findByPasswordResetToken($token);
-        if (!$this->_user) {
-            throw new InvalidParamException('Wrong password reset token.');
-        }
-        parent::__construct($config);
-    }
 
     /**
      * @inheritdoc
@@ -43,9 +27,19 @@ class ResetPasswordForm extends Model
     public function rules()
     {
         return [
-            ['password', 'required'],
-            ['password', 'string', 'min' => 6],
+            ['password', 'compare'],
+            ['oldpassword', 'validatePassword'],
+            [['password','oldpassword','password_repeat'], 'required'],
+            [['password','password_repeat'], 'string', 'min' => 6],
         ];
+    }
+    public function validatePassword($attribute, $params)
+    {
+        $user = $this->getUser();
+        if (!$user || !$user->validatePassword($this->oldpassword)) {
+            $this->addError($attribute, '用户名或密码错误。');
+        }
+
     }
 
     /**
@@ -55,10 +49,29 @@ class ResetPasswordForm extends Model
      */
     public function resetPassword()
     {
-        $user = $this->_user;
+
+        $user = $this->getUser();
         $user->setPassword($this->password);
-        $user->removePasswordResetToken();
 
         return $user->save(false);
+
+    }
+
+    protected function getUser()
+    {
+        if ($this->_user === null) {
+            $this->_user = User::findByUsername(Yii::$app->user->identity->username);
+        }
+
+        return $this->_user;
+    }
+    public function attributeLabels()
+    {
+        return [
+            'oldpassword' => '旧密码',
+            'password' => '新密码',
+            'password_repeat' => '重复新密码',
+
+        ];
     }
 }

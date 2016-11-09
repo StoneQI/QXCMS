@@ -70,8 +70,8 @@ $this->params['breadcrumbs'][] = $this->title;
              'attribute'=>'post_is_top',
              'vAlign'=>'middle',
              'width'=>'8%',
-             'trueLabel' => '已置顶',
-             'falseLabel' => '未置顶'
+             'trueLabel' => '是',
+             'falseLabel' => '否'
              ],
             // 'post_column_id',
              [

@@ -78,7 +78,7 @@ class FileController extends Controller
         $model = new Files();
         $upload_form = new UploadForm();
 
-        if ($model->load(Yii::$app->request->post())) {
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             if ($filename = $upload_form->upload($upload_form)) {
                 $model->file_url = $filename;
                 $model->save();

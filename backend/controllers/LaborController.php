@@ -9,6 +9,7 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
+use common\models\UploadForm;
 /**
  * LaborController implements the CRUD actions for Labor model.
  */
@@ -74,14 +75,21 @@ class LaborController extends Controller
     public function actionCreate()
     {
         $model = new Labor();
+        $upload_form = new UploadForm();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->Id]);
-        } else {
-            return $this->render('create', [
-                'model' => $model,
-            ]);
+        if ($model->load(Yii::$app->request->post()) && $model->validate())
+        {
+            if ($filename = $upload_form->upload($upload_form)) {
+                $model->technician = $filename;
+                if ($model->save()) {
+                    return $this->redirect(['view', 'id' => $model->Id]);
+                }
+            }
         }
+        return $this->render('create', [
+            'model' => $model,
+            'upload_form'=>$upload_form
+        ]);
     }
 
     /**
@@ -93,14 +101,21 @@ class LaborController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
+        $upload_form = new UploadForm();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->Id]);
-        } else {
+        if ($model->load(Yii::$app->request->post()) && $model->validate())
+        {
+            if ($filename = $upload_form->upload($upload_form)) {
+                $model->technician = $filename;
+                if ($model->save()) {
+                    return $this->redirect(['view', 'id' => $model->Id]);
+                }
+            }
+        }
             return $this->render('update', [
                 'model' => $model,
+                'upload_form'=>$upload_form
             ]);
-        }
     }
 
     /**

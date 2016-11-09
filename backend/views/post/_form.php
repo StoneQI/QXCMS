@@ -22,7 +22,10 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'post_origin')->textInput(['maxlength' => true])->label('文章来源') ?>
 
-    <?= $form->field($model, 'post_image')->textInput(['maxlength' => true])->label('文章图像（可不设置，如要设置请先在文件管理功能里取得图片地址复制到此）') ?>
+
+    <?= Html::label('文章图像') ?><br>
+    <?php echo $model->post_image?Html::img($model->post_image, ['alt' => '文章图像']):"" ?>
+    <?= $form->field($upload_form, 'file')->fileInput()->label('') ?>
 
     <?= $form->field($model, 'post_video')->textInput(['maxlength' => true]) ?>
 

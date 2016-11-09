@@ -50,17 +50,17 @@ $('form').on('beforeSubmit', function (e) {
     ]);
     if (!Yii::$app->user->isGuest) {
     $menuItems = [
-        ['label' => '首页管理', 'url' => ['/indexinfo/index']],
+        ['label' => '首页管理', 'url' => ['/indexinfo/update']],
         ['label' => '栏目管理', 'url' => ['/column/index']],
         ['label' => '文章管理', 'url' => ['/post/index']],
         ['label' => '留言管理', 'url' => ['/contact/index']],
         ['label' => '劳务信息', 'url' => ['/labor/index']],
         ['label' => '文件管理', 'url' => ['/file/index']],
-        ['label' => '网站配置', 'url' => ['/webinfo/index']],
+        ['label' => '网站配置', 'url' => ['/webinfo/update']],
+        ['label' => '修改密码', 'url' => ['/site/reset-password']],
     ];
     }
     if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => '注册', 'url' => ['/site/signup']];
         $menuItems[] = ['label' => '登录', 'url' => ['/site/login']];
     } else {
         $menuItems[] = '<li>'

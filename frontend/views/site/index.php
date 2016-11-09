@@ -6,7 +6,7 @@ use common\models\Indexinfo;
 $this->title = '首页';
 
 $indexinfo = Indexinfo::getinfo();
-
+$post=\backend\models\Posts::getIndexShow();
 ?>
 <div id="contents">
         <div id="adbox">
@@ -34,50 +34,24 @@ $indexinfo = Indexinfo::getinfo();
         <div class="featured">
             <h2>最新动态</h2>
             <ul class="clearfix">
+            <?php
+                foreach ($post as $key => $value) {
+            ?>
                 <li>
                     <div class="frame1">
                         <div class="box">
-                            <img src="<?= $indexinfo->list_img1 ?>" alt="Img" height="130" width="197">
+                            <img src="<?= $value->post_image ?>" alt="Img" height="130" width="197">
                         </div>
                     </div>
                     <p>
-                        <a href="<?= $indexinfo->list_url1 ?>" ><b><?= $indexinfo->list_title1 ?></b></a><?= $indexinfo->list_content1 ?>
+                        <a href="<?= 'http://localhost:8000/post'.$value->id ?>" ><b><?= $value->post_tiltle ?></b></a><?= $value->post_summarize ?>
                     </p>
-                    <a href="<?= $indexinfo->list_url1 ?>" class="more">点击阅读</a>
+                    <a href="<?= 'http://localhost:8000/post'.$value->id ?>" class="more">点击阅读</a>
                 </li>
-                               <li>
-                    <div class="frame1">
-                        <div class="box">
-                            <img src="<?= $indexinfo->list_img2 ?>" alt="Img" height="130" width="197">
-                        </div>
-                    </div>
-                    <p>
-                        <a href="<?= $indexinfo->list_url2 ?>" ><b><?= $indexinfo->list_title2 ?></b></a><?= $indexinfo->list_content2 ?>
-                    </p>
-                    <a href="<?= $indexinfo->list_url2 ?>" class="more">点击阅读</a>
-                </li>
-                                <li>
-                    <div class="frame1">
-                        <div class="box">
-                            <img src="<?= $indexinfo->list_img3 ?>" alt="Img" height="130" width="197">
-                        </div>
-                    </div>
-                    <p>
-                        <a href="<?= $indexinfo->list_url3 ?>" ><b><?= $indexinfo->list_title3 ?></b></a><?= $indexinfo->list_content3 ?>
-                    </p>
-                    <a href="<?= $indexinfo->list_url3 ?>" class="more">点击阅读</a>
-                </li>
-                                <li>
-                    <div class="frame1">
-                        <div class="box">
-                            <img src="<?= $indexinfo->list_img4 ?>" alt="Img" height="130" width="197">
-                        </div>
-                    </div>
-                    <p>
-                        <a href="<?= $indexinfo->list_url4 ?>" ><b><?= $indexinfo->list_title4 ?></b></a><?= $indexinfo->list_content4 ?>
-                    </p>
-                    <a href="<?= $indexinfo->list_url4 ?>" class="more">点击阅读</a>
-                </li>
+
+            <?php
+                }
+             ?>
             </ul>
         </div>
     </div>

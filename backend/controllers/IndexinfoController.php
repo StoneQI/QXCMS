@@ -8,6 +8,8 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
+use common\models\UploadForm;
+
 class IndexinfoController extends Controller
 {
     public function behaviors()
@@ -15,7 +17,7 @@ class IndexinfoController extends Controller
         return [
             'access' => [
                 'class' => AccessControl::className(),
-                'only' => ['index', 'update'],
+                'only' => [ 'update'],
                 'rules' => [
                     [
                         'allow' => true,
@@ -25,26 +27,31 @@ class IndexinfoController extends Controller
             ],
         ];
     }
-    public function actionIndex()
-    {
-    	$model = Indexinfo::getinfo();
-        return $this->render('index',[
-        	'model'=>$model ]
-        	);
-    }
 
     public function actionUpdate()
     {
     	$model = new Indexinfo();
         $indexinfo = Indexinfo::getinfo();
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-           return $this->redirect(['index']);
-        } else {
-          return $this->render('update', [
-                'model' => $model,
-                'indexinfo'=>$indexinfo
-             ]);
-        }
-    }
+        $upload_form = new UploadForm();
 
+
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+            if ($filename = $upload_form->upload($upload_form)) {
+                $model->index_img = $filename;
+                if ($model->save()) {
+                   return $this->render('update', [
+                                   'model' => $model,
+                                   'indexinfo'=>$indexinfo,
+                                   'upload_form'=>$upload_form,
+                                ]);
+                };
+            }
+        }
+        return $this->render('update', [
+                'model' => $model,
+                'indexinfo'=>$indexinfo,
+                'upload_form'=>$upload_form,
+            ]);
+
+    }
 }

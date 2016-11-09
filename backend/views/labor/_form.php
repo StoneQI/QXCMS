@@ -20,7 +20,9 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'species')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'technician')->textInput(['maxlength' => true])->label('技工证（请先在文件管理功能里取得图片地址复制到此）') ?>
+    <?= Html::label('技工证') ?><br>
+    <?php echo $model->technician?Html::img($model->technician, ['alt' => '技工证']):"" ?>
+    <?= $form->field($upload_form, 'file')->fileInput()->label('') ?>
 
     <?= $form->field($model, 'license_number')->textInput(['maxlength' => true]) ?>
 

@@ -63,14 +63,13 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
             [
                 'attribute'=>'post_is_top',
-                'label'=>'置顶',
                 'format'=>'raw',
-                'value'=>$model->post_is_top ? '<span class="label label-success">已置顶</span>' : '<span class="label label-danger">未置顶</span>',
+                'value'=>$model->post_is_top ? '<span class="label label-success">是</span>' : '<span class="label label-danger">是</span>',
                 'type'=>DetailView::INPUT_SWITCH,
                 'widgetOptions' => [
                     'pluginOptions' => [
-                        'onText' => '已置顶',
-                        'offText' => '未置顶',
+                        'onText' => '是',
+                        'offText' => '否',
                     ]
                 ],
                 'valueColOptions'=>['style'=>'width:30%']

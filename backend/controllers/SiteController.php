@@ -8,7 +8,6 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use backend\models\LoginForm;
-use backend\models\PasswordResetRequestForm;
 use backend\models\ResetPasswordForm;
 use backend\models\SignupForm;
 use backend\models\ContactForm;
@@ -57,22 +56,8 @@ class SiteController extends Controller
         return [
             'error' => [
                 'class' => 'yii\web\ErrorAction',
-            ],
-            'captcha' => [
-                'class' => 'yii\captcha\CaptchaAction',
-                'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
-            ],
+            ]
         ];
-    }
-
-    /**
-     * Displays homepage.
-     *
-     * @return mixed
-     */
-    public function actionIndex()
-    {
-        return $this->render('index');
     }
 
 
@@ -84,12 +69,12 @@ class SiteController extends Controller
     public function actionLogin()
     {
         if (!Yii::$app->user->isGuest) {
-            return $this->goHome();
+            return $this->redirect(array('/indexinfo/update'));
         }
 
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
+            return $this->redirect(array('/indexinfo/update'));
         } else {
             return $this->render('login', [
                 'model' => $model,
@@ -138,50 +123,18 @@ class SiteController extends Controller
         ]);
     }
 
-    /**
-     * Requests password reset.
-     *
-     * @return mixed
-     */
-    public function actionRequestPasswordReset()
-    {
-        $model = new PasswordResetRequestForm();
-        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
-            if ($model->sendEmail()) {
-                Yii::$app->session->setFlash('success', 'Check your email for further instructions.');
 
-                return $this->goHome();
-            } else {
-                Yii::$app->session->setFlash('error', 'Sorry, we are unable to reset password for email provided.');
+
+    public function actionResetPassword()
+    {
+        $model = new ResetPasswordForm();
+        if ($model->load(Yii::$app->request->post()) && $model->validate()  ) {
+            if ($model->resetPassword()) {
+                Yii::$app->session->setFlash('success', '密码修改成功');
+            }else{
+            Yii::$app->session->setFlash('error', '密码修改失败');
             }
         }
-
-        return $this->render('requestPasswordResetToken', [
-            'model' => $model,
-        ]);
-    }
-
-    // *
-    //  * Resets password.
-    //  *
-    //  * @param string $token
-    //  * @return mixed
-    //  * @throws BadRequestHttpException
-
-    public function actionResetPassword($token)
-    {
-        try {
-            $model = new ResetPasswordForm($token);
-        } catch (InvalidParamException $e) {
-            throw new BadRequestHttpException($e->getMessage());
-        }
-
-        if ($model->load(Yii::$app->request->post()) && $model->validate() && $model->resetPassword()) {
-            Yii::$app->session->setFlash('success', 'New password was saved.');
-
-            return $this->goHome();
-        }
-
         return $this->render('resetPassword', [
             'model' => $model,
         ]);

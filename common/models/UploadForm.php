@@ -14,7 +14,7 @@ class UploadForm extends Model
     public function rules()
     {
         return [
-            [['file'], 'file', 'skipOnEmpty' => false],
+            [['file'], 'file', 'skipOnEmpty' => false,'checkExtensionByMimeType'=>true, 'maxSize' => 3*1024*1024*1024],
         ];
     }
 

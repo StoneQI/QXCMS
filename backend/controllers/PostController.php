@@ -11,6 +11,7 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
+use common\models\UploadForm;
 /**
  * PostController implements the CRUD actions for Posts model.
  */
@@ -78,16 +79,18 @@ class PostController extends Controller
         $model = new Posts();
         $columns = Columns::getColumn(0);
         $contents =new Contents();
+        $upload_form = new UploadForm();
 
-        if (Yii::$app->request->post() && $this->saveContent($model,$contents,Yii::$app->request->post())) {
+        if (Yii::$app->request->post() && $this->saveContent($model,$contents,Yii::$app->request->post(),$upload_form)) {
             //echo array_values($model->getFirstErrors())[0];exit;
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
            // echo array_values($model->getFirstErrors())[0];exit;
             return $this->render('create', [
                 'model' => $model,
-               'columns' =>$columns,
-                'contents' =>$contents
+                'columns' =>$columns,
+                'contents' =>$contents,
+                'upload_form'=>$upload_form
             ]);
         }
     }
@@ -102,14 +105,17 @@ class PostController extends Controller
     {
         $model = $this->findModel($id);
         $columns = Columns::getColumn(0);
+        $upload_form = new UploadForm();
+
         $contents =Contents::find()->where(['posts_id'=>$id])->one();
-        if (Yii::$app->request->post() && $this->saveContent($model,$contents,Yii::$app->request->post()) ) {
+        if (Yii::$app->request->post() && $this->saveContent($model,$contents,Yii::$app->request->post(),$upload_form) ) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [
                 'model' => $model,
                 'columns' =>$columns,
-                 'contents' =>$contents
+                'contents' =>$contents,
+                'upload_form'=>$upload_form
             ]);
         }
     }
@@ -145,11 +151,14 @@ class PostController extends Controller
         }
     }
 
-    protected function saveContent($post,$content,$params)
+    protected function saveContent($post,$content,$params,$upload_form)
     {
         $tr = Yii::$app->db->beginTransaction();
         try {
             $post->load($params);
+            $post->validate();
+            $filename = $upload_form->upload($upload_form);
+            $post->post_image = $filename;
             $post->save();
             $content->content = $params['Contents']['content'];
             $content->posts_id = $post->attributes['id'];
@@ -157,10 +166,10 @@ class PostController extends Controller
                  throw new ErrorException ("插入数据错误");
             }
             $tr->commit();
-            return 1;
+            return true;
         } catch (ErrorException  $e) {
             $tr->rollBack();
-            return 0;
+            return false;
         }
     }
 

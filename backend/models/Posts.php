@@ -70,7 +70,7 @@ class Posts extends \yii\db\ActiveRecord
             'post_link' => '文章链接',
             'post_anthor' => '作者',
             'post_origin' => '来源',
-            'post_is_top' => '置顶',
+            'post_is_top' => '首页显示',
             'post_column_id' => '所属栏目',
             'post_status' => '发布',
             'post_sort' => '文章排序',
@@ -89,5 +89,8 @@ class Posts extends \yii\db\ActiveRecord
     {
             // 客户和订单通过 Order.customer_id -> id 关联建立一对多关系
             return $this->hasOne(Contents::className(), ['posts_id' => 'id']);
+    }
+    public static function getIndexShow(){
+        return static::find()->where('post_is_top = 1 and post_status =1')->orderBy('created_at')->all();
     }
 }

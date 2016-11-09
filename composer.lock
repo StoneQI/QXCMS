@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e5494dd421d6fe843649b2f9750a23f2",
-    "content-hash": "5ac07cc0ee22362a1b7019a7f0100505",
+    "hash": "48268aa83af03a30b2c0ef9bb3f10584",
+    "content-hash": "f1055d8878880aa44c0f3890ccdd72f8",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -1753,53 +1753,6 @@
             "time": "2015-02-06 02:01:30"
         },
         {
-            "name": "mdmsoft/yii2-upload-file",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mdmsoft/yii2-upload-file.git",
-                "reference": "f431814126dee40a52778e292ee2d473f984a4d8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://packagist.phpcomposer.com/files/mdmsoft/yii2-upload-file/f431814126dee40a52778e292ee2d473f984a4d8.zip",
-                "reference": "f431814126dee40a52778e292ee2d473f984a4d8",
-                "shasum": ""
-            },
-            "require": {
-                "yiisoft/yii2": "~2.0"
-            },
-            "type": "yii2-extension",
-            "extra": {
-                "bootstrap": "mdm\\upload\\Bootstrap",
-                "branch-alias": {
-                    "dev-master": "2.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "mdm\\upload\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Misbahul Munir",
-                    "email": "misbahuldmunir@gmail.com"
-                }
-            ],
-            "description": "Yii2 upload file tools",
-            "keywords": [
-                "file",
-                "upload",
-                "yii"
-            ],
-            "time": "2016-10-29 15:52:01"
-        },
-        {
             "name": "swiftmailer/swiftmailer",
             "version": "v5.4.3",
             "source": {
@@ -2506,6 +2459,7 @@
                 "codeception",
                 "yii2"
             ],
+            "abandoned": "codeception/codeception",
             "time": "2016-03-17 03:41:26"
         },
         {
@@ -2659,8 +2613,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "kartik-v/yii2-grid": 20,
-        "mdmsoft/yii2-upload-file": 20
+        "kartik-v/yii2-grid": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

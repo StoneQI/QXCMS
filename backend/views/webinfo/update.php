@@ -14,7 +14,8 @@ $this->params['breadcrumbs'][] = '修改';
 
     <?= $this->render('_form', [
         'model' => $model,
-         'webinfo'=>$webinfo
+        'webinfo'=>$webinfo,
+        'upload_form'=>$upload_form,
     ]) ?>
 
 </div>

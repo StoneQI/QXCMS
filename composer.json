@@ -21,8 +21,7 @@
         "kartik-v/yii2-grid": "@dev",
         "kartik-v/yii2-widgets": "*",
         "kucha/ueditor": "*",
-        "kartik-v/yii2-detail-view": "*",
-        "mdmsoft/yii2-upload-file": "dev-master"
+        "kartik-v/yii2-detail-view": "*"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "*",
