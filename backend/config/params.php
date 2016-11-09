@@ -1,5 +1,5 @@
 <?php
 return [
     'adminEmail' => 'admin@example.com',
-    'assets_path'=>"http://localhost:8001/",//(后台路径)
+    'assets_path'=>"http://admin.liyekeji.cn/",//(后台路径)
 ];

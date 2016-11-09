@@ -21,7 +21,8 @@
         "kartik-v/yii2-grid": "@dev",
         "kartik-v/yii2-widgets": "*",
         "kucha/ueditor": "*",
-        "kartik-v/yii2-detail-view": "*"
+        "kartik-v/yii2-detail-view": "*",
+        "yidashi/yii2-bootstrap-markdown": "*"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "*",

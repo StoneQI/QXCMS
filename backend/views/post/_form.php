@@ -23,8 +23,8 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'post_origin')->textInput(['maxlength' => true])->label('文章来源') ?>
 
 
-    <?= Html::label('文章图像') ?><br>
-    <?php echo $model->post_image?Html::img($model->post_image, ['alt' => '文章图像']):"" ?>
+    <?= Html::label('文章图像(图片大小为：265（宽）*198（高）)') ?><br>
+    <?php echo $model->post_image?Html::img($model->post_image, ['alt' => '文章图像','width'=>'265','height'=>'198']):"" ?>
     <?= $form->field($upload_form, 'file')->fileInput()->label('') ?>
 
     <?= $form->field($model, 'post_video')->textInput(['maxlength' => true]) ?>
