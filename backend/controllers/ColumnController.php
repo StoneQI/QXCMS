@@ -197,7 +197,7 @@ class ColumnController extends Controller
             'upload' => [
                 'class' => 'kucha\ueditor\UEditorAction',
                 'config' => [
-                                "imageUrlPrefix"  => "http://admin.liyekeji.cn/",//图片访问路径前缀(默认后台路径)
+                                "imageUrlPrefix"  => \Yii::$app->params['assets_path'],//图片访问路径前缀(默认后台路径)
                                 "upload/imagePathFormat" => "image/{yyyy}{mm}{dd}/{time}{rand:6}",
                             ],
             ]

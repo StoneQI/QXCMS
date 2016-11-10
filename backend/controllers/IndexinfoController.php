@@ -45,7 +45,7 @@ class IndexinfoController extends Controller
                 'model' => $model,
                 'indexinfo'=>$indexinfo,
                 'upload_form'=>$upload_form,
-            ]);
+        ]);
 
     }
 }
