@@ -13,7 +13,7 @@ $post=\backend\models\Posts::getIndexShow();
             <div class="clearfix">
             <img src="<?= $indexinfo->index_img ?>" alt="Img" height="382" width="594">
                 <div class="detail">
-                    <h1> <?= $indexinfo->index_imgtext ?></h1>
+                    <h1> <?= nl2br($indexinfo->index_imgtext) ?></h1>
                 </div>
             </div>
         </div>
@@ -22,12 +22,12 @@ $post=\backend\models\Posts::getIndexShow();
                 <div class="testimonial">
                     <h2><?= $indexinfo->center_title_right ?></h2>
                     <p>
-                        &ldquo;<?= $indexinfo->center_content_right ?>&rdquo;
+                        &ldquo;<?= nl2br($indexinfo->center_content_right) ?>&rdquo;
                     </p>
                 </div>
                 <h1><?= $indexinfo->center_title ?></h1>
                 <p>
-                    <?= $indexinfo->center_content ?>
+                    <?= nl2br($indexinfo->center_content) ?>
                 </p>
             </div>
         </div>
@@ -44,9 +44,9 @@ $post=\backend\models\Posts::getIndexShow();
                         </div>
                     </div>
                     <p>
-                        <a href="<?= 'http://localhost:8000/post'.$value->id ?>" ><b><?= $value->post_tiltle ?></b></a><?= $value->post_summarize ?>
+                        <a href="<?= 'http://www.liyekeji.cn/post'.$value->id ?>" ><b><?= $value->post_tiltle ?></b></a><?= $value->post_summarize ?>
                     </p>
-                    <a href="<?= 'http://localhost:8000/post'.$value->id ?>" class="more">点击阅读</a>
+                    <a href="<?= 'http://www.liyekeji.cn/post'.$value->id ?>" class="more">点击阅读</a>
                 </li>
 
             <?php

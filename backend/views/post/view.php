@@ -40,7 +40,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'post_tiltle',
             [
                 'label' => '文章地址',
-                'value'=>'http://localhost:8000/post/'.$model->id,
+                'value'=>'http://www.liyekeji.cn/post/'.$model->id,
                 'format'=>['url',['target'=>'view_window']],
             ],
             'post_anthor',

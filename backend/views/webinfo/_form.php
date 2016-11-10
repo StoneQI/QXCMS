@@ -16,8 +16,8 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'web_name')->textInput(['maxlength' => true,'value'=>$webinfo->web_name]) ?>
 
 
-        <?= Html::label('企业LOGO') ?><br>
-        <?php echo $model->web_logo?Html::img($model->web_logo, ['alt' => '企业LOGO']):"" ?>
+        <?= Html::label('企业LOGO(图片大小为：320（宽）*52（高）)') ?><br>
+        <?php echo $webinfo->web_logo?Html::img($webinfo->web_logo, ['alt' => '企业LOGO','width'=>'320','height'=>'50']):"" ?>
         <?= $form->field($upload_form, 'file')->fileInput()->label('') ?>
 
 

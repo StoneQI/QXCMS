@@ -69,6 +69,6 @@ $this->title = '劳务信息';
 </div>
 </div>
 <div class="container">
-<h3 class="alert alert-danger text-center">更多信息请联系我们</h3>
+<h3 class="alert alert-danger text-center"><a href="http://liyekeji.cn/contact">更多信息请联系我们</a> </h3>
 </div>
 

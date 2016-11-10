@@ -31,7 +31,6 @@ class UploadForm extends Model
             }
         }
         return false;
-
     }
 
 

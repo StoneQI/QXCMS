@@ -43,15 +43,10 @@ class WebinfoController extends Controller
         if ($model->load(Yii::$app->request->post()) && $model->validate())
         {
             $filename = $upload_form->upload($upload_form);
-            $model->index_img = $filename?$filename:$webinfo->index_img;
+            $model->web_logo = $filename?$filename:$webinfo->web_logo;
                 if ($model->save()) {
-                   return $this->render('update', [
-                            'model' => $model,
-                            'webinfo'=>$webinfo,
-                            'upload_form'=>$upload_form,
-                        ]);
+                   return $this->refresh();
                 }
-
         }
         return $this->render('update', [
                 'model' => $model,

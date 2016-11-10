@@ -4,7 +4,6 @@
 /* @var $form yii\bootstrap\ActiveForm */
 /* @var $model \frontend\models\ContactForm */
 use yii\helpers\Url;
-
 $this->title = $parsent_column['name'];
 
 ?>

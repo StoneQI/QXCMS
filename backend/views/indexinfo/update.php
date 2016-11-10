@@ -23,8 +23,8 @@ $this->params['breadcrumbs'][] = ['label' => '首页管理', 'url' => ['index']]
           <div class="tab-content">
             <div role="tabpanel" class="tab-pane active" id="home">
             <br>
-                <?= Html::label('首页大图') ?><br>
-                <?php echo $model->index_img?Html::img($model->index_img, ['alt' => '首页大图']):"" ?>
+                <?= Html::label('首页大图(图片大小为：594（宽）*382（高）)') ?><br>
+                <?php echo $indexinfo->index_img?Html::img($indexinfo->index_img, ['alt' => '首页大图','width'=>'594','height'=>'382']):"" ?>
             	<?= $form->field($upload_form, 'file')->fileInput()->label('') ?>
             	<?= $form->field($model, 'index_imgtext')->textarea(['maxlength' => true,'value'=>$indexinfo->index_imgtext]) ?>
 
