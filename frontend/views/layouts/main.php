@@ -32,7 +32,7 @@ $web_config = Webinfo::getinfo();
     <div id="header">
         <div class="clearfix">
             <div class="logo">
-                <a href="web.html"><img src="images/logo.png" alt="LOGO" height="52" width="320"></a>
+                <a href="web.html"><img src="<?= $web_config->web_logo ?>" alt="LOGO" height="52" width="320"></a>
             </div>
 
             <ul class="navigation">
@@ -64,7 +64,7 @@ $web_config = Webinfo::getinfo();
             <div class="section">
                 <h4><?= $indexinfo->footer_left_title ?></h4>
                 <p>
-                    <?= $indexinfo->footer_left_content ?>
+                    <?= nl2br($indexinfo->footer_left_content) ?>
                 </p>
             </div>
             <div class="section contact">
@@ -78,11 +78,14 @@ $web_config = Webinfo::getinfo();
                 <p>
                     <span>邮箱:</span> <?= Html::encode($web_config->web_mail) ?>
                 </p>
+                <p>
+                    <span>备案号:</span> <?= Html::encode($web_config->record_id) ?>
+                </p>
             </div>
             <div class="section">
                 <h4><?= $indexinfo->footer_right_title ?></h4>
                 <p>
-                    <?= $indexinfo->footer_right_content ?>
+                    <?= nl2br($indexinfo->footer_right_content) ?>
                 </p>
                 <a href="<?=Url::toRoute(['site/contact']); ?>" class="subscribe">联系我们</a>
             </div>
@@ -90,7 +93,6 @@ $web_config = Webinfo::getinfo();
         <div id="footnote">
             <div class="clearfix">
                 <div class="connect">
-                    <a href="http://sc.chinaz.com/" class="facebook"></a><a href="http://sc.chinaz.com/" class="twitter"></a><a href="http://sc.chinaz.com/" class="googleplus"></a><a href="http://sc.chinaz.com/" class="pinterest"></a>
                 </div>
                 <p>
                      &copy; 2016.潍坊千行信息科技提供技术支持.<a target="_blank" href="http://www.qianxingit.cn/"></a>

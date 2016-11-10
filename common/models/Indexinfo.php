@@ -80,10 +80,10 @@ class Indexinfo extends Model
     'center_content'=>'推荐内容',
     'center_title_right'=>'热门标题',
     'center_content_right'=>'热门内容',
-    'footer_left_title'=>'底部右侧标题',
-    'footer_left_content'=>'底部右侧内容',
-    'footer_right_title'=>'底部左侧标题',
-    'footer_right_content'=>'底部左侧内容'
+    'footer_left_title'=>'底部左侧标题',
+    'footer_left_content'=>'底部左侧内容',
+    'footer_right_title'=>'底部右侧标题',
+    'footer_right_content'=>'底部右侧内容'
         ];
     }
 }
