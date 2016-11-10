@@ -78,6 +78,9 @@ $web_config = Webinfo::getinfo();
                 <p>
                     <span>邮箱:</span> <?= Html::encode($web_config->web_mail) ?>
                 </p>
+                <p>
+                    <span>备案号:</span> <?= Html::encode($web_config->record_id) ?>
+                </p>
             </div>
             <div class="section">
                 <h4><?= $indexinfo->footer_right_title ?></h4>
