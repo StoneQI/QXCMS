@@ -30,7 +30,7 @@ $this->title = '留言';
                         </li>
                         <li>
                             <p class="phone">
-                            Phone: <?= $web_config->web_phone ?>
+                            电话: <?= $web_config->web_phone ?>
                             </p>
                         </li>
                         <!-- <li>
@@ -40,7 +40,7 @@ $this->title = '留言';
                         </li> -->
                         <li>
                             <p class="mail">
-                                Email: <?= $web_config->web_mail ?>
+                                邮箱: <?= $web_config->web_mail ?>
                             </p>
                         </li>
                     </ul>

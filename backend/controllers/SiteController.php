@@ -10,6 +10,7 @@ use yii\filters\AccessControl;
 use backend\models\LoginForm;
 use backend\models\SignupForm;
 use backend\models\ContactForm;
+use backend\models\ResetPasswordForm;
 
 /**
  * Site controller

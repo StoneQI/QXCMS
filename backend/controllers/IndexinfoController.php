@@ -36,16 +36,10 @@ class IndexinfoController extends Controller
 
 
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
-            if ($filename = $upload_form->upload($upload_form)) {
-                $model->index_img = $filename;
+            $filename = $upload_form->upload($upload_form);
+            $model->index_img = $filename?$filename:$indexinfo->index_img;
                 if ($model->save()) {
-                   return $this->render('update', [
-                                   'model' => $model,
-                                   'indexinfo'=>$indexinfo,
-                                   'upload_form'=>$upload_form,
-                                ]);
-                };
-            }
+                    return $this->refresh();                }
         }
         return $this->render('update', [
                 'model' => $model,

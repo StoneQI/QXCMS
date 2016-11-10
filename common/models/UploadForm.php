@@ -14,25 +14,23 @@ class UploadForm extends Model
     public function rules()
     {
         return [
-            [['file'], 'file', 'skipOnEmpty' => false,'checkExtensionByMimeType'=>true, 'maxSize' => 3*1024*1024*1024],
+            [['file'], 'file', 'skipOnEmpty' => true,'checkExtensionByMimeType'=>true, 'maxSize' => 3*1024*1024*1024],
         ];
     }
 
     public function upload($models,$filename = 'file')
     {
-        $this->file = UploadedFile::getInstance($models, $filename);
-        if ($this->validate()) {
-            $randStr = str_shuffle('ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890');
-            $rand = substr($randStr,0,6);
-            $file_name = 'upload/'. time() .'-'.$rand. '.' . $this->file->extension;
-            if ($this->file->saveAs($file_name)) {
-                return \Yii::$app->params['assets_path'].$file_name;
+        if ($this->file = UploadedFile::getInstance($models, $filename)) {
+            if ($this->validate()) {
+                       $randStr = str_shuffle('ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890');
+                       $rand = substr($randStr,0,6);
+                       $file_name = 'upload/'. time() .'-'.$rand. '.' . $this->file->extension;
+                       if ($this->file->saveAs($file_name)) {
+                           return \Yii::$app->params['assets_path'].$file_name;
+                       }
             }
-
-             return false;
-        } else {
-            return false;
         }
+        return false;
     }
 
 

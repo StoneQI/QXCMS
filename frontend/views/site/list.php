@@ -4,7 +4,6 @@
 /* @var $form yii\bootstrap\ActiveForm */
 /* @var $model \frontend\models\ContactForm */
 use yii\helpers\Url;
-
 $this->title = $parsent_column['name'];
 
 ?>
@@ -28,12 +27,7 @@ $this->title = $parsent_column['name'];
                   ?>
                   </ul>
                 </div>
-                <div>
-                    <h2>联系方式</h2>
-                    <p>
-                        &ldquo;The best family lawyers in the city so far. Me and my ex-wife didn’t have any<br> problems settling the terms and agreement. Everything went so smoothly. We’re both very happy.&ldquo; <span>- Jared Greene</span>
-                    </p>
-                </div>
+
             </div>
             <div class="main">
 
