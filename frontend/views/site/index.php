@@ -44,9 +44,9 @@ $post=\backend\models\Posts::getIndexShow();
                         </div>
                     </div>
                     <p>
-                        <a href="<?= \Yii::$app->params['assets_path'].$value->id ?>" ><b><?= $value->post_tiltle ?></b></a><?= $value->post_summarize ?>
+                        <a href="<?= \Yii::$app->params['assets_path'].'post/'.$value->id ?>" ><b><?= $value->post_tiltle ?></b></a><?= $value->post_summarize ?>
                     </p>
-                    <a href="<?= \Yii::$app->params['assets_path'].$value->id ?>" class="more">点击阅读</a>
+                    <a href="<?= \Yii::$app->params['assets_path'].'post/'.$value->id ?>" class="more">点击阅读</a>
                 </li>
 
             <?php
