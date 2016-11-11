@@ -92,7 +92,7 @@ use yii\widgets\ActiveForm;
        // 'searchreplace', //查询替换
        // 'map', //Baidu地图
        // 'gmap', //Google地图
-        'insertvideo', //视频
+        //'insertvideo', //视频
         'help', //帮助
         'justifyleft', //居左对齐
         'justifyright', //居右对齐

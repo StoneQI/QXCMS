@@ -6,7 +6,7 @@ use yii\helpers\Html;
 /* @var $model common\models\Webinfo */
 
 $this->title = '修改网站信息: ';
-$this->params['breadcrumbs'][] = ['label' => '网站信息', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => '网站信息', 'url' => ['update']];
 $this->params['breadcrumbs'][] = '修改';
 ?>
 <div class="webinfo-update">

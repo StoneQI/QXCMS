@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 $this->title = '首页管理';
-$this->params['breadcrumbs'][] = ['label' => '首页管理', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => '首页管理', 'url' => ['update']];
 /* @var $this yii\web\View */
 /* @var $model common\models\IndexInfo */
 /* @var $form ActiveForm */
