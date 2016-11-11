@@ -99,12 +99,12 @@ class ColumnController extends Controller
      */
     protected function isChange($model,$params,$upload_form){
         if (!$params) {
-           return 0;
+           return false;
         }
-        if ($params['Columns']['pid'] == 1) {
+        if ($params['Columns']['pid'] == 1 && $model->id != 4 ) {
             if ($model->pid == 1) {
                 Yii::$app->session->setFlash('error', '不能修改根栏目');
-                return 0;
+                return false;
             }
             Yii::$app->session->setFlash('error', $model->isNewRecord ? '不能新建根栏目' : '不能修改为根栏目');
             return false;
