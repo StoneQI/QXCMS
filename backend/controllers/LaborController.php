@@ -81,9 +81,9 @@ class LaborController extends Controller
         {
             if ($filename = $upload_form->upload($upload_form)) {
                 $model->technician = $filename;
-                if ($model->save()) {
-                    return $this->redirect(['view', 'id' => $model->Id]);
-                }
+            }
+            if ($model->save()) {
+                return $this->redirect(['view', 'id' => $model->Id]);
             }
         }
         return $this->render('create', [
@@ -107,15 +107,15 @@ class LaborController extends Controller
         {
             if ($filename = $upload_form->upload($upload_form)) {
                 $model->technician = $filename;
-                if ($model->save()) {
-                    return $this->redirect(['view', 'id' => $model->Id]);
-                }
+            }
+            if ($model->save()) {
+                return $this->redirect(['view', 'id' => $model->Id]);
             }
         }
-            return $this->render('update', [
-                'model' => $model,
-                'upload_form'=>$upload_form
-            ]);
+        return $this->render('update', [
+            'model' => $model,
+            'upload_form'=>$upload_form
+        ]);
     }
 
     /**
