@@ -112,11 +112,11 @@ class ColumnController extends Controller
         if ( $model->load($params)&& $model->validate()) {
            if ($filename = $upload_form->upload($upload_form)) {
                $model->column_image = $filename;
-               if ($model->save()) {
-                    return true;
-               }
-           return false;
             }
+            if ($model->save()) {
+                    return true;
+            }
+            return false;
         }
     }
     public function actionUpdate($id)

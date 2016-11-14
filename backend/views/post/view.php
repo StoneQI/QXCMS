@@ -38,6 +38,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
             ],
             'post_tiltle',
+            'post_subtitle',
             [
                 'label' => '文章地址',
                 'value'=>'http://www.liyekeji.cn/post/'.$model->id,

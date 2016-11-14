@@ -8,6 +8,7 @@ use backend\models\Columns;
 use backend\models\Contents;
 use backend\models\PostsSearch;
 use yii\web\Controller;
+use yii\base\ErrorException;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
@@ -158,7 +159,9 @@ class PostController extends Controller
             $post->load($params);
             $post->validate();
             $filename = $upload_form->upload($upload_form);
-            $post->post_image = $filename;
+            if ($filename) {
+               $post->post_image = $filename;
+            }
             $post->save();
             $content->content = $params['Contents']['content'];
             $content->posts_id = $post->attributes['id'];
