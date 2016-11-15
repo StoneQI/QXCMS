@@ -56,7 +56,6 @@ $this->params['breadcrumbs'][] = $this->title;
                 $content = array('1'=>'默认');
                 return $content[$model->column_content_layout];
               }],
-            'column_content_layout',
             'column_sort',
             // 'createtime:datetime',
             // 'updatetime:datetime',

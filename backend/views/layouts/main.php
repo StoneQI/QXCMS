@@ -55,7 +55,6 @@ $('form').on('beforeSubmit', function (e) {
         ['label' => '文章管理', 'url' => ['/post/index']],
         ['label' => '留言管理', 'url' => ['/contact/index']],
         ['label' => '劳务信息', 'url' => ['/labor/index']],
-        ['label' => '文件管理', 'url' => ['/file/index']],
         ['label' => '网站配置', 'url' => ['/webinfo/update']],
         ['label' => '修改密码', 'url' => ['/site/reset-password']],
     ];
