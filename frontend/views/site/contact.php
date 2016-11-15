@@ -33,14 +33,9 @@ $this->title = '留言';
                             电话: <?= $web_config->web_phone ?>
                             </p>
                         </li>
-                        <!-- <li>
-                            <p class="fax">
-                                Fax: (+20) 000 222 988
-                            </p>
-                        </li> -->
                         <li>
                             <p class="mail">
-                                邮箱: <?= $web_config->web_mail ?>
+                                <em>邮箱: <?= $web_config->web_mail ?></em>
                             </p>
                         </li>
                     </ul>
