@@ -35,7 +35,7 @@ class Labor extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'sex', 'age', 'technician', 'license_number', 'address'], 'required'],
+            [['name', 'sex', 'age','license_number', 'address'], 'required'],
             [['name', 'species'], 'string', 'max' => 50],
             [[ 'age'], 'string', 'max' => 8],
             ['status', 'default', 'value' => 1],
