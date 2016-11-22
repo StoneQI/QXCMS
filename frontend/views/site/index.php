@@ -43,7 +43,7 @@ $post=\backend\models\Posts::getIndexShow();
                             <img src="<?= $value->post_image ?>" alt="Img" height="130" width="197">
                         </div>
                     </div>
-                    <p>
+                    <p >
                         <a href="<?= \Yii::$app->params['assets_path'].'post/'.$value->id ?>" ><b><?= $value->post_tiltle ?></b></a><?= $value->post_summarize ?>
                     </p>
                     <a href="<?= \Yii::$app->params['assets_path'].'post/'.$value->id ?>" class="more">点击阅读</a>

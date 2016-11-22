@@ -35,7 +35,7 @@ $this->title = '劳务信息';
                      return Html::label($model->species);
                  },
                  'filterType'=>GridView::FILTER_SELECT2,
-                 'filter'=>ArrayHelper::map(Labor::find()->orderBy('species')->asArray()->all(), 'species', 'species'),
+                 'filter'=>ArrayHelper::map(Labor::find()->where('status = 1')->orderBy('species')->asArray()->all(), 'species', 'species'),
                  'filterWidgetOptions'=>[
                      'pluginOptions'=>['allowClear'=>true],
                  ],
@@ -46,7 +46,7 @@ $this->title = '劳务信息';
             [
                 'attribute'=>'technician',
                 'value'=>function ($model, $key, $index, $widget) {
-                    return Html::a('点击查看技工证','#',['onclick'=>'BootstrapDialog.show({title: "技工证",message: \'<img src="'.$model->technician.'">\',buttons: [{label: "关闭", action: function(dialogItself){dialogItself.close(); } }]});']);
+                    return Html::a('点击查看技工证','#',['onclick'=>'BootstrapDialog.show({title: "技工证",message: \'<img src="'.$model->technician.'" width="568px">\',buttons: [{label: "关闭", action: function(dialogItself){dialogItself.close(); } }]});']);
     },
             'format'=>'raw',
             ],
