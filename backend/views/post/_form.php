@@ -29,7 +29,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'post_video')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'post_link')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'post_link')->textInput(['maxlength' => true])->label('文章链接（格式如：http://www.baidu.com/）'); ?>
      <?= $form->field($model, 'post_summarize')->textInput(['maxlength' => true]) ?>
 
 
@@ -40,6 +40,7 @@ use yii\widgets\ActiveForm;
         'initialFrameHeight' => '200',
         //设置语言
         'lang' =>'zh-cn', //中文为 zh-cn
+        'pasteplain'=>true,
         //定制菜单
         'toolbars' => [
             [
