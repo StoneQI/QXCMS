@@ -35,7 +35,7 @@ $this->title = '劳务信息';
                      return Html::label($model->species);
                  },
                  'filterType'=>GridView::FILTER_SELECT2,
-                 'filter'=>ArrayHelper::map(Labor::find()->orderBy('species')->asArray()->all(), 'species', 'species'),
+                 'filter'=>ArrayHelper::map(Labor::find()->where('status = 1')->orderBy('species')->asArray()->all(), 'species', 'species'),
                  'filterWidgetOptions'=>[
                      'pluginOptions'=>['allowClear'=>true],
                  ],
