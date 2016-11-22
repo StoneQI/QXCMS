@@ -45,7 +45,7 @@ $this->title = $parsent_column['name'];
                                     <img src="<?= $value->post_image?>" alt="Img" height="94" width="90">
                                 </div>
                             </div>
-                            <p>
+                            <p class="list_post_content">
                             <a href="<?=Url::to(['site/post', 'id' => $value->id]); ?>" > <b><?= $value->post_tiltle?></b></a>
                                 <?= $value->post_summarize?>
                             </p>

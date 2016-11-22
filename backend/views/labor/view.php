@@ -14,6 +14,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 
     <p>
+        <?= Html::a('<i class="glyphicon glyphicon-plus"></i> 新增劳务', ['create'], ['class' => 'btn btn-success'])?>
         <?= Html::a('修改', ['update', 'id' => $model->Id], ['class' => 'btn btn-primary']) ?>
         <?= Html::a('删除', ['delete', 'id' => $model->Id], [
             'class' => 'btn btn-danger',
