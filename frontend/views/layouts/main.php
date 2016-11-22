@@ -103,6 +103,31 @@ $web_config = Webinfo::getinfo();
     </div>
 
 
+<!-- 代码部分begin -->
+<div class="side">
+    <ul>
+        <li><a href="<?=Url::toRoute(['site/contact']); ?>"><div class="sidebox"><img src="<?= \Yii::$app->params['assets_path']?>images/side_icon01.png">联系我们</div></a></li>
+<!--        <li><a href="#"><div class="sidebox"><img src="http://demo.lanrenzhijia.com/2014/service1108/side_icon02.png">客户案例</div></a></li>-->
+        <li><a href="http://wpa.qq.com/msgrd?v=3&uin=2790768494&site=qq&menu=yes" ><div class="sidebox"><img src="<?= \Yii::$app->params['assets_path']?>images/side_icon04.png">QQ客服</div></a></li>
+<!--        <li><a href="javascript:void(0);" ><div class="sidebox"><img src="http://demo.lanrenzhijia.com/2014/service1108/side_icon03.png">新浪微博</div></a></li>-->
+        <li style="border:none;"><a href="javascript:goTop();" class="sidetop"><img src="<?= \Yii::$app->params['assets_path']?>images/side_icon05.png"></a></li>
+    </ul>
+</div>
+<script src="http://www.lanrenzhijia.com/ajaxjs/jquery.min.js"></script>
+<script>
+    $(function(){
+        $(".side ul li").hover(function(){
+            $(this).find(".sidebox").stop().animate({"width":"124px"},200).css({"opacity":"1","filter":"Alpha(opacity=100)","background":"#ae1c1c"})
+        },function(){
+            $(this).find(".sidebox").stop().animate({"width":"54px"},200).css({"opacity":"0.8","filter":"Alpha(opacity=80)","background":"#000"})
+        });
+    });
+    //回到顶部函数
+    function goTop(){
+        $('html,body').animate({'scrollTop':0},300);
+    }
+</script>
+<!-- 代码部分end -->
 
 <?php $this->endBody() ?>
 </body>
