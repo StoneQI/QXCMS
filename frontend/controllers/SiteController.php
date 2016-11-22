@@ -59,6 +59,7 @@ class SiteController extends Controller
 
                         $sub_column[$i]['name'] = $value->column_name;
                         $sub_column[$i]['id'] = $value->id;
+                        $sub_column[$i]['column_link'] = $value->column_link;
                         $i++;
                     }
                     if ($pid == -1) {

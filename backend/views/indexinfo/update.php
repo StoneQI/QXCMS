@@ -26,22 +26,22 @@ $this->params['breadcrumbs'][] = ['label' => '首页管理', 'url' => ['update']
                 <?= Html::label('首页大图(图片大小为：594（宽）*382（高）)') ?><br>
                 <?php echo $indexinfo->index_img?Html::img($indexinfo->index_img, ['alt' => '首页大图','width'=>'594','height'=>'382']):"" ?>
             	<?= $form->field($upload_form, 'file')->fileInput()->label('') ?>
-            	<?= $form->field($model, 'index_imgtext')->textarea(['maxlength' => true,'value'=>$indexinfo->index_imgtext]) ?>
+            	<?= $form->field($model, 'index_imgtext')->textarea(['maxlength' => true,'value'=>$indexinfo->index_imgtext,'rows'=>'5']) ?>
 
             </div>
             <div role="tabpanel" class="tab-pane" id="profile">
             <br>
             	<?= $form->field($model, 'center_title')->textInput(['maxlength' => true,'value'=>$indexinfo->center_title]) ?>
-            	 <?= $form->field($model, 'center_content')->textarea(['maxlength' => true,'value'=>$indexinfo->center_content]) ?>
+            	 <?= $form->field($model, 'center_content')->textarea(['maxlength' => true,'value'=>$indexinfo->center_content,'rows'=>'4']) ?>
             	 <?= $form->field($model, 'center_title_right')->textInput(['maxlength' => true,'value'=>$indexinfo->center_title_right]) ?>
-            	 <?= $form->field($model, 'center_content_right')->textarea(['maxlength' => true,'value'=>$indexinfo->center_content_right]) ?>
+            	 <?= $form->field($model, 'center_content_right')->textarea(['maxlength' => true,'value'=>$indexinfo->center_content_right,'rows'=>'4']) ?>
             </div>
             <div role="tabpanel" class="tab-pane" id="settings"><br>
             	 <?= $form->field($model, 'footer_left_title')->textInput(['maxlength' => true,'value'=>$indexinfo->footer_left_title]) ?>
-            	 <?= $form->field($model, 'footer_left_content')->textarea(['maxlength' => true,'value'=>$indexinfo->footer_left_content]) ?>
+            	 <?= $form->field($model, 'footer_left_content')->textarea(['maxlength' => true,'value'=>$indexinfo->footer_left_content,'rows'=>'4']) ?>
 
             	 <?= $form->field($model, 'footer_right_title')->textInput(['maxlength' => true,'value'=>$indexinfo->footer_right_title]) ?>
-            	 <?= $form->field($model, 'footer_right_content')->textarea(['maxlength' => true,'value'=>$indexinfo->footer_right_content]) ?>
+            	 <?= $form->field($model, 'footer_right_content')->textarea(['maxlength' => true,'value'=>$indexinfo->footer_right_content,'rows'=>'4']) ?>
             </div>
           </div>
 
