@@ -20,6 +20,7 @@ $web_config = Webinfo::getinfo();
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
 <head>
+    <meta name="baidu-site-verification" content="JXMWB8bHEA" />
     <meta charset="<?= Yii::$app->charset ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>
