@@ -22,7 +22,8 @@
         "kartik-v/yii2-widgets": "*",
         "kucha/ueditor": "*",
         "kartik-v/yii2-detail-view": "*",
-        "yidashi/yii2-bootstrap-markdown": "*"
+        "yidashi/yii2-bootstrap-markdown": "*",
+        "bower-asset/jquery": "1.11.*@stable | 1.12.*@stable"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "*",
