@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "48268aa83af03a30b2c0ef9bb3f10584",
-    "content-hash": "f1055d8878880aa44c0f3890ccdd72f8",
+    "hash": "cc31191389339dfb0476ba42ab4c4a1b",
+    "content-hash": "cc16551962948093bfe81fddcfd9c4a3",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -111,16 +111,16 @@
         },
         {
             "name": "bower-asset/jquery",
-            "version": "2.2.4",
+            "version": "1.12.1-patch1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jquery/jquery-dist.git",
-                "reference": "c0185ab7c75aab88762c5aae780b9d83b80eda72"
+                "reference": "e409311a9966092cd40b6a1c4a64ad0b105e364c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/c0185ab7c75aab88762c5aae780b9d83b80eda72",
-                "reference": "c0185ab7c75aab88762c5aae780b9d83b80eda72",
+                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/e409311a9966092cd40b6a1c4a64ad0b105e364c",
+                "reference": "e409311a9966092cd40b6a1c4a64ad0b105e364c",
                 "shasum": ""
             },
             "type": "bower-asset-library",
@@ -1806,6 +1806,33 @@
             "time": "2016-07-08 11:51:25"
         },
         {
+            "name": "yidashi/yii2-bootstrap-markdown",
+            "version": "v2.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yidashi/yii2-bootstrap-markdown.git",
+                "reference": "9df58be2387f77afe6f7ea508b0a992bf8093289"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://packagist.phpcomposer.com/files/yidashi/yii2-bootstrap-markdown/9df58be2387f77afe6f7ea508b0a992bf8093289.zip",
+                "reference": "9df58be2387f77afe6f7ea508b0a992bf8093289",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "yidashi\\markdown\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "yii2-bootstrap-markdown",
+            "time": "2016-11-25 02:32:25"
+        },
+        {
             "name": "yiisoft/yii2",
             "version": "2.0.9",
             "source": {
@@ -2613,7 +2640,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "kartik-v/yii2-grid": 20
+        "kartik-v/yii2-grid": 20,
+        "bower-asset/jquery": 0
     },
     "prefer-stable": false,
     "prefer-lowest": false,
