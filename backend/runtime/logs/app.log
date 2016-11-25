@@ -1,0 +1,125 @@
+2016-11-23 14:17:32 [120.192.170.55][1][5u794omh8h434d2j3sa3haav17][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'The requested page does not exist.' in C:\php\www\liyeit\backend\controllers\ContactController.php:115
+Stack trace:
+#0 C:\php\www\liyeit\backend\controllers\ContactController.php(98): backend\controllers\ContactController->findModel('4')
+#1 [internal function]: backend\controllers\ContactController->actionDelete('4')
+#2 C:\php\www\liyeit\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 C:\php\www\liyeit\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 C:\php\www\liyeit\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('delete', Array)
+#5 C:\php\www\liyeit\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('contact/delete', Array)
+#6 C:\php\www\liyeit\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\php\www\liyeit\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2016-11-23 14:17:31 [120.192.170.55][1][5u794omh8h434d2j3sa3haav17][info][application] $_GET = [
+    'r' => 'contact/delete'
+    'id' => '4'
+]
+
+$_POST = [
+    '_csrf-backend' => 'bmhCT2pWLmU9EQQMWgZjDwYvehoeJVkCXF87CRwiTFAkPQMeHjFnVA=='
+]
+
+$_COOKIE = [
+    'advanced-backend' => '5u794omh8h434d2j3sa3haav17'
+    '_csrf-backend' => '0517c08ae587f8bb9aae78cd068d2c74cd0e59f683a9c587e9c5443b7c2aaa9da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"SyFC0PMjhG8Utswg27yFvtb5JUAQtgI1\";}'
+    'Hm_lvt_3c8ecbfa472e76b0340d7a701a04197e' => '1479861638,1479865537,1479866242,1479873254'
+    'Hm_lpvt_3c8ecbfa472e76b0340d7a701a04197e' => '1479881572'
+    '_identity-backend' => '41323ae8d93c33903ffe20cc3d756e47450f54c6cbc7e37fd48879180401d12da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"LPxZC-5Nr46PYAqaUfyyonh_Pkhz6KeF\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'PHPRC' => 'C:\\php\\php54n\\'
+    'PHP_FCGI_MAX_REQUESTS' => '10000'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Windows\\system32\\config\\systemprofile\\AppData\\Roaming'
+    'APP_POOL_ID' => 'lyitadmin'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'iZ28zu01sygZ'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DFSTRACINGON' => 'FALSE'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'LOCALAPPDATA' => 'C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local'
+    'NUMBER_OF_PROCESSORS' => '1'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files\\Microsoft Visual Studio 9.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\Program Files\\Git\\cmd'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_IDENTIFIER' => 'x86 Family 6 Model 45 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2d07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Windows\\TEMP'
+    'TMP' => 'C:\\Windows\\TEMP'
+    'TRACE_FORMAT_SEARCH_PATH' => '\\\\winseqfe\\release\\Windows6.0\\lh_sp2rtm\\6002.18005.090410-1830\\x86fre\\symbols.pri\\TraceFormat'
+    'USERDOMAIN' => 'WORKGROUP'
+    'USERNAME' => 'iZ28zu01sygZ$'
+    'USERPROFILE' => 'C:\\Windows\\system32\\config\\systemprofile'
+    'windir' => 'C:\\Windows'
+    'ORIG_PATH_INFO' => '/index.php'
+    'URL' => '/index.php'
+    'SERVER_SOFTWARE' => 'Microsoft-IIS/7.0'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_PORT_SECURE' => '0'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.liyekeji.cn'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_METHOD' => 'POST'
+    'REMOTE_USER' => ''
+    'REMOTE_PORT' => '13106'
+    'REMOTE_HOST' => '120.192.170.55'
+    'REMOTE_ADDR' => '120.192.170.55'
+    'QUERY_STRING' => 'r=contact%2Fdelete&id=4'
+    'PATH_TRANSLATED' => 'C:\\php\\www\\liyeit\\backend\\web\\index.php'
+    'LOGON_USER' => ''
+    'LOCAL_ADDR' => '115.28.166.44'
+    'INSTANCE_META_PATH' => '/LM/W3SVC/4'
+    'INSTANCE_ID' => '4'
+    'HTTPS_SERVER_SUBJECT' => ''
+    'HTTPS_SERVER_ISSUER' => ''
+    'HTTPS_SECRETKEYSIZE' => ''
+    'HTTPS_KEYSIZE' => ''
+    'HTTPS' => 'off'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '74'
+    'CERT_SUBJECT' => ''
+    'CERT_SERIALNUMBER' => ''
+    'CERT_ISSUER' => ''
+    'CERT_FLAGS' => ''
+    'CERT_COOKIE' => ''
+    'AUTH_USER' => ''
+    'AUTH_PASSWORD' => ''
+    'AUTH_TYPE' => ''
+    'APPL_PHYSICAL_PATH' => 'C:\\php\\www\\liyeit\\backend\\web\\'
+    'APPL_MD_PATH' => '/LM/W3SVC/4/ROOT'
+    'IIS_UrlRewriteModule' => '7.1.0761.0'
+    'SCRIPT_FILENAME' => 'C:\\php\\www\\liyeit\\backend\\web\\index.php'
+    'REQUEST_URI' => '/index.php?r=contact%2Fdelete&id=4'
+    'DOCUMENT_ROOT' => 'C:\\php\\www\\liyeit\\backend\\web'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://admin.liyekeji.cn'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 UBrowser/6.0.895.5 Safari/537.36'
+    'HTTP_REFERER' => 'http://admin.liyekeji.cn/index.php?r=contact%2Findex'
+    'HTTP_HOST' => 'admin.liyekeji.cn'
+    'HTTP_COOKIE' => 'advanced-backend=5u794omh8h434d2j3sa3haav17; _csrf-backend=0517c08ae587f8bb9aae78cd068d2c74cd0e59f683a9c587e9c5443b7c2aaa9da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22SyFC0PMjhG8Utswg27yFvtb5JUAQtgI1%22%3B%7D; Hm_lvt_3c8ecbfa472e76b0340d7a701a04197e=1479861638,1479865537,1479866242,1479873254; Hm_lpvt_3c8ecbfa472e76b0340d7a701a04197e=1479881572; _identity-backend=41323ae8d93c33903ffe20cc3d756e47450f54c6cbc7e37fd48879180401d12da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22LPxZC-5Nr46PYAqaUfyyonh_Pkhz6KeF%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_LENGTH' => '74'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1479881851.4844
+    'REQUEST_TIME' => 1479881851
+]

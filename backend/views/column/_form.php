@@ -22,7 +22,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'column_name')->textInput(['maxlength' => true])->label('栏目名字（必须填写）'); ?>
 
-    <?= $form->field($model, 'column_link')->textInput(['maxlength' => true])->label('栏目链接（当你需要链接到其他页面时设置）') ?>
+    <?= $form->field($model, 'column_link')->textInput(['maxlength' => true])->label('栏目链接（格式如：http://www.baidu.com/）');?>
 
     <?= $form->field($model, 'column_layout')->dropdownList(['list'=>'新闻中心','img_list'=>'产品展示','SGP-aboutus'=>'单页布局--关于我们','cooperate'=>'单页布局--合作平台'])->label('栏目布局（根据需要指定该栏目的布局方式）'); ?>
     <?= Html::label('栏目图片') ?><br>
@@ -37,6 +37,7 @@ use yii\widgets\ActiveForm;
         //设置语言
         'lang' =>'zh-cn', //中文为 zh-cn
         //定制菜单
+        'pasteplain'=>true,
         'toolbars' => [
             [
            //             'anchor', //锚点

@@ -15,17 +15,19 @@ $this->title = $parsent_column['name'];
                     <ul>
 
                   <?php
-                  foreach ($column as $key => $value) {
+                    foreach ($column as $key => $value) {
+                      ?>
+                      <li>
+                      <?php if ($value['column_link']){ ?>
+                        <a href="<?=$value['column_link']; ?>" target= _blank><?= $value['name'];?></a>
+                      <?php }else{ ?>
+                        <a href="<?=Url::toRoute(['site/column', 'id' => $parsent_column['id'],'pid'=>$value['id']]); ?>"><?= $value['name'];?></a>
+                      </li>
+                      <?php
+                      }
+                    }
                     ?>
-                    <li>
-              <a href="<?=Url::toRoute(['site/column', 'id' => $parsent_column['id'],'pid'=>$value['id']]); ?>"><?= $value['name']?></a>
-            </li>
-                    <?php
-                  }
-
-
-                  ?>
-                  </ul>
+                    </ul>
                 </div>
 
             </div>
@@ -46,7 +48,13 @@ $this->title = $parsent_column['name'];
                                 </div>
                             </div>
                             <p class="list_post_content">
-                            <a href="<?=Url::to(['site/post', 'id' => $value->id]); ?>" > <b><?= $value->post_tiltle?></b></a>
+                              <?php if ($value->post_link): ?>
+                                <a href="<?=$value->post_link;?>"  target= _blank >
+                              <?php else: ?>
+                                <a href="<?=Url::to(['site/post', 'id' => $value->id]); ?>" >
+                              <?php endif ?>
+
+                           <b><?= $value->post_tiltle?></b></a>
                                 <?= $value->post_summarize?>
                             </p>
                         </li>
