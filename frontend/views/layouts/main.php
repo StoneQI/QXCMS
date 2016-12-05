@@ -23,9 +23,18 @@ $web_config = Webinfo::getinfo();
     <meta name="baidu-site-verification" content="JXMWB8bHEA" />
     <meta charset="<?= Yii::$app->charset ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="360-site-verification" content="7cd885e483b593ef4185eadc32a94380" />
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($web_config->web_name).'-'.$this->title ?></title>
+     <meta name="keywords" content="寿光立业网络科技，寿光立业科技有限公司，寿光立业科技，寿光立业网络科技有限公司
+立业科技，寿光网络立业，寿光网络">
     <?php $this->head() ?>
+    <script>
+(function(){
+   var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?e429e547c93097c21288d6a8e08f704e":"https://jspassport.ssl.qhimg.com/11.0.1.js?e429e547c93097c21288d6a8e08f704e";
+   document.write('<script src="' + src + '" id="sozz"><\/script>');
+})();
+</script>
 </head>
 <body>
 <?php $this->beginBody() ?>
